@@ -200,6 +200,11 @@ vlans:
     description: "For OCT/UMass nodes IPMI for operate first"
     switches:
       - oct_mgmthub
+  913:
+    name: "OKD-IPMI"
+    description: "For OKD nodes in OCT4 IPMI"
+    switches:
+      - oct_mgmthub
   930:
     name: "OCT-SWMGMT"
     description: "Switch management network for OCT"
