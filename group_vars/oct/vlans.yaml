@@ -14,6 +14,9 @@ vlans:
   127:
     name: "MOC-NEU-PUBLIC"
     description: "NEU Public IP for infrastructure"
+  204:
+    name: "MOC-GENERAL"
+    description: "Intranet (routable to internet). SNMP for client nodes."
   208:
     name: "ESI-CONTROL-PLANE"
     description: "ESI control plane"
@@ -884,6 +887,9 @@ vlans:
   933:
     name: "OCT-PDU"
     description: "PDU network for OCT"
+  2076:
+    name: "Routed-2176"
+    description: "NERC Openshift Infra Frontend Routed"
   2400:
     name: oct-chameleon-2400-internal
     description: OCT Chameleon 2400 internal

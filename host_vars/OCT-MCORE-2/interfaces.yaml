@@ -98,7 +98,10 @@ interfaces:
   GigabitEthernet 1/39:
     state: "down"
   GigabitEthernet 1/40:
-    state: "down"
+    description: "Colosseum VPN RaspPi Mgmt"
+    state: "up"
+    portmode: "access"
+    untagged: 204
   GigabitEthernet 1/41:
     state: "down"
   GigabitEthernet 1/42:
