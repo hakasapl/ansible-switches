@@ -59,6 +59,7 @@ interfaces:
       - 623
       - 624:630
       - 911
+      - 2076
       - 3801
     stp:
       edgeport: true
@@ -78,6 +79,7 @@ interfaces:
       - 623
       - 624:630
       - 911
+      - 2076
       - 3801
     stp:
       edgeport: true
@@ -104,6 +106,7 @@ interfaces:
       - 623
       - 624:630
       - 911
+      - 2076
       - 3801
     stp:
       edgeport: true

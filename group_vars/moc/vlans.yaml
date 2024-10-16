@@ -887,6 +887,9 @@ vlans:
   930:
     name: "MOC-SWMGMT"
     description: "Switch management network for MOC"
+  2076:
+    name: "Routed-2176"
+    description: "NERC Openshift Infra Frontend Routed"
   2141:
     name: "NERC-Openstack-FloatingIP"
     description: "Floating IPs for NERC openstack 199.94.60.0 /24"

@@ -54,41 +54,17 @@ interfaces:
     allowlist:
       - "description"
   twentyFiveGigE 1/9:
-    description: "NERC-LenA100-U32-Openshift"
-    state: "up"
-    mtu: 9216
-    portmode: "hybrid"
-    untagged: 2172
-    tagged:
-      - 2170
-      - 2173
-    stp:
-      edgeport: true
-      bpduguard: true
+    description: "MOC-R8PAC23U32"
+    allowlist:
+      - "description"
   twentyFiveGigE 1/10:
-    description: "NERC-LenA100-U33-Openshift"
-    state: "up"
-    mtu: 9216
-    portmode: "hybrid"
-    untagged: 2172
-    tagged:
-      - 2170
-      - 2173
-    stp:
-      edgeport: true
-      bpduguard: true
+    description: "MOC-R8PAC23U33"
+    allowlist:
+      - "description"
   twentyFiveGigE 1/11:
-    description: "NERC-LenA100-U34-Openshift"
-    state: "up"
-    mtu: 9216
-    portmode: "hybrid"
-    untagged: 2172
-    tagged:
-      - 2170
-      - 2173
-    stp:
-      edgeport: true
-      bpduguard: true
+    description: "MOC-R8PAC23U34"
+    allowlist:
+      - "description"
   twentyFiveGigE 1/12:
     description: "NERC-LenA100-U36-Openshift"
     state: "up"
@@ -130,17 +106,9 @@ interfaces:
     allowlist:
       - "description"
   twentyFiveGigE 1/16:
-    description: "NERC-LenA100-U40-Openshift"
-    state: "up"
-    mtu: 9216
-    portmode: "hybrid"
-    untagged: 2172
-    tagged:
-      - 2170
-      - 2173
-    stp:
-      edgeport: true
-      bpduguard: true
+    description: "MOC-R8PAC23U40"
+    allowlist:
+      - "description"
   twentyFiveGigE 1/17:
     state: "down"
   twentyFiveGigE 1/18:
