@@ -1,0 +1,1805 @@
+interfaces:
+  Ethernet1/1:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/1/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/1/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/1/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/1/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/2:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/2/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/2/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/2/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/2/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/3:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/3/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/3/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/3/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/3/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/4:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/4/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/4/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/4/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/4/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/5:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/5/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/5/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/5/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/5/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/6:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/6/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/6/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/6/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/6/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/7:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/7/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/7/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/7/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/7/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/8:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/8/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/8/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/8/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/8/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/9:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/9/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/9/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/9/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/9/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/10:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/10/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/10/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/10/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/10/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/11:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/11/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/11/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/11/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/11/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/12:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/12/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/12/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/12/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/12/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/13:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/13/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/13/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/13/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/13/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/14:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/14/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/14/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/14/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/14/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/15:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/15/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/15/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/15/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/15/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/16:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/16/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/16/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/16/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/16/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/17:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/17/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/17/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/17/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/17/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/18:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/18/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/18/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/18/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/18/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/19:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/19/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/19/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/19/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/19/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/20:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/20/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/20/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/20/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/20/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/21:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/21/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/21/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/21/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/21/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/22:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/22/1:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/22/2:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/22/3:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/22/4:
+    enabled: true
+    description: "UXX-SLOTXX-A"
+  Ethernet1/23:
+    enabled: false
+  Ethernet1/24:
+    enabled: false
+  Ethernet1/25:
+    enabled: false
+  Ethernet1/26:
+    enabled: false
+  Ethernet1/27:
+    enabled: false
+  Ethernet1/28:
+    enabled: false
+  Ethernet1/29:
+    enabled: false
+  Ethernet1/30:
+    enabled: false
+  Ethernet1/31:
+    enabled: true
+    description: "Uplink from NERC Core"
+  Ethernet1/32:
+    enabled: false
+  Ethernet1/33:
+    enabled: false
+  Ethernet1/34:
+    enabled: false
+  Ethernet1/35:
+    enabled: true
+    description: "NERC-R1PCC20-SW-TORS-B Port 35"
+    mtu: 9216
+  Ethernet1/36:
+    enabled: true
+    description: "NERC-R1PCC20-SW-TORS-B Port 36"
+    mtu: 9216
+  port-channel1:
+    enabled: true
+    description: "VPC peer-link"
+    portmode: trunk
+    mode: "lacp"
+    managed: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/35"
+      - "Ethernet1/36"
+  port-channel10:
+    enabled: true
+    description: "Harvard Shared Aggregation"
+    mtu: 9216
+    portmode: trunk
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/31"
+    mlag: "10"
+  port-channel100:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/1/1"
+    mlag: "100"
+  port-channel101:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/1/2"
+    mlag: "101"
+  port-channel102:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/1/3"
+    mlag: "102"
+  port-channel103:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/1/4"
+    mlag: "103"
+  port-channel104:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/2/1"
+    mlag: "104"
+  port-channel105:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/2/2"
+    mlag: "105"
+  port-channel106:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/2/3"
+    mlag: "106"
+  port-channel107:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/2/4"
+    mlag: "107"
+  port-channel108:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/3/1"
+    mlag: "108"
+  port-channel109:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/3/2"
+    mlag: "109"
+  port-channel11:
+    enabled: true
+    description: "Harvard Shared Aggregation"
+    mtu: 9216
+    portmode: trunk
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/32"
+    mlag: "11"
+  port-channel110:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/3/3"
+    mlag: "110"
+  port-channel111:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/3/4"
+    mlag: "111"
+  port-channel112:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/4/1"
+    mlag: "112"
+  port-channel113:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/4/2"
+    mlag: "113"
+  port-channel114:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/4/3"
+    mlag: "114"
+  port-channel115:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/4/4"
+    mlag: "115"
+  port-channel116:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/5/1"
+    mlag: "116"
+  port-channel117:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/5/2"
+    mlag: "117"
+  port-channel118:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/5/3"
+    mlag: "118"
+  port-channel119:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/5/4"
+    mlag: "119"
+  port-channel120:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/6/1"
+    mlag: "120"
+  port-channel121:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/6/2"
+    mlag: "121"
+  port-channel122:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/6/3"
+    mlag: "122"
+  port-channel123:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/6/4"
+    mlag: "123"
+  port-channel124:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/7/1"
+    mlag: "124"
+  port-channel125:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/7/2"
+    mlag: "125"
+  port-channel126:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/7/3"
+    mlag: "126"
+  port-channel127:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/7/4"
+    mlag: "127"
+  port-channel128:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/8/1"
+    mlag: "128"
+  port-channel129:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/8/2"
+    mlag: "129"
+  port-channel130:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/8/3"
+    mlag: "130"
+  port-channel131:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/8/4"
+    mlag: "131"
+  port-channel132:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/9/1"
+    mlag: "132"
+  port-channel133:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/9/2"
+    mlag: "133"
+  port-channel134:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/9/3"
+    mlag: "134"
+  port-channel135:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/9/4"
+    mlag: "135"
+  port-channel136:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/10/1"
+    mlag: "136"
+  port-channel137:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/10/2"
+    mlag: "137"
+  port-channel138:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/10/3"
+    mlag: "138"
+  port-channel139:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/10/4"
+    mlag: "139"
+  port-channel140:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/11/1"
+    mlag: "140"
+  port-channel141:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/11/2"
+    mlag: "141"
+  port-channel142:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/11/3"
+    mlag: "142"
+  port-channel143:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/11/4"
+    mlag: "143"
+  port-channel144:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/12/1"
+    mlag: "144"
+  port-channel145:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/12/2"
+    mlag: "145"
+  port-channel146:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/12/3"
+    mlag: "146"
+  port-channel147:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/12/4"
+    mlag: "147"
+  port-channel148:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2176
+    tagged:
+      - 2177
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/13/1"
+    mlag: "148"
+  port-channel149:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2176
+    tagged:
+      - 2177
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/13/2"
+    mlag: "149"
+  port-channel150:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2176
+    tagged:
+      - 2177
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/13/3"
+    mlag: "150"
+  port-channel151:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/13/4"
+    mlag: "151"
+  port-channel152:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/14/1"
+    mlag: "152"
+  port-channel153:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/14/2"
+    mlag: "153"
+  port-channel154:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/14/3"
+    mlag: "154"
+  port-channel155:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/14/4"
+    mlag: "155"
+  port-channel156:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/15/1"
+    mlag: "156"
+  port-channel157:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/15/2"
+    mlag: "157"
+  port-channel158:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/15/3"
+    mlag: "158"
+  port-channel159:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/15/4"
+    mlag: "159"
+  port-channel160:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/16/1"
+    mlag: "160"
+  port-channel161:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/16/2"
+    mlag: "161"
+  port-channel162:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/16/3"
+    mlag: "162"
+  port-channel163:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/16/4"
+    mlag: "163"
+  port-channel164:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2176
+    tagged:
+      - 2177
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/17/1"
+    mlag: "164"
+  port-channel165:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2176
+    tagged:
+      - 2177
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/17/2"
+    mlag: "165"
+  port-channel166:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2176
+    tagged:
+      - 2177
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/17/3"
+    mlag: "166"
+  port-channel167:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2176
+    tagged:
+      - 2177
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/17/4"
+    mlag: "167"
+  port-channel168:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2176
+    tagged:
+      - 2177
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/18/1"
+    mlag: "168"
+  port-channel169:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2176
+    tagged:
+      - 2177
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/18/2"
+    mlag: "169"
+  port-channel170:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/18/3"
+    mlag: "170"
+  port-channel171:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/18/4"
+    mlag: "171"
+  port-channel172:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2174
+    tagged:
+      - 2175
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/19/1"
+    mlag: "172"
+  port-channel173:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2174
+    tagged:
+      - 2175
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/19/2"
+    mlag: "173"
+  port-channel174:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2174
+    tagged:
+      - 2175
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/19/3"
+    mlag: "174"
+  port-channel175:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2174
+    tagged:
+      - 2175
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/19/4"
+    mlag: "175"
+  port-channel176:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2174
+    tagged:
+      - 2175
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/20/1"
+    mlag: "176"
+  port-channel177:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2174
+    tagged:
+      - 2175
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/20/2"
+    mlag: "177"
+  port-channel178:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2174
+    tagged:
+      - 2175
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/20/3"
+    mlag: "178"
+  port-channel179:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2174
+    tagged:
+      - 2175
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/20/4"
+    mlag: "179"
+  port-channel180:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/21/1"
+    mlag: "180"
+  port-channel181:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/21/2"
+    mlag: "181"
+  port-channel182:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/21/3"
+    mlag: "182"
+  port-channel183:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2174
+    tagged:
+      - 2175
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/21/4"
+    mlag: "183"
+  port-channel184:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2174
+    tagged:
+      - 2175
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/22/1"
+    mlag: "184"
+  port-channel185:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/22/2"
+    mlag: "185"
+  port-channel186:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/22/3"
+    mlag: "186"
+  port-channel187:
+    description: "UXX-SLOTXX LAG"
+    enabled: true
+    portmode: "hybrid"
+    untagged: 2172
+    tagged:
+      - 2173
+      - 2180
+    mtu: 9216
+    stp:
+      edgeport: true
+      bpduguard: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/22/4"
+    mlag: "187"

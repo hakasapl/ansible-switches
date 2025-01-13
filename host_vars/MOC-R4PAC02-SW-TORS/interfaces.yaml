@@ -189,9 +189,9 @@ interfaces:
   twentyFiveGigE 1/32:
     state: "up"
   twentyFiveGigE 1/33:
-    state: "down"
+    description: "MOC-AMDTESTGPU1-P1"
   twentyFiveGigE 1/34:
-    state: "down"
+    description: "MOC-AMDTESTGPU1-P1"
   twentyFiveGigE 1/35:
     state: "down"
   twentyFiveGigE 1/36:

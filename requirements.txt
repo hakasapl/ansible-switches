@@ -1,2 +1,4 @@
 jsonschema
 ansible-pylibssh
+botocore
+boto3

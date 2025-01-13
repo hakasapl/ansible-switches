@@ -38,6 +38,9 @@ vlans:
   280:
     name: "MOC-MAAS-NIC1"
     description: "MAAS Internal Network 2"
+  350:
+    name: Lenovo-H100-Temp
+    description: Lenovo H100 Temp VLAN for burn-in
   351:
     name: ESI-351
     description: ESI Vlan 351

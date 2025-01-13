@@ -296,6 +296,10 @@ def generateINTFConfig(interfaces: dict):
         # "stp" field
         if "stp" in fields:
             stp_fields = fields["stp"]
+            if "disabled" in stp_fields and stp_fields["disabled"]:
+                edge_str = "spanning-tree bpdufilter enable"
+                config_dict[dict_key].append(edge_str)
+
             if "edgeport" in stp_fields and stp_fields["edgeport"]:
                 edge_str = "spanning-tree port type edge"
                 if "bpduguard" in stp_fields and stp_fields["bpduguard"]:
@@ -331,7 +335,21 @@ def generateINTFConfig(interfaces: dict):
 
         # "tagged" field
         if "tagged" in fields:
-            allowed_vl_string = ",".join(list(map(str, fields["tagged"])))
+            new_tagged = []
+            # loop through fields["tagged"] and expand any X:Y ranges
+            for tagged in fields["tagged"]:
+                tagged_str = str(tagged)
+                if ":" in tagged_str:
+                    # If the item contains a range, expand it
+                    vlan_range = tagged_str.split(":")
+                    vlan_range = list(range(int(vlan_range[0]), int(vlan_range[1]) + 1))
+                    # Add the expanded range to the new list
+                    new_tagged += vlan_range
+                else:
+                    # If no range, just add the item to the new list
+                    new_tagged.append(tagged_str)
+
+            allowed_vl_string = ",".join(list(map(str, new_tagged)))
             tagged_str = f"switchport trunk allowed vlan {allowed_vl_string}"
             config_dict[dict_key].append(tagged_str)
 
@@ -400,7 +418,7 @@ def generateINTFConfig(interfaces: dict):
         # "mlag" field
         if "mlag" in fields:
             if fields["mlag"]:
-                config_dict[member_port].append(f"vpc {fields['mlag']}")
+                config_dict[dict_key].append(f"vpc {fields['mlag']}")
 
     for key, lines in config_dict.items():
         config.append("")

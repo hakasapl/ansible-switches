@@ -139,7 +139,7 @@ interfaces:
     description: "OCT10-FPGABUILD-OBM"
     state: "up"
     portmode: "access"
-    untagged: 911
+    untagged: 910
     stp:
       edgeport: true
       bpduguard: true

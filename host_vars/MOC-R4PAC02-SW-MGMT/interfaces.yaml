@@ -149,7 +149,13 @@ interfaces:
   GigabitEthernet 1/28:
     state: "down"
   GigabitEthernet 1/29:
-    state: "down"
+    description: "MOC-AMDTESTGPU1-OBM"
+    state: "up"
+    portmode: "access"
+    untagged: 911
+    stp:
+      edgeport: true
+      bpduguard: true
   GigabitEthernet 1/30:
     state: "down"
   GigabitEthernet 1/31:
