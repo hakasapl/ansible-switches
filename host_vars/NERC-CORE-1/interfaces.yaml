@@ -80,11 +80,9 @@ interfaces:
   Ethernet1/33:
     enabled: true
     description: "Harvard R6-PA-C15 Shared Aggregation Port 25"
-    mtu: 9216
   Ethernet1/34:
     enabled: true
     description: "Harvard R6-PA-C13 Shared Aggregation Port 26"
-    mtu: 9216
   Ethernet1/35:
     enabled: true
     description: "MOC-CORE-1 Port 21"
@@ -111,11 +109,10 @@ interfaces:
     mtu: 9216
     portmode: trunk
     tagged:
-      - 550
-      #- 2141:2148
-      #- 2170
-      #- 2172:2180
-      #- 2180
+      - 2141:2148
+      - 2170
+      - 2172:2180
+      - 2180
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:

@@ -145,9 +145,7 @@ interfaces:
   hundredGigE 1/24:
     state: "down"
   hundredGigE 1/25:
-    description: "Harvard Link"
-    state: "up"
-    mtu: 9216
+    state: "down"
   hundredGigE 1/26:
     description: "OCT-CORE-1 Port 26"
     state: "up"
@@ -235,22 +233,6 @@ interfaces:
     stp:
       disabled: true
       rootguard: true
-  Port-channel 30:
-    description: "Harvard LAG"
-    state: "up"
-    portmode: "trunk"
-    tagged:
-      - 2141:2148
-      - 2170
-      - 2172:2177
-      - 2180
-    mtu: 9216
-    stp:
-      disabled: true
-    lacp-rate: "fast"
-    lacp-members-active:
-      - "hundredGigE 1/25"
-    mlag: "Port-channel 30"
   Port-channel 40:
     description: "R8PAC23-Uplink"
     state: "up"

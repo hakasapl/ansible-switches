@@ -301,11 +301,10 @@ def generateINTFConfig(interfaces: dict):
                 config_dict[dict_key].append(edge_str)
 
             if "edgeport" in stp_fields and stp_fields["edgeport"]:
-                edge_str = "spanning-tree port type edge"
-                if "bpduguard" in stp_fields and stp_fields["bpduguard"]:
-                    edge_str += " bpduguard"
+                config_dict[dict_key].append("spanning-tree port type edge")
 
-                config_dict[dict_key].append(edge_str)
+            if "bpduguard" in stp_fields and stp_fields["bpduguard"]:
+                config_dict[dict_key].append("spanning-tree bpduguard enable")
 
             if "rootguard" in stp_fields and stp_fields["rootguard"] and not is_l3:
                 config_dict[dict_key].append("spanning-tree guard root")
@@ -353,12 +352,13 @@ def generateINTFConfig(interfaces: dict):
             tagged_str = f"switchport trunk allowed vlan {allowed_vl_string}"
             config_dict[dict_key].append(tagged_str)
 
-            if is_portchannel:
-                for member_port in getLAGMembers(fields):
-                    if member_port not in config_dict:
-                        config_dict[member_port] = []
-
-                    config_dict[member_port].append(tagged_str)
+            #! TODO below might be required only for NEW port channels
+            #if is_portchannel:
+            #    for member_port in getLAGMembers(fields):
+            #        if member_port not in config_dict:
+            #            config_dict[member_port] = []
+            #
+            #        config_dict[member_port].append(tagged_str)
 
         # "untagged" field
         if "untagged" in fields:
@@ -370,12 +370,13 @@ def generateINTFConfig(interfaces: dict):
 
             config_dict[dict_key].append(untagged_str)
 
-            if is_portchannel:
-                for member_port in getLAGMembers(fields):
-                    if member_port not in config_dict:
-                        config_dict[member_port] = []
-
-                    config_dict[member_port].append(untagged_str)
+            #! TODO below might be required only for NEW port channels
+            #if is_portchannel:
+            #    for member_port in getLAGMembers(fields):
+            #        if member_port not in config_dict:
+            #            config_dict[member_port] = []
+            #
+            #        config_dict[member_port].append(untagged_str)
 
         # "lag-members" field
         if "lag-members" in fields:

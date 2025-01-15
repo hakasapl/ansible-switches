@@ -470,8 +470,8 @@ interfaces:
       bpduguard: true
     lacp-rate: "fast"
     lacp-members-active:
-      - "twentyFiveGigE 1/33"
-      - "twentyFiveGigE 1/34"
+      - "twentyFiveGigE 1/35"
+      - "twentyFiveGigE 1/36"
   Port-channel 118:
     description: "U37 LAG"
     state: "up"

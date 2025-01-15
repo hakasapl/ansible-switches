@@ -373,6 +373,17 @@ interfaces:
   Ethernet1/32:
     enabled: false
   Ethernet1/33:
+    fanout:
+      type: "quad"
+      speed: "10g"
+  Ethernet1/33/1:
+    enabled: true
+    description: "MGMT switch"
+  Ethernet1/33/2:
+    enabled: false
+  Ethernet1/33/3:
+    enabled: false
+  Ethernet1/33/4:
     enabled: false
   Ethernet1/34:
     enabled: false
@@ -384,6 +395,9 @@ interfaces:
     enabled: true
     description: "NERC-R1PCC20-SW-TORS-B Port 36"
     mtu: 9216
+  Vlan930:
+    enabled: true
+    ip4: "10.80.3.42/20"
   port-channel1:
     enabled: true
     description: "VPC peer-link"
@@ -394,9 +408,25 @@ interfaces:
     lacp-members-active:
       - "Ethernet1/35"
       - "Ethernet1/36"
+  port-channel2:
+    enabled: true
+    description: "MGMT switch"
+    mtu: 9216
+    portmode: trunk
+    tagged:
+      - 930
+      - 2146
+      - 2170
+    stp:
+      disabled: true
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/33/1"
+    mlag: "2"
   port-channel10:
     enabled: true
-    description: "Harvard Shared Aggregation"
+    description: "NERC Core Uplink"
     mtu: 9216
     portmode: trunk
     mode: "lacp"
@@ -410,12 +440,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/1/1"
@@ -426,12 +458,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/1/2"
@@ -442,12 +476,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/1/3"
@@ -458,12 +494,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/1/4"
@@ -474,12 +512,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/2/1"
@@ -490,12 +530,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/2/2"
@@ -506,12 +548,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/2/3"
@@ -522,12 +566,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/2/4"
@@ -538,12 +584,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/3/1"
@@ -554,12 +602,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/3/2"
@@ -580,12 +630,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/3/3"
@@ -596,12 +648,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/3/4"
@@ -612,12 +666,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/4/1"
@@ -628,12 +684,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/4/2"
@@ -644,12 +702,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/4/3"
@@ -660,12 +720,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/4/4"
@@ -676,12 +738,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/5/1"
@@ -692,12 +756,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/5/2"
@@ -708,12 +774,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/5/3"
@@ -724,12 +792,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/5/4"
@@ -740,12 +810,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/6/1"
@@ -756,12 +828,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/6/2"
@@ -772,12 +846,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/6/3"
@@ -788,12 +864,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/6/4"
@@ -804,12 +882,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/7/1"
@@ -820,12 +900,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/7/2"
@@ -836,12 +918,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/7/3"
@@ -852,12 +936,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/7/4"
@@ -868,12 +954,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/8/1"
@@ -884,12 +972,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/8/2"
@@ -900,12 +990,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/8/3"
@@ -916,12 +1008,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/8/4"
@@ -932,12 +1026,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/9/1"
@@ -948,12 +1044,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/9/2"
@@ -964,12 +1062,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/9/3"
@@ -980,12 +1080,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/9/4"
@@ -996,12 +1098,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/10/1"
@@ -1012,12 +1116,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/10/2"
@@ -1028,12 +1134,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/10/3"
@@ -1044,12 +1152,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/10/4"
@@ -1060,12 +1170,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/11/1"
@@ -1076,12 +1188,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/11/2"
@@ -1092,12 +1206,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/11/3"
@@ -1108,12 +1224,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/11/4"
@@ -1124,12 +1242,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/12/1"
@@ -1140,12 +1260,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/12/2"
@@ -1156,12 +1278,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/12/3"
@@ -1172,12 +1296,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/12/4"
@@ -1188,11 +1314,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 2176
       - 2177
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/13/1"
@@ -1203,11 +1331,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 2176
       - 2177
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/13/2"
@@ -1218,11 +1348,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 2176
       - 2177
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/13/3"
@@ -1233,12 +1365,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/13/4"
@@ -1249,12 +1383,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/14/1"
@@ -1265,12 +1401,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/14/2"
@@ -1281,12 +1419,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/14/3"
@@ -1297,12 +1437,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/14/4"
@@ -1313,12 +1455,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/15/1"
@@ -1329,12 +1473,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/15/2"
@@ -1345,12 +1491,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/15/3"
@@ -1361,12 +1509,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/15/4"
@@ -1377,12 +1527,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/16/1"
@@ -1393,12 +1545,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/16/2"
@@ -1409,12 +1563,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/16/3"
@@ -1425,12 +1581,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/16/4"
@@ -1441,11 +1599,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 2176
       - 2177
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/17/1"
@@ -1456,11 +1616,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 2176
       - 2177
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/17/2"
@@ -1471,11 +1633,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 2176
       - 2177
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/17/3"
@@ -1486,11 +1650,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 2176
       - 2177
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/17/4"
@@ -1501,11 +1667,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 2176
       - 2177
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/18/1"
@@ -1516,11 +1684,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 2176
       - 2177
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/18/2"
@@ -1531,12 +1701,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/18/3"
@@ -1547,12 +1719,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/18/4"
@@ -1563,11 +1737,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2174
     tagged:
+      - 2174
       - 2175
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/19/1"
@@ -1578,11 +1754,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2174
     tagged:
+      - 2174
       - 2175
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/19/2"
@@ -1593,11 +1771,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2174
     tagged:
+      - 2174
       - 2175
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/19/3"
@@ -1608,11 +1788,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2174
     tagged:
+      - 2174
       - 2175
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/19/4"
@@ -1623,11 +1805,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2174
     tagged:
+      - 2174
       - 2175
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/20/1"
@@ -1638,11 +1822,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2174
     tagged:
+      - 2174
       - 2175
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/20/2"
@@ -1653,11 +1839,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2174
     tagged:
+      - 2174
       - 2175
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/20/3"
@@ -1668,11 +1856,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2174
     tagged:
+      - 2174
       - 2175
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/20/4"
@@ -1683,12 +1873,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/21/1"
@@ -1699,12 +1891,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/21/2"
@@ -1715,12 +1909,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/21/3"
@@ -1731,11 +1927,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2174
     tagged:
+      - 2174
       - 2175
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/21/4"
@@ -1746,11 +1944,13 @@ interfaces:
     portmode: "hybrid"
     untagged: 2174
     tagged:
+      - 2174
       - 2175
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/22/1"
@@ -1761,12 +1961,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/22/2"
@@ -1777,12 +1979,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/22/3"
@@ -1793,12 +1997,14 @@ interfaces:
     portmode: "hybrid"
     untagged: 2172
     tagged:
+      - 2172
       - 2173
       - 2180
     mtu: 9216
     stp:
       edgeport: true
       bpduguard: true
+    managed: true
     lacp-rate: "fast"
     lacp-members-active:
       - "Ethernet1/22/4"
