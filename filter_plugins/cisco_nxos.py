@@ -353,7 +353,7 @@ def generateINTFConfig(interfaces: dict):
             config_dict[dict_key].append(tagged_str)
 
             #! TODO below might be required only for NEW port channels
-            #if is_portchannel:
+            # if is_portchannel:
             #    for member_port in getLAGMembers(fields):
             #        if member_port not in config_dict:
             #            config_dict[member_port] = []
