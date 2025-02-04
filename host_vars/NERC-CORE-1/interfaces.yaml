@@ -53,10 +53,11 @@ interfaces:
     enabled: false
   Ethernet1/23:
     enabled: true
-    description: "NERC-R4PAC02-SW-TORS Port X"
+    description: "NERC-R4PAC02-SW-TEMP-TORS-B Port 31"
+    mtu: 9216
+    portmode: trunk
   Ethernet1/24:
-    enabled: true
-    description: "NERC-R4PAC04-SW-TORS Port X"
+    enabled: false
   Ethernet1/25:
     enabled: true
     description: "NERC-SW-R8-PA-C23-TORS Port 49"
@@ -130,6 +131,7 @@ interfaces:
     portmode: trunk
     tagged:
       - 930
+      - 935
       - 2141:2148
       - 2170
       - 2172:2180
@@ -170,26 +172,26 @@ interfaces:
     lacp-members-active:
       - "Ethernet1/25"
     mlag: "52"
-  port-channel53:
-    enabled: true
-    description: "R4-PA-C02 TORS"
-    mtu: 9216
-    portmode: trunk
-    mode: "lacp"
-    lacp-rate: "fast"
-    lacp-members-active:
-      - "Ethernet1/23"
-    mlag: "53"
-  port-channel54:
-    enabled: true
-    description: "R4-PA-C04 TORS"
-    mtu: 9216
-    portmode: trunk
-    mode: "lacp"
-    lacp-rate: "fast"
-    lacp-members-active:
-      - "Ethernet1/24"
-    mlag: "54"
+  #port-channel53:
+  #  enabled: true
+  #  description: "R4-PC-C02 TORS"
+  #  mtu: 9216
+  #  portmode: trunk
+  #  mode: "lacp"
+  #  lacp-rate: "fast"
+  #  lacp-members-active:
+  #    - "Ethernet1/23"
+  #  mlag: "53"
+  #port-channel54:
+  #  enabled: true
+  #  description: "R4-PC-C04 TORS"
+  #  mtu: 9216
+  #  portmode: trunk
+  #  mode: "lacp"
+  #  lacp-rate: "fast"
+  #  lacp-members-active:
+  #    - "Ethernet1/24"
+  #  mlag: "54"
   port-channel55:
     enabled: true
     description: "R1-PC-C20 TORS"

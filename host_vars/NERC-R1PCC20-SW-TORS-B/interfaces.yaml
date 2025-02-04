@@ -398,6 +398,10 @@ interfaces:
   Vlan930:
     enabled: true
     ip4: "10.80.3.42/20"
+  Vlan935:
+    enabled: true
+    managed: true
+    ip4: "10.82.3.42/20"
   port-channel1:
     enabled: true
     description: "VPC peer-link"

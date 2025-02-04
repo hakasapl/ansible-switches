@@ -884,6 +884,9 @@ vlans:
   931:
     name: "OCT-SWMGMT"
     description: "Switch management network for OCT"
+  935:
+    name: "MOC-SWMON"
+    description: "Switch monitoring network for MOC"
   933:
     name: "OCT-PDU"
     description: "PDU network for OCT"

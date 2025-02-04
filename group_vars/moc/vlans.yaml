@@ -890,6 +890,12 @@ vlans:
   930:
     name: "MOC-SWMGMT"
     description: "Switch management network for MOC"
+  931:
+    name: "OCT-SWMGMT"
+    description: "Switch management network for OCT"
+  935:
+    name: "MOC-SWMON"
+    description: "Switch monitoring network for MOC"
   2076:
     name: "Routed-2176"
     description: "NERC Openshift Infra Frontend Routed"

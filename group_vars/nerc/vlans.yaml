@@ -38,6 +38,9 @@ vlans:
   280:
     name: "MOC-MAAS-NIC1"
     description: "MAAS Internal Network 2"
+  350:
+    name: Lenovo-H100-Temp
+    description: Lenovo H100 Temp VLAN for burn-in
   351:
     name: ESI-351
     description: ESI Vlan 351
@@ -887,6 +890,9 @@ vlans:
   930:
     name: "MOC-SWMGMT"
     description: "Switch management network for MOC"
+  935:
+    name: "MOC-SWMON"
+    description: "Switch monitoring network for MOC"
   2141:
     name: "NERC-Openstack-FloatingIP"
     description: "Floating IPs for NERC openstack 199.94.60.0 /24"

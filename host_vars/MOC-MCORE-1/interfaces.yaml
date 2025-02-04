@@ -54,13 +54,17 @@ interfaces:
   GigabitEthernet 1/19:
     state: "up"
     description: "NERC-R4PAC02-SW-MGMT"
-    portmode: "access"
-    untagged: 911
+    portmode: "trunk"
+    tagged:
+      - 911
+      - 930
   GigabitEthernet 1/20:
     state: "up"
     description: "NERC-R4PAC04-SW-MGMT"
-    portmode: "access"
-    untagged: 911
+    portmode: "trunk"
+    tagged:
+      - 911
+      - 930
   GigabitEthernet 1/21:
     state: "down"
   GigabitEthernet 1/22:

@@ -570,3 +570,7 @@ interfaces:
   Vlan 930:
     state: "up"
     ip4: "10.80.3.21/20"
+  Vlan 935:
+    state: "up"
+    ip4: "10.82.3.21/20"
+    managed: true

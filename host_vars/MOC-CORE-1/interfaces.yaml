@@ -221,6 +221,8 @@ interfaces:
       - 623
       - 624:630
       - 911
+      - 931
+      - 935
       - 2076
       - 3801
       - 3802
@@ -251,6 +253,7 @@ interfaces:
     portmode: "trunk"
     tagged:
       - 930
+      - 935
       - 2141:2148
       - 2170
       - 2172:2177
@@ -307,6 +310,8 @@ interfaces:
       - 127
       - 911
       - 930
+      - 931
+      - 935
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:

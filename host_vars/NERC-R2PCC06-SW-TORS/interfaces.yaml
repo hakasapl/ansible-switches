@@ -446,9 +446,9 @@ interfaces:
     description: "U31 LAG"
     state: "up"
     portmode: "hybrid"
-    untagged: 2172
+    untagged: 2174
     tagged:
-      - 2173
+      - 2175
     mtu: 9216
     stp:
       edgeport: true

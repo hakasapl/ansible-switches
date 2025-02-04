@@ -276,6 +276,9 @@ interfaces:
       - "twentyFiveGigE 1/47"
       - "twentyFiveGigE 1/48"
     mlag: "Port-channel 101"
+  Vlan 911:
+    state: "up"
+    ip4: "10.2.17.1/19"
   Vlan 930:
     state: "up"
     ip4: "10.80.2.81/20"
