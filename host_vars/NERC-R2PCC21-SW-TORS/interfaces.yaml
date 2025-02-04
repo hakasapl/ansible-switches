@@ -1,0 +1,576 @@
+interfaces:
+  twentyFiveGigE 1/1:
+    state: "up"
+    description: "U01-TL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/2:
+    state: "up"
+    description: "U01-BL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/3:
+    state: "up"
+    description: "U01-TR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/4:
+    state: "up"
+    description: "U01-BR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/5:
+    state: "up"
+    description: "U03-TL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/6:
+    state: "up"
+    description: "U03-BL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/7:
+    state: "up"
+    description: "U03-TR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/8:
+    state: "up"
+    description: "U03-BR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/9:
+    state: "up"
+    description: "U05-TL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/10:
+    state: "up"
+    description: "U05-BL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/11:
+    state: "up"
+    description: "U05-TR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/12:
+    state: "up"
+    description: "U05-BR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/13:
+    state: "up"
+    description: "U07-TL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/14:
+    state: "up"
+    description: "U07-BL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/15:
+    state: "up"
+    description: "U07-TR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/16:
+    state: "up"
+    description: "U07-BR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/17:
+    state: "up"
+    description: "U09-TL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/18:
+    state: "up"
+    description: "U09-BL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/19:
+    state: "up"
+    description: "U09-TR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/20:
+    state: "up"
+    description: "U09-BR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/21:
+    state: "up"
+    description: "U11-TL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/22:
+    state: "up"
+    description: "U11-BL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/23:
+    state: "up"
+    description: "U11-TR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/24:
+    state: "up"
+    description: "U11-BR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/25:
+    state: "up"
+    description: "U13-TL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/26:
+    state: "up"
+    description: "U13-BL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/27:
+    state: "up"
+    description: "U13-TR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/28:
+    state: "up"
+    description: "U13-BR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/29:
+    state: "up"
+    description: "U15-TL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/30:
+    state: "up"
+    description: "U15-BL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/31:
+    state: "up"
+    description: "U15-TR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/32:
+    state: "up"
+    description: "U15-BR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/33:
+    state: "up"
+    description: "U17-TL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/34:
+    state: "up"
+    description: "U17-BL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/35:
+    state: "up"
+    description: "U17-TR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/36:
+    state: "up"
+    description: "U17-BR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/37:
+    state: "up"
+    description: "U19-TL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/38:
+    state: "up"
+    description: "U19-BL-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/39:
+    state: "up"
+    description: "U19-TR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/40:
+    state: "up"
+    description: "U19-BR-1"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
+  twentyFiveGigE 1/41:
+    state: "down"
+  twentyFiveGigE 1/42:
+    state: "down"
+  twentyFiveGigE 1/43:
+    state: "down"
+  twentyFiveGigE 1/44:
+    state: "down"
+  twentyFiveGigE 1/45:
+    state: "down"
+  twentyFiveGigE 1/46:
+    state: "down"
+  twentyFiveGigE 1/47:
+    state: "down"
+  twentyFiveGigE 1/48:
+    state: "up"
+    description: "MGMT switch uplink"
+    portmode: "access"
+    untagged: 2146
+    stp:
+      edgeport: true
+      bpduguard: true
+  hundredGigE 1/49:
+    state: "down"
+  hundredGigE 1/50:
+    state: "down"
+  hundredGigE 1/51:
+    state: "down"
+  hundredGigE 1/52:
+    state: "down"
+  hundredGigE 1/53:
+    state: "up"
+    description: "NERC-CORE-1 Port 26"
+    mtu: 9216
+  hundredGigE 1/54:
+    state: "up"
+    description: "NERC-CORE-2 Port 26"
+    mtu: 9216
+  Port-channel 10:
+    description: "NERC-CORE LAG"
+    state: "up"
+    portmode: "trunk"
+    tagged: "all"
+    mtu: 9216
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "hundredGigE 1/53"
+      - "hundredGigE 1/54"
+  Vlan 930:
+    state: "up"
+    ip4: "10.80.3.21/20"
+  Vlan 935:
+    state: "up"
+    ip4: "10.82.3.21/20"
+    managed: true

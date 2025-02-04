@@ -1,12 +1,20 @@
 interfaces:
   Ethernet1/1:
-    enabled: false
+    enabled: true
+    description: "NERC-CORE-2 Port 1"
+    mtu: 9216
   Ethernet1/2:
-    enabled: false
+    enabled: true
+    description: "NERC-CORE-2 Port 2"
+    mtu: 9216
   Ethernet1/3:
-    enabled: false
+    enabled: true
+    description: "NERC-CORE-2 Port 3"
+    mtu: 9216
   Ethernet1/4:
-    enabled: false
+    enabled: true
+    description: "NERC-CORE-2 Port 4"
+    mtu: 9216
   Ethernet1/5:
     enabled: false
   Ethernet1/6:
@@ -44,17 +52,24 @@ interfaces:
   Ethernet1/22:
     enabled: false
   Ethernet1/23:
-    enabled: false
+    enabled: true
+    description: "NERC-R4PAC02-SW-TEMP-TORS-B Port 31"
+    mtu: 9216
+    portmode: trunk
   Ethernet1/24:
     enabled: false
   Ethernet1/25:
-    enabled: false
+    enabled: true
+    description: "NERC-SW-R8-PA-C23-TORS Port 49"
   Ethernet1/26:
-    enabled: false
+    enabled: true
+    description: "NERC-SW-R2-PC-C21-TORS Port 53"
   Ethernet1/27:
-    enabled: false
+    enabled: true
+    description: "NERC-SW-R2-PC-C06-TORS Port 53"
   Ethernet1/28:
-    enabled: false
+    enabled: true
+    description: "NERC-SW-R1-PC-C20-TORS-A Port X"
   Ethernet1/29:
     enabled: false
   Ethernet1/30:
@@ -63,3 +78,127 @@ interfaces:
     enabled: false
   Ethernet1/32:
     enabled: false
+  Ethernet1/33:
+    enabled: true
+    description: "Harvard R6-PA-C15 Shared Aggregation Port 25"
+  Ethernet1/34:
+    enabled: true
+    description: "Harvard R6-PA-C13 Shared Aggregation Port 26"
+  Ethernet1/35:
+    enabled: true
+    description: "MOC-CORE-1 Port 21"
+    fec: false
+  Ethernet1/36:
+    enabled: true
+    description: "MOC-CORE-2 Port 21"
+    fec: false
+  port-channel1:
+    enabled: true
+    description: "VPC peer-link"
+    portmode: trunk
+    mode: "lacp"
+    managed: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/1"
+      - "Ethernet1/2"
+      - "Ethernet1/3"
+      - "Ethernet1/4"
+  port-channel10:
+    enabled: true
+    description: "Harvard Shared Aggregation"
+    mtu: 9216
+    portmode: trunk
+    tagged:
+      - 2141:2148
+      - 2170
+      - 2172:2180
+      - 2180
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/33"
+      - "Ethernet1/34"
+    mlag: "10"
+  port-channel20:
+    enabled: true
+    description: "MOC core"
+    mtu: 9216
+    autoneg: false
+    speed: 100000
+    stp:
+      disabled: true
+    portmode: trunk
+    tagged:
+      - 930
+      - 935
+      - 2141:2148
+      - 2170
+      - 2172:2180
+      - 2180
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/35"
+      - "Ethernet1/36"
+    mlag: "20"
+  port-channel50:
+    enabled: true
+    description: "R2-PC-C21 TORS"
+    mtu: 9216
+    portmode: trunk
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/26"
+    mlag: "50"
+  port-channel51:
+    enabled: true
+    description: "R2-PC-C06 TORS"
+    mtu: 9216
+    portmode: trunk
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/27"
+    mlag: "51"
+  port-channel52:
+    enabled: true
+    description: "R8-PA-C23 TORS"
+    mtu: 9216
+    portmode: trunk
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/25"
+    mlag: "52"
+  #port-channel53:
+  #  enabled: true
+  #  description: "R4-PC-C02 TORS"
+  #  mtu: 9216
+  #  portmode: trunk
+  #  mode: "lacp"
+  #  lacp-rate: "fast"
+  #  lacp-members-active:
+  #    - "Ethernet1/23"
+  #  mlag: "53"
+  #port-channel54:
+  #  enabled: true
+  #  description: "R4-PC-C04 TORS"
+  #  mtu: 9216
+  #  portmode: trunk
+  #  mode: "lacp"
+  #  lacp-rate: "fast"
+  #  lacp-members-active:
+  #    - "Ethernet1/24"
+  #  mlag: "54"
+  port-channel55:
+    enabled: true
+    description: "R1-PC-C20 TORS"
+    mtu: 9216
+    portmode: trunk
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/28"
+    mlag: "55"
