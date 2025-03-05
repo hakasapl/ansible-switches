@@ -7,6 +7,8 @@ interfaces:
     description: "MOCINFRA-CTRL-U36-R"
     state: "up"
     untagged: 127
+    tagged:
+      - 911
     mtu: 9216
     portmode: "hybrid"
     stp:
@@ -16,6 +18,8 @@ interfaces:
     description: "MOCINFRA-CTRL-U35-R"
     state: "up"
     untagged: 127
+    tagged:
+      - 911
     mtu: 9216
     portmode: "hybrid"
     stp:
@@ -25,6 +29,8 @@ interfaces:
     description: "MOCINFRA-CTRL-U34-R"
     state: "up"
     untagged: 127
+    tagged:
+      - 911
     mtu: 9216
     portmode: "hybrid"
     stp:
@@ -273,6 +279,7 @@ interfaces:
     state: "up"
     portmode: "trunk"
     tagged:
+      - 350
       - 930
       - 935
       - 2141:2148
@@ -329,10 +336,14 @@ interfaces:
     mtu: 9216
     tagged:
       - 127
+      - 201
+      - 204
+      - 277
       - 911
       - 930
       - 931
       - 935
+      - 2303
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:

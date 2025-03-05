@@ -58,6 +58,8 @@ interfaces:
     tagged:
       - 911
       - 930
+      - 935
+      - 2303
   GigabitEthernet 1/20:
     state: "up"
     description: "NERC-R4PAC04-SW-MGMT"
@@ -65,6 +67,8 @@ interfaces:
     tagged:
       - 911
       - 930
+      - 935
+      - 2303
   GigabitEthernet 1/21:
     state: "down"
   GigabitEthernet 1/22:
