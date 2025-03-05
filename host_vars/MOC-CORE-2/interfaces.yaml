@@ -279,6 +279,7 @@ interfaces:
     state: "up"
     portmode: "trunk"
     tagged:
+      - 350
       - 930
       - 935
       - 2141:2148
@@ -342,6 +343,7 @@ interfaces:
       - 930
       - 931
       - 935
+      - 2303
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:

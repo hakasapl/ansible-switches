@@ -53,11 +53,14 @@ interfaces:
     enabled: false
   Ethernet1/23:
     enabled: true
-    description: "NERC-R4PAC02-SW-TEMP-TORS-B Port 31"
+    description: "GPU-CORE-1 Port 32"
     mtu: 9216
     portmode: trunk
   Ethernet1/24:
-    enabled: false
+    enabled: true
+    description: "GPU-CORE-2 Port 32"
+    mtu: 9216
+    portmode: trunk
   Ethernet1/25:
     enabled: true
     description: "NERC-SW-R8-PA-C23-TORS Port 50"
@@ -79,7 +82,7 @@ interfaces:
   Ethernet1/32:
     enabled: false
   Ethernet1/33:
-    enabled: false
+    enabled: true
     description: "Harvard R6-PA-C13 Shared Aggregation Port 25"
     mtu: 9216
   Ethernet1/34:
@@ -132,6 +135,7 @@ interfaces:
       disabled: true
     portmode: trunk
     tagged:
+      - 350
       - 930
       - 935
       - 2141:2148
@@ -174,26 +178,19 @@ interfaces:
     lacp-members-active:
       - "Ethernet1/25"
     mlag: "52"
-  #port-channel53:
-  #  enabled: true
-  #  description: "R4-PA-C02 TORS"
-  #  mtu: 9216
-  #  portmode: trunk
-  #  mode: "lacp"
-  #  lacp-rate: "fast"
-  #  lacp-members-active:
-  #    - "Ethernet1/23"
-  #  mlag: "53"
-  #port-channel54:
-  #  enabled: true
-  #  description: "R4-PA-C04 TORS"
-  #  mtu: 9216
-  #  portmode: trunk
-  #  mode: "lacp"
-  #  lacp-rate: "fast"
-  #  lacp-members-active:
-  #    - "Ethernet1/24"
-  #  mlag: "54"
+  port-channel53:
+    enabled: true
+    description: "GPU-CORE"
+    mtu: 9216
+    portmode: trunk
+    stp:
+      disabled: true
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/23"
+      - "Ethernet1/24"
+    mlag: "53"
   port-channel55:
     enabled: true
     description: "R1-PC-C20 TORS"

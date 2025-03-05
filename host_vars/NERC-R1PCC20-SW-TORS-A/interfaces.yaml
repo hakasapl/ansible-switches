@@ -1593,6 +1593,7 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 935
       - 2176
       - 2177
     mtu: 9216
@@ -1610,6 +1611,7 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 935
       - 2176
       - 2177
     mtu: 9216
@@ -1627,6 +1629,7 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 935
       - 2176
       - 2177
     mtu: 9216
@@ -1644,6 +1647,7 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 935
       - 2176
       - 2177
     mtu: 9216
@@ -1661,6 +1665,7 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 935
       - 2176
       - 2177
     mtu: 9216
@@ -1678,6 +1683,7 @@ interfaces:
     portmode: "hybrid"
     untagged: 2176
     tagged:
+      - 935
       - 2176
       - 2177
     mtu: 9216

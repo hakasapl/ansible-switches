@@ -947,6 +947,18 @@ vlans:
   2180:
     name: "NERC-Openshift-PublicIP"
     description: "NERC Openshift Public Access Network 199.94.63.0 /28"
+  2300:
+    name: "IBMSCALE-YELLOW-MANAGEMENT"
+    description: "IBMScale Yellow Management Network"
+  2301:
+    name: "IBMSCALE-BLUE-FSPBMC"
+    description: "IBMScale Blue FSP BMC Network"
+  2302:
+    name: "IBMSCALE-GREEN-FSPBMCTRUNCATED"
+    description: "IBMScale Green FSP BMC Truncated Network"
+  2303:
+    name: "IBMSCALE-PURPLE-CAMPUS"
+    description: "IBMScale Purple Campus Network"
   3800:
     name: "CSAIL-3800"
     description: "CSAIL 3800"
