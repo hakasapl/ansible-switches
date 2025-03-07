@@ -71,7 +71,7 @@ MOC-R4PCC02-SW-TORS ansible_host=10.80.2.91  ansible_network_os=nvidia.nvue
 MOC-R4PCC02-SW-MGMT ansible_host=10.80.2.95 ansible_network_os=picos.8
 # MOC R4PCC04
 MOC-R4PCC04-SW-TORS ansible_host=10.80.2.101 ansible_network_os=nvidia.nvue
-MOC-R4PCC02-SW-MGMT ansible_host=10.80.2.105 ansible_network_os=picos.8
+MOC-R4PCC04-SW-MGMT ansible_host=10.80.2.105 ansible_network_os=picos.8
 # MOC R4PCC06
 MOC-R4PCC06-SW-TORS ansible_host=10.80.2.111 ansible_network_os=nvidia.nvue
 

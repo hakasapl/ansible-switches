@@ -279,6 +279,7 @@ interfaces:
     state: "up"
     portmode: "trunk"
     tagged:
+      - 204
       - 350
       - 930
       - 935
