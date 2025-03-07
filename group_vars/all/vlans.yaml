@@ -98,6 +98,9 @@ vlans:
   290:
     name: "OKD-INTERNAL"
     description: "OKD Internal Network"
+  295:
+    name: "loopback-placeholder"
+    description: "Placeholder for loopback"
   300:
     name: "UNITY-INTERNAL"
     description: "Unity Cluster at UMass Internal Net"
