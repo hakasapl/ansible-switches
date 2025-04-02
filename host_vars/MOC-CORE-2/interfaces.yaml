@@ -280,13 +280,18 @@ interfaces:
     portmode: "trunk"
     tagged:
       - 204
+      - 211
       - 350
+      - 351:630
       - 930
       - 935
+      - 2076
       - 2141:2148
       - 2170
       - 2172:2177
       - 2180
+      - 2303
+      - 2304
     mtu: 9216
     stp:
       disabled: true
@@ -339,12 +344,14 @@ interfaces:
       - 127
       - 201
       - 204
+      - 211
       - 277
       - 911
       - 930
       - 931
       - 935
       - 2303
+      - 2304
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:
