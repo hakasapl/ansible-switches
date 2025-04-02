@@ -42,9 +42,13 @@ interfaces:
   hundredGigE 1/18:
     state: "down"
   hundredGigE 1/19:
-    state: "down"
+    description: "ATLAS-RT-1-2"
+    state: "up"
+    mtu: 9216
   hundredGigE 1/20:
-    state: "down"
+    description: "ATLAS-RT-1-2"
+    state: "up"
+    mtu: 9216
   hundredGigE 1/21:
     state: "down"
   hundredGigE 1/22:
@@ -104,6 +108,18 @@ interfaces:
       - "hundredGigE 1/1"
       - "hundredGigE 1/2"
     mlag: "Port-channel 10"
+  Port-channel 20:
+    description: "ATLAS uplink"
+    state: "up"
+    portmode: "trunk"
+    mtu: 9216
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "hundredGigE 1/19"
+      - "hundredGigE 1/20"
+    mlag: "Port-channel 20"
+    stp:
+      disabled: true
   Port-channel 100:
     description: "OCT-CORE-3 VLT LAG"
     state: "up"

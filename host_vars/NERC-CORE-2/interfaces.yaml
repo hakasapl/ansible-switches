@@ -16,13 +16,21 @@ interfaces:
     description: "NERC-CORE-1 Port 4"
     mtu: 9216
   Ethernet1/5:
-    enabled: false
+    description: "CES1-S4-P2"
+    enabled: true
+    mtu: 9216
   Ethernet1/6:
-    enabled: false
+    description: "CES2-S4-P2"
+    enabled: true
+    mtu: 9216
   Ethernet1/7:
-    enabled: false
+    description: "AFM1-S4-P2"
+    enabled: true
+    mtu: 9216
   Ethernet1/8:
-    enabled: false
+    description: "AFM2-S4-P2"
+    enabled: true
+    mtu: 9216
   Ethernet1/9:
     enabled: false
   Ethernet1/10:
@@ -136,13 +144,18 @@ interfaces:
     portmode: trunk
     tagged:
       - 204
+      - 211
       - 350
+      - 351:630
       - 930
       - 935
+      - 2076
       - 2141:2148
       - 2170
       - 2172:2180
       - 2180
+      - 2303
+      - 2304
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:
@@ -202,3 +215,47 @@ interfaces:
     lacp-members-active:
       - "Ethernet1/28"
     mlag: "55"
+  port-channel101:
+    enabled: true
+    description: "IBM Scale CES1"
+    mtu: 9216
+    mode: "lacp"
+    portmode: access
+    untagged: 211
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/5"
+    mlag: "101"
+  port-channel102:
+    enabled: true
+    description: "IBM Scale CES2"
+    mtu: 9216
+    mode: "lacp"
+    portmode: access
+    untagged: 211
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/6"
+    mlag: "102"
+  port-channel103:
+    enabled: true
+    description: "IBM Scale AFM1"
+    mtu: 9216
+    mode: "lacp"
+    portmode: access
+    untagged: 211
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/7"
+    mlag: "103"
+  port-channel104:
+    enabled: true
+    description: "IBM Scale AFM2"
+    mtu: 9216
+    mode: "lacp"
+    portmode: access
+    untagged: 211
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/8"
+    mlag: "104"

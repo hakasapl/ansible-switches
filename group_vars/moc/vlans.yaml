@@ -959,6 +959,9 @@ vlans:
   2303:
     name: "IBMSCALE-PURPLE-CAMPUS"
     description: "IBMScale Purple Campus Network"
+  2304:
+    name: "IBMSCALE-200G-DATA"
+    description: "IBMScale 200G dataplane network"
   3800:
     name: "CSAIL-3800"
     description: "CSAIL 3800"

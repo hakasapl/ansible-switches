@@ -46,6 +46,7 @@ interfaces:
     portmode: "trunk"
     tagged:
       - 930
+      - 935
     stp:
       edgeport: true
       bpduguard: true

@@ -1,10 +1,4 @@
 ---
-# Define nxos connection parameters
-- name: Define Connection Parameters
-  ansible.builtin.set_fact:
-    ansible_ssh_user: "{{ sw_secret['user'] }}"
-    ansible_ssh_pass: "{{ sw_secret['pass'] }}"
-
 - name: Enable sftp-server feature
   cisco.nxos.nxos_feature:
     feature: sftp-server

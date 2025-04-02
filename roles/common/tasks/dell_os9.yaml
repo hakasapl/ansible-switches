@@ -1,10 +1,4 @@
 ---
-# Define OS9 connection parameters
-- name: Define OS9 Connection Parameters
-  ansible.builtin.set_fact:
-    ansible_ssh_user: "{{ sw_secret['user'] }}"
-    ansible_ssh_pass: "{{ sw_secret['pass'] }}"
-
 # Set Connection Parameters
 - name: Set Conn Parameters
   dellemc.os9.os9_config:
