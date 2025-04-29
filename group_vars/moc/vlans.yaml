@@ -29,6 +29,9 @@ vlans:
   214:
     name: "MOC-NEW-ESI"
     description: "New ESI deployment"
+  249:
+    name: "CEPH-INTERNAL"
+    description: "Ceph Cluster (internal)"
   250:
     name: "MOC-PROD-CEPH"
     description: "Ceph public (for clients)"
@@ -38,6 +41,9 @@ vlans:
   280:
     name: "MOC-MAAS-NIC1"
     description: "MAAS Internal Network 2"
+  300:
+    name: "UNITY-INTERNAL"
+    description: "Unity Cluster at UMass Internal Net"
   350:
     name: Lenovo-H100-Temp
     description: Lenovo H100 Temp VLAN for burn-in

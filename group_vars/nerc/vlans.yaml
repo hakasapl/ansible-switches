@@ -35,6 +35,9 @@ vlans:
   277:
     name: "MOC-MAAS"
     description: "MAAS Internal Network"
+  300:
+    name: "UNITY-INTERNAL"
+    description: "Unity Cluster at UMass Internal Net"
   280:
     name: "MOC-MAAS-NIC1"
     description: "MAAS Internal Network 2"
@@ -893,6 +896,9 @@ vlans:
   935:
     name: "MOC-SWMON"
     description: "Switch monitoring network for MOC"
+  2076:
+    name: "Routed-2176"
+    description: "NERC Openshift Infra Frontend Routed"
   2141:
     name: "NERC-Openstack-FloatingIP"
     description: "Floating IPs for NERC openstack 199.94.60.0 /24"

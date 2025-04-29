@@ -88,25 +88,110 @@ interfaces:
     allowlist:
       - "description"
   twentyFiveGigE 1/23:
-    state: "down"
+    description: "ResearchCephOSD_U03_1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 249
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/24:
-    state: "down"
+    description: "ResearchCephOSD_U03_2"
+    state: "up"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 277
+    tagged:
+      - 201
+      - 250
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/25:
-    state: "down"
+    description: "ResearchCephOSD_U05_1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 249
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/26:
-    state: "down"
+    description: "ResearchCephOSD_U05_2"
+    state: "up"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 277
+    tagged:
+      - 201
+      - 250
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/27:
-    state: "down"
+    description: "ResearchCephOSD_U07_1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 249
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/28:
-    state: "down"
+    description: "ResearchCephOSD_U07_2"
+    state: "up"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 277
+    tagged:
+      - 201
+      - 250
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/29:
-    state: "down"
+    description: "ResearchCephOSD_U09_1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 249
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/30:
-    state: "down"
+    description: "ResearchCephOSD_U09_2"
+    state: "up"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 277
+    tagged:
+      - 201
+      - 250
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/31:
-    state: "down"
+    description: "ResearchCephOSD_U11_1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 249
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/32:
-    state: "down"
+    description: "ResearchCephOSD_U11_2"
+    state: "up"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 277
+    tagged:
+      - 201
+      - 250
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/33:
     description: "U35-P1"
     allowlist:
@@ -124,13 +209,41 @@ interfaces:
     allowlist:
       - "description"
   twentyFiveGigE 1/37:
-    state: "down"
+    description: "ResearchCephMON_U13_1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 250
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/38:
-    state: "down"
+    description: "ResearchCephMON_U13_1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 277
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/39:
-    state: "down"
+    description: "ResearchCephMON_U15_1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 250
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/40:
-    state: "down"
+    description: "ResearchCephMON_U15_1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 277
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/41:
     state: "down"
   twentyFiveGigE 1/42:
