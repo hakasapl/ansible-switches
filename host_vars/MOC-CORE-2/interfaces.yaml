@@ -122,7 +122,25 @@ interfaces:
     ip4: "10.255.215.69/26"
     ip6: "2607:fb60:2406:2::69/64"
   hundredGigE 1/5:
-    state: "down"
+    fanout:
+      type: "quad"
+      speed: "10G"
+  TenGigabitEthernet 1/5/1:
+    description: "MOC-FW-11 Port 3"
+    state: "up"
+    mtu: 9216
+  TenGigabitEthernet 1/5/2:
+    description: "MOC-FW-11 Port 4"
+    state: "up"
+    mtu: 9216
+  TenGigabitEthernet 1/5/3:
+    description: "MOC-FW-12 Port 3"
+    state: "up"
+    mtu: 9216
+  TenGigabitEthernet 1/5/4:
+    description: "MOC-FW-12 Port 4"
+    state: "up"
+    mtu: 9216
   hundredGigE 1/6:
     state: "down"
   hundredGigE 1/7:
@@ -136,7 +154,14 @@ interfaces:
   hundredGigE 1/10:
     state: "down"
   hundredGigE 1/11:
-    state: "down"
+    description: "UNITY-NESE-SW"
+    state: "up"
+    mtu: 9216
+    portmode: "trunk"
+    tagged:
+      - 300
+    stp:
+      disabled: true
   hundredGigE 1/12:
     state: "down"
   hundredGigE 1/13:
@@ -281,8 +306,10 @@ interfaces:
     tagged:
       - 204
       - 211
+      - 300
       - 350
       - 351:630
+      - 911
       - 930
       - 935
       - 2076
@@ -350,6 +377,7 @@ interfaces:
       - 930
       - 931
       - 935
+      - 2076
       - 2303
       - 2304
     mode: "lacp"
@@ -357,6 +385,54 @@ interfaces:
     lacp-members-active:
       - "TenGigabitEthernet 1/3/2"
     mlag: "Port-channel 200"
+  Port-channel 201:
+    description: "MOC-FW-11 LAG"
+    state: "up"
+    portmode: "trunk"
+    mtu: 9216
+    tagged:
+      - 127
+      - 201
+      - 204
+      - 211
+      - 277
+      - 911
+      - 930
+      - 931
+      - 935
+      - 2076
+      - 2303
+      - 2304
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "TenGigabitEthernet 1/5/1"
+      - "TenGigabitEthernet 1/5/2"
+    mlag: "Port-channel 201"
+  Port-channel 202:
+    description: "MOC-FW-12 LAG"
+    state: "up"
+    portmode: "trunk"
+    mtu: 9216
+    tagged:
+      - 127
+      - 201
+      - 204
+      - 211
+      - 277
+      - 911
+      - 930
+      - 931
+      - 935
+      - 2076
+      - 2303
+      - 2304
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "TenGigabitEthernet 1/5/3"
+      - "TenGigabitEthernet 1/5/4"
+    mlag: "Port-channel 202"
   Vlan 211:
     state: "up"
     ip4: "10.0.120.3/22"

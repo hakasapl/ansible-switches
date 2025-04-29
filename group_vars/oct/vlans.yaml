@@ -29,6 +29,9 @@ vlans:
   250:
     name: "MOC-PROD-CEPH"
     description: "Ceph public (for clients)"
+  300:
+    name: "UNITY-INTERNAL"
+    description: "Unity Cluster at UMass Internal Net"
   351:
     name: ESI-351
     description: ESI Vlan 351
