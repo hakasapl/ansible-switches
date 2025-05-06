@@ -5,6 +5,9 @@ vlans:
   57:
     name: "UMA-57"
     description: "UMass VLAN 57 Public IPs for Chameleon"
+  59:
+    name: "ATLAS-59"
+    description: "ATLAS VLAN 59"
   84:
     name: "UMA-84"
     description: "UMass VLAN 84 Public IPs for CloudLab"
@@ -2485,3 +2488,33 @@ vlans:
   3803:
     name: "CSAIL-3803"
     description: "CSAIL MaaS"
+  3911:
+    name: "ATLAS-3911"
+    description: "ATLAS VLAN 3911"
+  3912:
+    name: "ATLAS-3912"
+    description: "ATLAS VLAN 3912"
+  3913:
+    name: "ATLAS-3913"
+    description: "ATLAS VLAN 3913"
+  3914:
+    name: "ATLAS-3914"
+    description: "ATLAS VLAN 3914"
+  3915:
+    name: "ATLAS-3915"
+    description: "ATLAS VLAN 3915"
+  3916:
+    name: "ATLAS-3916"
+    description: "ATLAS VLAN 3916"
+  3917:
+    name: "ATLAS-3917"
+    description: "ATLAS VLAN 3917"
+  3918:
+    name: "ATLAS-3918"
+    description: "ATLAS VLAN 3918"
+  3919:
+    name: "ATLAS-3919"
+    description: "ATLAS VLAN 3919"
+  3920:
+    name: "ATLAS-3920"
+    description: "ATLAS VLAN 3920"
