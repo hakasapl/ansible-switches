@@ -381,7 +381,6 @@ interfaces:
     lacp-rate: "fast"
     lacp-members-active:
       - "TenGigabitEthernet 1/5/1"
-      - "TenGigabitEthernet 1/5/2"
     mlag: "Port-channel 201"
   Port-channel 202:
     description: "MOC-FW-12 LAG"
@@ -404,8 +403,7 @@ interfaces:
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:
-      - "TenGigabitEthernet 1/5/3"
-      - "TenGigabitEthernet 1/5/4"
+      - "TenGigabitEthernet 1/5/2"
     mlag: "Port-channel 202"
   Vlan 211:
     state: "up"
