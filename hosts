@@ -68,9 +68,11 @@ MOC-R4PAC02-SW-TORS ansible_host=10.80.2.81   ansible_network_os=dellemc.os9.os9
 MOC-R4PAC02-SW-MGMT ansible_host=10.80.2.85   ansible_network_os=dellemc.os9.os9
 # MOC R4PCC02
 MOC-R4PCC02-SW-TORS ansible_host=10.80.2.91  ansible_network_os=nvidia.nvue
+MOC-R4PCC02-SW-BORS ansible_host=10.80.2.92  ansible_network_os=nvidia.nvue
 MOC-R4PCC02-SW-MGMT ansible_host=10.80.2.95 ansible_network_os=picos.8
 # MOC R4PCC04
 MOC-R4PCC04-SW-TORS ansible_host=10.80.2.101 ansible_network_os=nvidia.nvue
+MOC-R4PCC04-SW-BORS ansible_host=10.80.2.102 ansible_network_os=nvidia.nvue
 MOC-R4PCC04-SW-MGMT ansible_host=10.80.2.105 ansible_network_os=picos.8
 # MOC R4PCC06
 MOC-R4PCC06-SW-TORS ansible_host=10.80.2.111 ansible_network_os=nvidia.nvue
@@ -84,3 +86,4 @@ NERC-R2PCC21-SW-TORS ansible_host=10.80.3.21 ansible_network_os=dellemc.os9.os9
 NERC-R2PCC06-SW-TORS ansible_host=10.80.3.31 ansible_network_os=dellemc.os9.os9
 NERC-R1PCC20-SW-TORS-A ansible_host=10.80.3.41 ansible_network_os=cisco.nxos.nxos
 NERC-R1PCC20-SW-TORS-B ansible_host=10.80.3.42 ansible_network_os=cisco.nxos.nxos
+NERC-R1PCC20-SW-MGMT ansible_host=10.80.3.45 ansible_network_os=dellemc.os9.os9

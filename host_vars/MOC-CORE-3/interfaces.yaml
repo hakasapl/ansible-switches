@@ -206,3 +206,6 @@ interfaces:
   Vlan 930:
     state: "up"
     ip4: "10.80.1.3/20"
+  Vlan 935:
+    state: "up"
+    ip4: "10.82.1.3/20"

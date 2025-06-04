@@ -520,9 +520,31 @@ interfaces:
       edgeport: true
       bpduguard: true
   twentyFiveGigE 1/41:
-    state: "down"
+    state: "up"
+    description: "U21-A100"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/42:
-    state: "down"
+    state: "up"
+    description: "U23-A100"
+    mtu: 9216
+    portmode: "hybrid"
+    untagged: 2145
+    tagged:
+      - 2141
+      - 2143:2144
+      - 2147
+    stp:
+      edgeport: true
+      bpduguard: true
   twentyFiveGigE 1/43:
     state: "down"
   twentyFiveGigE 1/44:

@@ -376,7 +376,6 @@ interfaces:
       - 911
       - 930
       - 931
-      - 935
       - 2076
       - 2303
       - 2304
@@ -403,6 +402,7 @@ interfaces:
       - 2076
       - 2303
       - 2304
+      - 3801
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:
@@ -426,6 +426,7 @@ interfaces:
       - 2076
       - 2303
       - 2304
+      - 3801
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:
@@ -438,6 +439,9 @@ interfaces:
   Vlan 930:
     state: "up"
     ip4: "10.80.1.2/20"
+  Vlan 935:
+    state: "up"
+    ip4: "10.82.1.2/20"
   Vlan 2076:
     state: "up"
     ip4: "10.85.0.3/22"
