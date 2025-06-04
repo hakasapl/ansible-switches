@@ -82,9 +82,11 @@ interfaces:
     enabled: true
     description: "NERC-SW-R1-PC-C20-TORS-A Port X"
   Ethernet1/29:
-    enabled: false
+    enabled: true
+    description: "MOC-SW-R4PCC02-SW-BORS Port 31"
   Ethernet1/30:
-    enabled: false
+    enabled: true
+    description: "MOC-SW-R4PCC04-SW-BORS Port 31"
   Ethernet1/31:
     enabled: false
   Ethernet1/32:
@@ -215,6 +217,26 @@ interfaces:
     lacp-members-active:
       - "Ethernet1/28"
     mlag: "55"
+  port-channel56:
+    enabled: true
+    description: "R4-PC-C02 BORS"
+    mtu: 9216
+    portmode: trunk
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/29"
+    mlag: "56"
+  port-channel57:
+    enabled: true
+    description: "R4-PC-C04 BORS"
+    mtu: 9216
+    portmode: trunk
+    mode: "lacp"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "Ethernet1/30"
+    mlag: "57"
   port-channel101:
     enabled: true
     description: "IBM Scale CES1"
