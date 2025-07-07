@@ -1,10 +1,13 @@
 # Ansible Site for Managing MOC/OCT Switches
+
 Ansible site for MOC/OCT switches
 
 ## Supported Switch OSes
 
 * Dell OS9 (FTOS9)
 * Cisco NXOS
+* Cumulus Linux 5 (WIP)
+* PicOS 8 (WIP)
 
 ## Site Setup
 
@@ -14,39 +17,51 @@ Ansible site for MOC/OCT switches
 1. Install the required ansible modules: `ansible-galaxy collection install -r requirements.yaml`
 1. Set up AWS CLI and be sure you can access the correct secrets
 1. On your client, you may have to enable legacy kex algorithms for some switches:
+
     ```
     KexAlgorithms +diffie-hellman-group1-sha1,diffie-hellman-group14-sha1
     ```
 
+## Interface Parameter Compatibility Matrix
+
+| Parameter | Dell OS9 | Cisco NXOS | Cumulus Linux 5 | PicOS 8 |
+|-----------|----------|------------|-----------------|---------|
+| description | ✅ | ✅ | ❌ | ❌ |
+| state | ✅ | ✅ | ❌ | ❌ |
+| mtu | ✅ | ✅ | ❌ | ❌ |
+| fec | ✅ | ✅ | ❌ | ❌ |
+| autoneg | ✅ | ✅ | ❌ | ❌ |
+| stp/edgeport | ✅ | ✅ | ❌ | ❌ |
+| stp/bpduguard | ✅ | ✅ | ❌ | ❌ |
+| stp/rootguard | ✅ | ✅ | ❌ | ❌ |
+| stp/disabled | ✅ | ✅ | ❌ | ❌ |
+| fanout | ✅ | ✅ | ❌ | ❌ |
+| managed | ❌ | ✅ | ❌ | ❌ |
+| allowlist | ✅ | ❌ | ❌ | ❌ |
+| blocklist | ✅ | ❌ | ❌ | ❌ |
+| portmode | ✅ | ✅ | ❌ | ❌ |
+| untagged | ✅ | ✅ | ❌ | ❌ |
+| tagged | ✅ | ✅ | ❌ | ❌ |
+| ip4 | ✅ | ✅ | ❌ | ❌ |
+| ip6 | ✅ | ✅ | ❌ | ❌ |
+| lag-members | ✅ | ✅ | ❌ | ❌ |
+| lacp-members-active | ✅ | ✅ | ❌ | ❌ |
+| lacp-members-passive | ✅ | ✅ | ❌ | ❌ |
+| lacp-rate | ✅ | ✅ | ❌ | ❌ |
+| mlag | ✅ | ✅ | ❌ | ❌ |
+
 ## Configuration
 
-### Interfaces
+### Available Fields (VLAN)
 
-Interfaces are configured in the file `host_vars/HOST/interfaces.yaml`
+* `id` VLAN 802.1q tag (Integer)
+* `name` Identifying name for the vlan (String)
+* `description` Description for the vlan (String)
+* `managed` Don't create nor destroy this VLAN (Boolean)
+* `fabrics` Define fabrics on which vlans can exist (ansible host groups) (List of strings)
 
-An example of this file is below:
+### Available Fields (Interface)
 
-```
-interfaces:
-  twentyFiveGigE 1/1:
-    description: "example interface"
-    state: "up"
-    mtu: 9216
-  Port-channel 1:
-    state: "up"
-    lag-members:
-      - "hundredGigE 1/1"
-      - "hundredGigE 1/2"
-    portmode: "access"
-    untagged: 10
-  Vlan 207:
-    state: "up"
-    ip4: "10.10.10.10/20"
-```
-
-### Available Fields
-
-* `name` Only for VLANs, sets the name of interfaces. (String)
 * `description` Sets the description of the interface. (String)
 * `state` Sets the admin state of the mode ("up", or "down")
 * `mtu` Sets the MTU of the interface (Integer 576-9416)
@@ -61,6 +76,8 @@ interfaces:
   * `mode` Sets mode (`single`, `dual`, or `quad`)
   * `speed` Sets the fanout speed (`10G`, `25G`, or `40G`)
 * `managed` If true, this interface will not be configured by ansible. Works for both VLANs and interfaces (Boolean)
+* `allowlist` Only allow modification of these fields (List of Strings)
+* `blocklist` Block modification of these fields (List of Strings)
 * `portmode` L2 portmode of an interface (String "access", "trunk", or "hybrid")
 * `untagged` Single vlan to untag, requires portmode access or hybrid (Integer 2-4094)
 * `tagged` List of vlans to tag, requires portmode trunk or hybrid (List of Integers 2-4094)
@@ -72,14 +89,15 @@ interfaces:
 * `lacp-rate` Sets the switch rate for LACP only (String "fast" or "slow")
 * `mlag` Set the label of the peer port-channel for a paired switch (String interface name)
 
-## Switch Configuration
+## MOC Specific Documentation
 
-Switches will need some manual configuration before being able to be set up from this ansible site.
+Every switch that exists in the MOCA system exists in this ansible site's host file. This project does not support all NOS types yet so some don't have individual host vars but exist in the hosts file for documentation sake.
 
-### Dell OS9 Switches
+### Naming Convention
 
-1. On the switch, enter `conf` mode
-1. Set the enable password: `enable password <DEFAULT_OS9_PASSWD>`
-1. Set the ssh user `username admin password <DEFAULT_OS9_PASSWD>`
-1. Enable ssh server `ip ssh server enable`
-1. Set the access IP (usually `managementethernet 1/1`)
+Network equipment addresses follow a common convention. Each list item represents one octet of an IPv4 address:
+
+* `10.`
+* `[80,81]` 80 for MOC/NERC, 81 for OCT
+* `[1,2]` 1 for core networking, 2 for rack networking
+* `10*<rack number> + unit number` Each rack gets its own unique number. For example, 3 switches in a rack might be `21`, `22`, and `23`
