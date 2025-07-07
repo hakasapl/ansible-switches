@@ -70,16 +70,18 @@ interfaces:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/16:
+    description: "rceph-osd-2ZD5V52"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/17:
+    description: "rceph-mon3-HC72GK2"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
@@ -98,9 +100,10 @@ interfaces:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/20:
+    description: "rceph-osd-2ZDCV52"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
@@ -126,7 +129,7 @@ interfaces:
     description: "oct-45"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
@@ -134,7 +137,7 @@ interfaces:
     description: "oct-43"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
@@ -142,7 +145,7 @@ interfaces:
     description: "oct-41"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
