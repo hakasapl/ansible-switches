@@ -75,23 +75,26 @@ interfaces:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/16:
+    description: "rceph-mon1-HC74GK2"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/17:
+    description: "rceph-mon2-HC73GK2"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/18:
+    description: "rceph-osd-2ZD3V52"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true

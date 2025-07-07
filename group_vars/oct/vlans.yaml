@@ -8,6 +8,7 @@ vlans:
   59:
     name: "ATLAS-59"
     description: "ATLAS VLAN 59"
+    managed: true
   84:
     name: "UMA-84"
     description: "UMass VLAN 84 Public IPs for CloudLab"
@@ -899,6 +900,18 @@ vlans:
   2076:
     name: "Routed-2176"
     description: "NERC Openshift Infra Frontend Routed"
+  2305:
+    name: "IBMSCALE-200G-DATA-Tenant1"
+    description: "IBMScale 200G dataplane network Tenant 1"
+  2306:
+    name: "IBMSCALE-200G-DATA-Tenant2"
+    description: "IBMScale 200G dataplane network Tenant 2"
+  2307:
+    name: "IBMSCALE-200G-DATA-Tenant3"
+    description: "IBMScale 200G dataplane network Tenant 3"
+  2308:
+    name: "IBMSCALE-200G-DATA-Tenant4"
+    description: "IBMScale 200G dataplane network Tenant 4"
   2400:
     name: oct-chameleon-2400-internal
     description: OCT Chameleon 2400 internal

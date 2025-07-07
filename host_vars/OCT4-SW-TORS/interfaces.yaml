@@ -61,6 +61,7 @@ interfaces:
       - 911
       - 2076
       - 3801
+      - 2305:2308
     stp:
       edgeport: true
       bpduguard: true
@@ -81,6 +82,7 @@ interfaces:
       - 911
       - 2076
       - 3801
+      - 2305:2308
     stp:
       edgeport: true
       bpduguard: true
@@ -108,6 +110,7 @@ interfaces:
       - 911
       - 2076
       - 3801
+      - 2305:2308
     stp:
       edgeport: true
       bpduguard: true

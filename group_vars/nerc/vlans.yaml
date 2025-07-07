@@ -962,6 +962,18 @@ vlans:
   2304:
     name: "IBMSCALE-200G-DATA"
     description: "IBMScale 200G dataplane network"
+  2305:
+    name: "IBMSCALE-200G-DATA-Tenant1"
+    description: "IBMScale 200G dataplane network Tenant 1"
+  2306:
+    name: "IBMSCALE-200G-DATA-Tenant2"
+    description: "IBMScale 200G dataplane network Tenant 2"
+  2307:
+    name: "IBMSCALE-200G-DATA-Tenant3"
+    description: "IBMScale 200G dataplane network Tenant 3"
+  2308:
+    name: "IBMSCALE-200G-DATA-Tenant4"
+    description: "IBMScale 200G dataplane network Tenant 4"
   3800:
     name: "CSAIL-3800"
     description: "CSAIL 3800"

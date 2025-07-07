@@ -893,6 +893,9 @@ vlans:
   912:
     name: "ESI-Controller-IPMI"
     description: "IPMI network for ESI controllers"
+  913:
+    name: "MOC-Research-OBM"
+    description: "OBM network for MOC researcher nodes"
   930:
     name: "MOC-SWMGMT"
     description: "Switch management network for MOC"
@@ -968,6 +971,18 @@ vlans:
   2304:
     name: "IBMSCALE-200G-DATA"
     description: "IBMScale 200G dataplane network"
+  2305:
+    name: "IBMSCALE-200G-DATA-Tenant1"
+    description: "IBMScale 200G dataplane network Tenant 1"
+  2306:
+    name: "IBMSCALE-200G-DATA-Tenant2"
+    description: "IBMScale 200G dataplane network Tenant 2"
+  2307:
+    name: "IBMSCALE-200G-DATA-Tenant3"
+    description: "IBMScale 200G dataplane network Tenant 3"
+  2308:
+    name: "IBMSCALE-200G-DATA-Tenant4"
+    description: "IBMScale 200G dataplane network Tenant 4"
   3800:
     name: "CSAIL-3800"
     description: "CSAIL 3800"
