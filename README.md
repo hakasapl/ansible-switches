@@ -88,3 +88,16 @@ Ansible site for MOC/OCT switches
 * `lacp-members-passive` List of LACP passive members for a port channel (List of Strings, interface names)
 * `lacp-rate` Sets the switch rate for LACP only (String "fast" or "slow")
 * `mlag` Set the label of the peer port-channel for a paired switch (String interface name)
+
+## MOC Specific Documentation
+
+Every switch that exists in the MOCA system exists in this ansible site's host file. This project does not support all NOS types yet so some don't have individual host vars but exist in the hosts file for documentation sake.
+
+### Naming Convention
+
+Network equipment addresses follow a common convention. Each list item represents one octet of an IPv4 address:
+
+* `10.`
+* `[80,81]` 80 for MOC/NERC, 81 for OCT
+* `[1,2]` 1 for core networking, 2 for rack networking
+* `10*<rack number> + unit number` Each rack gets its own unique number. For example, 3 switches in a rack might be `21`, `22`, and `23`
