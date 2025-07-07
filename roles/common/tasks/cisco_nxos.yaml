@@ -50,7 +50,7 @@
 - name: Add Config to Temporary file
   delegate_to: localhost
   ansible.builtin.copy:
-    content: "{{ ansible_net_config | NXOS_GETCONFIG(interfaces, vlans) }}"
+    content: "{{ ansible_net_config | NXOS_GETCONFIG(interfaces, vlans_host) }}"
     dest: "{{ temp_cfg_file.path }}"
 
 - name: Copy from server to device

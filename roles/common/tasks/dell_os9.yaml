@@ -42,7 +42,7 @@
     lines: "{{ item }}"
     replace: block
     match: none
-  loop: "{{ cur_config | OS9_GETCONFIG(interfaces, vlans) }}"
+  loop: "{{ cur_config | OS9_GETCONFIG(interfaces, vlans_host) }}"
   notify: Save Config
 
 - name: Clean Deleted Interfaces
@@ -50,5 +50,5 @@
     lines:
       - "{{ item }}"
     match: none
-  loop: "{{ cur_config | OS9_CLEANINTF(interfaces, vlans) }}"
+  loop: "{{ cur_config | OS9_CLEANINTF(interfaces, vlans_host) }}"
   notify: Save Config
