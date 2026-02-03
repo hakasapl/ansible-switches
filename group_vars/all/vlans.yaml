@@ -2105,6 +2105,11 @@ vlans:
     description: OBM network for MOC researcher nodes
     fabrics:
       - moc
+  - id: 914
+    name: MOC-DEV-OBM
+    description: OBM network for MOC/RH dev cluster (o-sac testing)
+    fabrics:
+      - moc
   - id: 915
     name: OCT-CHAMELEON-OBM
     description: For OCT Chameleon OBMs 10.54.0.0 /20

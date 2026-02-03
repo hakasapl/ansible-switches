@@ -158,7 +158,13 @@ interfaces:
   hundredGigE 1/16:
     state: "down"
   hundredGigE 1/17:
-    state: "down"
+    fanout:
+      type: "single"
+      speed: "40G"
+  fortyGigE 1/17/1:
+    description: "DEV-SW-1 Port 2"
+    state: "up"
+    mtu: 9216
   hundredGigE 1/18:
     state: "down"
   hundredGigE 1/19:
@@ -300,6 +306,7 @@ interfaces:
       - 623
       - 624:630
       - 911
+      - 912
       - 930
       - 935
       - 2076
@@ -307,7 +314,7 @@ interfaces:
       - 2170
       - 2172:2177
       - 2180
-      - 2303:2308
+      - 2300:2308
     mtu: 9216
     stp:
       disabled: true
@@ -316,6 +323,23 @@ interfaces:
       - "hundredGigE 1/21"
       - "hundredGigE 1/22"
     mlag: "Port-channel 50"
+  Port-channel 60:
+    description: "DEV-SW-1 uplink"
+    state: "up"
+    portmode: "trunk"
+    tagged:
+      - 351:499
+      - 501:622
+      - 623
+      - 624:630
+      - 914
+    mtu: 9216
+    stp:
+      disabled: true
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "fortyGigE 1/17/1"
+    mlag: "Port-channel 60"
   Port-channel 100:
     description: "MOC-CORE-1 VLT LAG"
     state: "up"
@@ -382,9 +406,10 @@ interfaces:
       - 204
       - 211
       - 277
-      #- 911
+      - 911
       - 912
       - 913
+      - 914
       - 930
       - 931
       - 935
@@ -407,9 +432,10 @@ interfaces:
       - 204
       - 211
       - 277
-      #- 911
+      - 911
       - 912
       - 913
+      - 914
       - 930
       - 931
       - 935

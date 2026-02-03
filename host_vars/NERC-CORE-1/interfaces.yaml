@@ -149,6 +149,7 @@ interfaces:
       - 350
       - 351:630
       - 911
+      - 912
       - 930
       - 935
       - 2076
@@ -156,7 +157,7 @@ interfaces:
       - 2170
       - 2172:2180
       - 2180
-      - 2303:2308
+      - 2300:2308
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:
