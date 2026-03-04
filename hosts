@@ -76,6 +76,7 @@ MOC-R4PCC04-SW-BORS ansible_host=10.80.2.102 ansible_network_os=nvidia.nvue
 MOC-R4PCC04-SW-MGMT ansible_host=10.80.2.105 ansible_network_os=picos.8
 # MOC R4PCC06
 MOC-R4PCC06-SW-TORS ansible_host=10.80.2.111 ansible_network_os=nvidia.nvue
+MOC-R4PCC06-SW-MGMT ansible_host=10.80.2.115 ansible_network_os=nvidia.nvue
 
 [nerc]
 # NERC Core Switches

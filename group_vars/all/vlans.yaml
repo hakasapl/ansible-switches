@@ -86,6 +86,11 @@ vlans:
     fabrics:
       - nerc
       - moc
+  - id: 215
+    name: MOC-INFRA-NAT
+    description: Infrastructure subnet 10.10.0.0 /22
+    fabrics:
+      - moc
   - id: 249
     name: CEPH-INTERNAL
     description: Ceph Cluster (internal)
@@ -2105,6 +2110,11 @@ vlans:
     description: OBM network for MOC researcher nodes
     fabrics:
       - moc
+  - id: 914
+    name: MOC-DEV-OBM
+    description: OBM network for MOC/RH dev cluster (o-sac testing)
+    fabrics:
+      - moc
   - id: 915
     name: OCT-CHAMELEON-OBM
     description: For OCT Chameleon OBMs 10.54.0.0 /20
@@ -2144,6 +2154,42 @@ vlans:
       - oct
       - nerc
       - moc
+  - id: 961
+    name: MOC-DEVVLAN-1
+    description: Reserved for MOC DEV vlan 1
+    managed: true
+  - id: 962
+    name: MOC-DEVVLAN-2
+    description: Reserved for MOC DEV vlan 2
+    managed: true
+  - id: 963
+    name: MOC-DEVVLAN-3
+    description: Reserved for MOC DEV vlan 3
+    managed: true
+  - id: 964
+    name: MOC-DEVVLAN-4
+    description: Reserved for MOC DEV vlan 4
+    managed: true
+  - id: 965
+    name: MOC-DEVVLAN-5
+    description: Reserved for MOC DEV vlan 5
+    managed: true
+  - id: 966
+    name: MOC-DEVVLAN-6
+    description: Reserved for MOC DEV vlan 6
+    managed: true
+  - id: 967
+    name: MOC-DEVVLAN-7
+    description: Reserved for MOC DEV vlan 7
+    managed: true
+  - id: 968
+    name: MOC-DEVVLAN-8
+    description: Reserved for MOC DEV vlan 8
+    managed: true
+  - id: 969
+    name: MOC-DEVVLAN-9
+    description: Reserved for MOC DEV vlan 9
+    managed: true
   - id: 2076
     name: Routed-2176
     description: NERC Openshift Infra Frontend Routed
@@ -2247,60 +2293,36 @@ vlans:
     fabrics:
       - nerc
       - moc
-  - id: 2300
-    name: IBMSCALE-YELLOW-MANAGEMENT
-    description: IBMScale Yellow Management Network
-    fabrics:
-      - nerc
-      - moc
-  - id: 2301
-    name: IBMSCALE-BLUE-FSPBMC
-    description: IBMScale Blue FSP BMC Network
-    fabrics:
-      - nerc
-      - moc
-  - id: 2302
-    name: IBMSCALE-GREEN-FSPBMCTRUNCATED
-    description: IBMScale Green FSP BMC Truncated Network
-    fabrics:
-      - nerc
-      - moc
-  - id: 2303
-    name: IBMSCALE-PURPLE-CAMPUS
-    description: IBMScale Purple Campus Network
-    fabrics:
-      - nerc
-      - moc
   - id: 2304
-    name: IBMSCALE-200G-DATA
-    description: IBMScale 200G dataplane network
+    name: PureStorage-Dataplane
+    description: PureStorage 200G dataplane network
     fabrics:
       - nerc
       - moc
   - id: 2305
-    name: IBMSCALE-200G-DATA-Tenant1
-    description: IBMScale 200G dataplane network Tenant 1
+    name: StorageAccess-200G-DATA-Tenant1
+    description: Storage access network tenant 1
     fabrics:
       - oct
       - nerc
       - moc
   - id: 2306
-    name: IBMSCALE-200G-DATA-Tenant2
-    description: IBMScale 200G dataplane network Tenant 2
+    name: StorageAccess-200G-DATA-Tenant2
+    description: Storage access network tenant 2
     fabrics:
       - oct
       - nerc
       - moc
   - id: 2307
-    name: IBMSCALE-200G-DATA-Tenant3
-    description: IBMScale 200G dataplane network Tenant 3
+    name: StorageAccess-200G-DATA-Tenant3
+    description: Storage access network tenant 3
     fabrics:
       - oct
       - nerc
       - moc
   - id: 2308
-    name: IBMSCALE-200G-DATA-Tenant4
-    description: IBMScale 200G dataplane network Tenant 4
+    name: StorageAccess-200G-DATA-Tenant4
+    description: Storage access network tenant 4
     fabrics:
       - oct
       - nerc

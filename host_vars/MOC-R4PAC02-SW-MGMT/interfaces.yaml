@@ -1,164 +1,140 @@
 interfaces:
   GigabitEthernet 1/1:
+    description: "RCEPH-OSD-U03"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/2:
+    description: "RCEPH-OSD-U05"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/3:
+    description: "RCEPH-OSD-U07"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/4:
+    description: "RCEPH-OSD-U09"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/5:
+    description: "RCEPH-OSD-U11"
     state: "up"
     portmode: "access"
-    untagged: 930
+    untagged: 913
     stp:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/6:
-    state: "down"
+    description: "RCEPH-MON-U13"
+    state: "up"
+    portmode: "access"
+    untagged: 913
+    stp:
+      edgeport: true
+      bpduguard: true
   GigabitEthernet 1/7:
-    state: "down"
+    description: "OVIRT-U14"
+    state: "up"
+    portmode: "access"
+    untagged: 912
+    stp:
+      edgeport: true
+      bpduguard: true
   GigabitEthernet 1/8:
-    state: "down"
+    description: "OVIRT-U15"
+    state: "up"
+    portmode: "access"
+    untagged: 912
+    stp:
+      edgeport: true
+      bpduguard: true
   GigabitEthernet 1/9:
-    state: "down"
+    description: "OVIRT-U16"
+    state: "up"
+    portmode: "access"
+    untagged: 912
+    stp:
+      edgeport: true
+      bpduguard: true
   GigabitEthernet 1/10:
-    state: "down"
+    description: "U24"
+    state: "up"
+    portmode: "access"
+    untagged: 913
+    stp:
+      edgeport: true
+      bpduguard: true
   GigabitEthernet 1/11:
-    state: "down"
+    description: "U25"
+    state: "up"
+    portmode: "access"
+    untagged: 913
+    stp:
+      edgeport: true
+      bpduguard: true
   GigabitEthernet 1/12:
-    state: "down"
+    description: "U26"
+    state: "up"
+    portmode: "access"
+    untagged: 913
+    stp:
+      edgeport: true
+      bpduguard: true
   GigabitEthernet 1/13:
-    state: "up"
-    portmode: "access"
-    untagged: 930
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/14:
-    state: "up"
-    portmode: "access"
-    untagged: 930
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/15:
-    state: "up"
-    portmode: "access"
-    untagged: 930
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/16:
-    description: "rceph-osd-2ZD5V52"
-    state: "up"
-    portmode: "access"
-    untagged: 913
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/17:
-    description: "rceph-mon3-HC72GK2"
-    state: "up"
-    portmode: "access"
-    untagged: 913
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/18:
-    state: "up"
-    portmode: "access"
-    untagged: 930
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/19:
-    state: "up"
-    portmode: "access"
-    untagged: 930
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/20:
-    description: "rceph-osd-2ZDCV52"
-    state: "up"
-    portmode: "access"
-    untagged: 913
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/21:
-    state: "up"
-    portmode: "access"
-    untagged: 930
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/22:
-    state: "up"
-    portmode: "access"
-    untagged: 930
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/23:
-    state: "down"
-  GigabitEthernet 1/24:
-    state: "down"
-  GigabitEthernet 1/25:
-    description: "oct-45"
-    state: "up"
-    portmode: "access"
-    untagged: 913
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/26:
-    description: "oct-43"
-    state: "up"
-    portmode: "access"
-    untagged: 913
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/27:
-    description: "oct-41"
-    state: "up"
-    portmode: "access"
-    untagged: 913
-    stp:
-      edgeport: true
-      bpduguard: true
-  GigabitEthernet 1/28:
-    state: "down"
-  GigabitEthernet 1/29:
-    description: "MOC-AMDTESTGPU1-OBM"
+    description: "MOC-AMDTEST-U30"
     state: "up"
     portmode: "access"
     untagged: 911
     stp:
       edgeport: true
       bpduguard: true
+  GigabitEthernet 1/14:
+    state: "down"
+  GigabitEthernet 1/15:
+    state: "down"
+  GigabitEthernet 1/16:
+    state: "down"
+  GigabitEthernet 1/17:
+    state: "down"
+  GigabitEthernet 1/18:
+    state: "down"
+  GigabitEthernet 1/19:
+    state: "down"
+  GigabitEthernet 1/20:
+    state: "down"
+  GigabitEthernet 1/21:
+    state: "down"
+  GigabitEthernet 1/22:
+    state: "down"
+  GigabitEthernet 1/23:
+    state: "down"
+  GigabitEthernet 1/24:
+    state: "down"
+  GigabitEthernet 1/25:
+    state: "down"
+  GigabitEthernet 1/26:
+    state: "down"
+  GigabitEthernet 1/27:
+    state: "down"
+  GigabitEthernet 1/28:
+    state: "down"
+  GigabitEthernet 1/29:
+    state: "down"
   GigabitEthernet 1/30:
     state: "down"
   GigabitEthernet 1/31:
