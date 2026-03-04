@@ -29,6 +29,19 @@
     state: enabled
   notify: Save Config
 
+- name: Enable LLDP feature
+  cisco.nxos.nxos_feature:
+    feature: lldp
+    state: enabled
+  notify: Save Config
+
+- name: Enable SNMP
+  cisco.nxos.nxos_snmp_server:
+    config:
+      communities:
+        - community: public
+          group: network-operator
+
 - name: Gather only the config and default facts
   cisco.nxos.nxos_facts:
     gather_subset:

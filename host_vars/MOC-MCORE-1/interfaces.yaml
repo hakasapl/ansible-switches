@@ -20,13 +20,12 @@ interfaces:
   GigabitEthernet 1/6:
     state: "down"
   GigabitEthernet 1/7:
-    description: "MOC-DEV-R6PBC02U19-OBM"
+    description: "MOC-SW-U21-MGMT"
     state: "up"
     portmode: "access"
     untagged: 914
     stp:
-      edgeport: true
-      bpduguard: true
+      rootguard: true
   GigabitEthernet 1/8:
     state: "down"
   GigabitEthernet 1/9:
@@ -51,6 +50,7 @@ interfaces:
     mtu: 9216
     portmode: "trunk"
     tagged:
+      - 215
       - 911
       - 912
       - 930
