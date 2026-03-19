@@ -8,6 +8,7 @@ interfaces:
     state: "up"
     untagged: 127
     tagged:
+      - 215
       - 911
       - 912
       - 913
@@ -21,6 +22,7 @@ interfaces:
     state: "up"
     untagged: 127
     tagged:
+      - 215
       - 911
       - 912
       - 913
@@ -34,6 +36,7 @@ interfaces:
     state: "up"
     untagged: 127
     tagged:
+      - 215
       - 911
       - 912
       - 913
