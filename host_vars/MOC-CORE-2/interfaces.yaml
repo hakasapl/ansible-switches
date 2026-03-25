@@ -10,8 +10,6 @@ interfaces:
     tagged:
       - 215
       - 911
-      - 912
-      - 913
     mtu: 9216
     portmode: "hybrid"
     stp:
@@ -24,8 +22,6 @@ interfaces:
     tagged:
       - 215
       - 911
-      - 912
-      - 913
     mtu: 9216
     portmode: "hybrid"
     stp:
@@ -38,8 +34,6 @@ interfaces:
     tagged:
       - 215
       - 911
-      - 912
-      - 913
     mtu: 9216
     portmode: "hybrid"
     stp:
