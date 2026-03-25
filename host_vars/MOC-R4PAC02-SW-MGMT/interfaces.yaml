@@ -48,29 +48,11 @@ interfaces:
       edgeport: true
       bpduguard: true
   GigabitEthernet 1/7:
-    description: "OVIRT-U14"
-    state: "up"
-    portmode: "access"
-    untagged: 912
-    stp:
-      edgeport: true
-      bpduguard: true
+    state: "down"
   GigabitEthernet 1/8:
-    description: "OVIRT-U15"
-    state: "up"
-    portmode: "access"
-    untagged: 912
-    stp:
-      edgeport: true
-      bpduguard: true
+    state: "down"
   GigabitEthernet 1/9:
-    description: "OVIRT-U16"
-    state: "up"
-    portmode: "access"
-    untagged: 912
-    stp:
-      edgeport: true
-      bpduguard: true
+    state: "down"
   GigabitEthernet 1/10:
     description: "U24"
     state: "up"
