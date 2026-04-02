@@ -279,20 +279,8 @@ interfaces:
     state: "up"
     portmode: "trunk"
     tagged:
-      - 10
-      - 127
-      - 204
-      - 208
-      - 211
-      - 213
-      - 250
       - 931
       - 935
-      - 2076
-      - 2305:2308
-      - 3801
-      - 3802
-      - 3803
     mtu: 9216
     lacp-rate: "fast"
     lacp-members-active:

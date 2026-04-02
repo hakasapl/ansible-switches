@@ -148,25 +148,7 @@ interfaces:
     description: "OCT-CORE-4 Port 28 VLT"
     state: "up"
   hundredGigE 1/29:
-    description: "FABRIC-CISCO"
-    state: "up"
-    mtu: 9216
-    portmode: "hybrid"
-    tagged:
-      - 3100
-      - 3101
-      - 3102
-      - 3103
-      - 3104
-      - 3105
-      - 3106
-      - 3107
-      - 3108
-      - 3109
-    autoneg: false
-    stp:
-      disabled: true
-      rootguard: true
+    state: "down"
   hundredGigE 1/30:
     fanout:
       type: "quad"
