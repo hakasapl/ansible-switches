@@ -118,6 +118,7 @@ interfaces:
     state: "up"
     portmode: "trunk"
     tagged:
+      - 3110:3119
       - 3911:3920
     mtu: 9216
     lacp-rate: "fast"

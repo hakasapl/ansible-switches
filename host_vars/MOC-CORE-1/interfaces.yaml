@@ -279,6 +279,7 @@ interfaces:
     state: "up"
     portmode: "trunk"
     tagged:
+      - 204
       - 931
       - 935
     mtu: 9216
@@ -323,7 +324,7 @@ interfaces:
       - 2170
       - 2172:2177
       - 2180
-      - 2300:2308
+      - 2304:2308
     mtu: 9216
     stp:
       disabled: true
@@ -337,10 +338,6 @@ interfaces:
     state: "up"
     portmode: "trunk"
     tagged:
-      - 351:499
-      - 501:622
-      - 623
-      - 624:630
       - 914
     mtu: 9216
     stp:
@@ -398,7 +395,6 @@ interfaces:
       - 930
       - 931
       - 2076
-      - 2303:2308
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:
@@ -424,7 +420,7 @@ interfaces:
       - 931
       - 935
       - 2076
-      - 2303:2308
+      - 2304:2308
       - 3801
     mode: "lacp"
     lacp-rate: "fast"
@@ -451,7 +447,7 @@ interfaces:
       - 931
       - 935
       - 2076
-      - 2303:2308
+      - 2304:2308
       - 3801
     mode: "lacp"
     lacp-rate: "fast"

@@ -165,7 +165,7 @@ interfaces:
       type: "single"
       speed: "40G"
   fortyGigE 1/17/1:
-    description: "DEV-SW-1 Port 2"
+    description: "DEV-SW-1 Port 2 (Inactive backup link)"
     state: "up"
     mtu: 9216
   hundredGigE 1/18:
@@ -256,6 +256,7 @@ interfaces:
     state: "up"
     portmode: "trunk"
     tagged:
+      - 204
       - 931
       - 935
     mtu: 9216
@@ -300,7 +301,7 @@ interfaces:
       - 2170
       - 2172:2177
       - 2180
-      - 2300:2308
+      - 2304:2308
     mtu: 9216
     stp:
       disabled: true
@@ -309,23 +310,6 @@ interfaces:
       - "hundredGigE 1/21"
       - "hundredGigE 1/22"
     mlag: "Port-channel 50"
-  Port-channel 60:
-    description: "DEV-SW-1 uplink"
-    state: "up"
-    portmode: "trunk"
-    tagged:
-      - 351:499
-      - 501:622
-      - 623
-      - 624:630
-      - 914
-    mtu: 9216
-    stp:
-      disabled: true
-    lacp-rate: "fast"
-    lacp-members-active:
-      - "fortyGigE 1/17/1"
-    mlag: "Port-channel 60"
   Port-channel 100:
     description: "MOC-CORE-1 VLT LAG"
     state: "up"
@@ -375,7 +359,6 @@ interfaces:
       - 930
       - 931
       - 2076
-      - 2303:2308
     mode: "lacp"
     lacp-rate: "fast"
     lacp-members-active:
@@ -401,7 +384,7 @@ interfaces:
       - 931
       - 935
       - 2076
-      - 2303:2308
+      - 2304:2308
       - 3801
     mode: "lacp"
     lacp-rate: "fast"
@@ -428,7 +411,7 @@ interfaces:
       - 931
       - 935
       - 2076
-      - 2303:2308
+      - 2304:2308
       - 3801
     mode: "lacp"
     lacp-rate: "fast"

@@ -112,6 +112,7 @@ interfaces:
     state: "up"
     portmode: "trunk"
     tagged:
+      - 204
       - 931
       - 935
     mtu: 9216
