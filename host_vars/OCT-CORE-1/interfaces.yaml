@@ -107,19 +107,9 @@ interfaces:
     state: "up"
     portmode: "trunk"
     tagged:
-      - 10
-      - 127
       - 204
-      - 208
-      - 211
-      - 213
-      - 250
       - 931
       - 935
-      - 2076
-      - 3801
-      - 3802
-      - 3803
     mtu: 9216
     lacp-rate: "fast"
     lacp-members-active:
@@ -127,29 +117,6 @@ interfaces:
     mlag: "Port-channel 40"
     stp:
       disabled: true
-      rootguard: true
-  Port-channel 50:
-    description: "AL2S Uplink"
-    state: "up"
-    portmode: "trunk"
-    tagged:
-      - 3100
-      - 3101
-      - 3102
-      - 3103
-      - 3104
-      - 3105
-      - 3106
-      - 3107
-      - 3108
-      - 3109
-    mtu: 9216
-    lacp-rate: "slow"
-    lacp-members-active:
-      - "TenGigabitEthernet 1/33"
-    mlag: "Port-channel 50"
-    stp:
-      disable: true
       rootguard: true
   Port-channel 100:
     description: "OCT-CORE-2 VLT LAG"
