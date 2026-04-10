@@ -72,12 +72,6 @@ vlans:
     fabrics:
       - nerc
       - moc
-  - id: 213
-    name: MOC-PROD-CEPH-ISCSI
-    description: Ceph Cluster iSCSI
-    fabrics:
-      - nerc
-      - moc
   - id: 214
     name: MOC-NEW-ESI
     description: New ESI deployment
@@ -93,12 +87,6 @@ vlans:
     name: CEPH-INTERNAL
     description: Ceph Cluster (internal)
     fabrics:
-      - moc
-  - id: 250
-    name: MOC-PROD-CEPH
-    description: Ceph public (for clients)
-    fabrics:
-      - nerc
       - moc
   - id: 277
     name: MOC-MAAS
