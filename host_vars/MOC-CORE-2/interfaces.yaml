@@ -8,6 +8,7 @@ interfaces:
     state: "up"
     untagged: 127
     tagged:
+      - 204
       - 215
       - 911
     mtu: 9216
@@ -20,6 +21,7 @@ interfaces:
     state: "up"
     untagged: 127
     tagged:
+      - 204
       - 215
       - 911
     mtu: 9216
@@ -32,6 +34,7 @@ interfaces:
     state: "up"
     untagged: 127
     tagged:
+      - 204
       - 215
       - 911
     mtu: 9216
