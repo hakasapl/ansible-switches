@@ -8,6 +8,7 @@ interfaces:
     state: "up"
     untagged: 127
     tagged:
+      - 204
       - 215
       - 911
     mtu: 9216
@@ -20,6 +21,7 @@ interfaces:
     state: "up"
     untagged: 127
     tagged:
+      - 204
       - 215
       - 911
     mtu: 9216
@@ -32,6 +34,7 @@ interfaces:
     state: "up"
     untagged: 127
     tagged:
+      - 204
       - 215
       - 911
     mtu: 9216
@@ -90,9 +93,7 @@ interfaces:
       edgeport: true
       bpduguard: true
   TenGigabitEthernet 1/3/2:
-    state: "up"
-    description: "MOC-FW-1 Port 4"
-    mtu: 9216
+    state: "down"
   TenGigabitEthernet 1/3/3:
     state: "down"
   TenGigabitEthernet 1/3/4:
@@ -337,25 +338,6 @@ interfaces:
     stp:
       disabled: true
       rootguard: true
-  Port-channel 200:
-    description: "MOC-FW-1 LAG"
-    state: "up"
-    portmode: "trunk"
-    mtu: 9216
-    tagged:
-      - 127
-      - 201
-      - 204
-      - 277
-      - 911
-      - 930
-      - 931
-      - 2076
-    mode: "lacp"
-    lacp-rate: "fast"
-    lacp-members-active:
-      - "TenGigabitEthernet 1/3/2"
-    mlag: "Port-channel 200"
   Port-channel 201:
     description: "MOC-FW-11 LAG"
     state: "up"
@@ -372,6 +354,7 @@ interfaces:
       - 912
       - 913
       - 914
+      - 916
       - 930
       - 931
       - 935
@@ -399,6 +382,7 @@ interfaces:
       - 912
       - 913
       - 914
+      - 916
       - 930
       - 931
       - 935

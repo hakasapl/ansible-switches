@@ -32,6 +32,11 @@ vlans:
     fabrics:
       - nerc
       - moc
+  - id: 203
+    name: MOCSEC-INFRANAT
+    description: NAT for infra nodes, can access 916
+    fabrics:
+      - mocsecdata
   - id: 204
     name: MOC-GENERAL
     description: Intranet (routable to internet). SNMP for client nodes.
@@ -39,6 +44,22 @@ vlans:
       - oct
       - nerc
       - moc
+  - id: 205
+    name: MOC-GLUSTER
+    description: Gluster/VM migration - oVirt
+    fabrics:
+      - nerc
+      - moc
+  - id: 206
+    name: MOCSEC-PROD-DATA
+    description: Data network for mocsec environment
+    fabrics:
+      - mocsecdata
+  - id: 207
+    name: MOCSEC-STAGING-DATA
+    description: Data network for mocsec staging environment
+    fabrics:
+      - mocsecdata
   - id: 208
     name: ESI-CONTROL-PLANE
     description: ESI control plane
@@ -1792,6 +1813,11 @@ vlans:
     description: OBM network for MOC/RH dev cluster (o-sac testing)
     fabrics:
       - moc
+  - id: 916
+    name: MOCSEC-OBM
+    description: OBM network for MOCSEC cluster
+    fabrics:
+      - mocsecmgmt
   - id: 930
     name: MOC-SWMGMT
     description: Switch management network for MOC
