@@ -107,7 +107,11 @@ interfaces:
     state: "down"
   twentyFiveGigE 1/7/3:
     description: "U29-S1-P1"
-    state: "down"
+    state: "up"
+    portmode: "access"
+    untagged: 203
+    stp:
+      edgeport: true
   twentyFiveGigE 1/7/4:
     description: "U29-S3-P1"
     state: "down"
@@ -180,8 +184,15 @@ interfaces:
     description: "U33-S1B-P1"
     state: "down"
   TenGigabitEthernet 1/23/3:
-    description: "U33-S1C-P1"
-    state: "down"
+    description: "U33-S3A-P1 - Infra1"
+    state: "up"
+    portmode: "hybrid"
+    untagged: 203
+    tagged:
+      - 206
+      - 207
+    stp:
+      edgeport: true
   TenGigabitEthernet 1/23/4:
     description: "U33-S1D-P1"
     state: "down"
@@ -190,13 +201,7 @@ interfaces:
       type: "quad"
       speed: "10G"
   TenGigabitEthernet 1/24/1:
-    description: "U33-S3A-P1 - Infra1"
-    state: "up"
-    portmode: "hybrid"
-    untagged: 203
-    tagged:
-      - 206
-      - 207
+    state: "down"
   TenGigabitEthernet 1/24/2:
     description: "U33-S3B-P1"
     state: "down"
@@ -217,8 +222,15 @@ interfaces:
     description: "U35-S1B-P1"
     state: "down"
   TenGigabitEthernet 1/25/3:
-    description: "U35-S1C-P1"
-    state: "down"
+    description: "U35-S3A-P1 - Infra2"
+    state: "up"
+    portmode: "hybrid"
+    untagged: 203
+    tagged:
+      - 206
+      - 207
+    stp:
+      edgeport: true
   TenGigabitEthernet 1/25/4:
     description: "U35-S1D-P1"
     state: "down"
@@ -227,13 +239,7 @@ interfaces:
       type: "quad"
       speed: "10G"
   TenGigabitEthernet 1/26/1:
-    description: "U35-S3A-P1 - Infra2"
-    state: "up"
-    portmode: "hybrid"
-    untagged: 203
-    tagged:
-      - 206
-      - 207
+    state: "down"
   TenGigabitEthernet 1/26/2:
     description: "U35-S3B-P1"
     state: "down"
@@ -258,8 +264,15 @@ interfaces:
     portmode: "access"
     untagged: 203
   TenGigabitEthernet 1/27/3:
-    description: "U37-S1C-P1"
-    state: "down"
+    description: "U37-S3A-P1 - Infra3"
+    state: "up"
+    portmode: "hybrid"
+    untagged: 203
+    tagged:
+      - 206
+      - 207
+    stp:
+      edgeport: true
   TenGigabitEthernet 1/27/4:
     description: "U37-S1D-P1"
     state: "down"
@@ -268,13 +281,7 @@ interfaces:
       type: "quad"
       speed: "10G"
   TenGigabitEthernet 1/28/1:
-    description: "U37-S3A-P1 - Infra3"
-    state: "up"
-    portmode: "hybrid"
-    untagged: 203
-    tagged:
-      - 206
-      - 207
+    state: "down"
   TenGigabitEthernet 1/28/2:
     description: "U37-S3B-P1"
     state: "down"
