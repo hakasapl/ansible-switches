@@ -88,8 +88,8 @@ vlans:
     fabrics:
       - moc
   - id: 277
-    name: MOC-MAAS
-    description: MAAS Internal Network
+    name: MOC-RCEPH
+    description: Research ceph access network
     fabrics:
       - nerc
       - moc

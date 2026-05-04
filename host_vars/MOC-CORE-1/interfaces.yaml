@@ -86,7 +86,6 @@ interfaces:
     untagged: 208
     tagged:
       - 211
-      - 213
       - 351:499
       - 520:622
       - 623
@@ -110,7 +109,6 @@ interfaces:
     portmode: "hybrid"
     untagged: 127
     tagged:
-      - 213
       - 911
     stp:
       edgeport: true
