@@ -72,12 +72,6 @@ vlans:
     fabrics:
       - nerc
       - moc
-  - id: 214
-    name: MOC-NEW-ESI
-    description: New ESI deployment
-    fabrics:
-      - nerc
-      - moc
   - id: 215
     name: MOC-INFRA-NAT
     description: Infrastructure subnet 10.10.0.0 /22

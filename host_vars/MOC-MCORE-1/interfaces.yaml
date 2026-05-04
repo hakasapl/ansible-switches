@@ -183,12 +183,7 @@ interfaces:
       bpduguard: true
   GigabitEthernet 1/48:
     description: "ESI Undercloud Port 2"
-    state: "up"
-    portmode: "access"
-    untagged: 214
-    stp:
-      edgeport: true
-      bpduguard: true
+    state: "down"
   TenGigabitEthernet 1/49:
     description: "MOC-CORE-1 Port 33"
     state: "up"
