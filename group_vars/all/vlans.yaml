@@ -82,6 +82,11 @@ vlans:
     description: Ceph Cluster (internal)
     fabrics:
       - moc
+  - id: 250
+    name: MOC-PROD-CEPH
+    description: Ceph public (for clients)
+    fabrics:
+      - moc
   - id: 277
     name: MOC-MAAS
     description: MAAS Internal Network
