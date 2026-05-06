@@ -27,8 +27,8 @@ vlans:
       - nerc
       - moc
   - id: 201
-    name: MOC-FOREMAN
-    description: Foreman Provisioning. SNMP for OpenStack and Ceph
+    name: MOC-INFRA-OPENSHIFT
+    description: MOC infra Openshift infra network
     fabrics:
       - nerc
       - moc
