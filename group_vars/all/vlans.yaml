@@ -1973,6 +1973,18 @@ vlans:
     fabrics:
       - nerc
       - moc
+  - id: 2305
+    name: PureStorage-Test1
+    description: PureStorage Test net 1
+    fabrics:
+      - nerc
+      - moc
+  - id: 2306
+    name: PureStorage-Test2
+    description: PureStorage Test net 2
+    fabrics:
+      - nerc
+      - moc
   - id: 2500
     name: oct-cloudlab-2500
     description: OCT CloudLab Vlan 2500
