@@ -98,10 +98,15 @@ vlans:
       - moc
   - id: 216
     name: OPENACCELERATOR-PRODUCTION
-    description: OAC Production Net  10.20.12.0 /23
+    description: OAC Production Net 10.20.12.0 /23
     fabrics:
       - moc
       - nerc
+  - id: 240
+    name: JONATHAN-NAT
+    description: "NAT net for Jonathan student environment"
+    fabrics:
+      - moc
   - id: 249
     name: CEPH-INTERNAL
     description: Ceph Cluster (internal)
@@ -1839,6 +1844,11 @@ vlans:
       - moc
       - nerc
       - mocsecmgmt
+  - id: 918
+    name: MOCEXT-JONATHANAPPAVOO-MGMT
+    description: Management net for Joanathan Appavoo student cluster
+    fabrics:
+      - moc
   - id: 930
     name: MOC-SWMGMT
     description: Switch management network for MOC
