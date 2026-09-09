@@ -2052,7 +2052,7 @@ vlans:
   - id: 2304
     name: PureStorage-Dataplane
     description: PureStorage 200G dataplane network
-    subnet4: "10.7.0.0/24"
+    subnet4: "10.7.0.0/20"
     fabrics:
       - nerc
       - moc
@@ -2074,7 +2074,7 @@ vlans:
       - mocsecdata
   - id: 2307
     name: PureStorage-Secure-Prod
-    description: PureStorage Secure Staging Network
+    description: PureStorage Secure Prod Network
     subnet4: "10.8.2.0/23"
     fabrics:
       - nerc
