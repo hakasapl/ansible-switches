@@ -1,9 +1,4 @@
 vlans:
-  - id: 57
-    name: UMA-57
-    description: UMass VLAN 57 Public IPs for Chameleon
-    fabrics:
-      - oct
   - id: 59
     name: ATLAS-59
     description: ATLAS VLAN 59
@@ -13,28 +8,33 @@ vlans:
   - id: 84
     name: UMA-84
     description: UMass VLAN 84 Public IPs for CloudLab
+    subnet4: "198.22.255.0/24"
     fabrics:
       - oct
   - id: 86
     name: UMA-86
     description: UMass VLAN 86 Public IPs for Fabric
+    subnet4: "205.172.168.0/26"
     fabrics:
       - oct
   - id: 127
     name: MOC-NEU-PUBLIC
     description: NEU Public IP for infrastructure
+    subnet4: "129.10.5.0/24"
     fabrics:
       - nerc
       - moc
   - id: 201
     name: MOC-INFRA-OPENSHIFT
     description: MOC infra Openshift infra network
+    subnet4: "172.16.0.0/19"
     fabrics:
       - nerc
       - moc
   - id: 203
     name: MOCSEC-INFRANAT
     description: NAT for infra nodes, can access 916
+    subnet4: "10.11.0.0/24"
     fabrics:
       - mocsecdata
       - moc
@@ -42,90 +42,99 @@ vlans:
   - id: 204
     name: MOC-GENERAL
     description: MaaS and NAT access to internet.
+    subnet4: "172.16.96.0/24"
     fabrics:
       - oct
-      - nerc
-      - moc
-  - id: 205
-    name: MOC-GLUSTER
-    description: Gluster/VM migration - oVirt
-    fabrics:
       - nerc
       - moc
   - id: 206
     name: MOCSEC-PROD-DATA
     description: Data network for mocsec environment
+    subnet4: "10.12.0.0/20"
     fabrics:
       - mocsecdata
   - id: 207
     name: MOCSEC-STAGING-DATA
     description: Data network for mocsec staging environment
+    subnet4: "10.13.0.0/24"
     fabrics:
       - mocsecdata
   - id: 208
     name: ESI-CONTROL-PLANE
     description: ESI control plane
+    subnet4: "192.168.24.0/24"
     fabrics:
       - nerc
       - moc
   - id: 211
     name: MOC-NESE
     description: New England Storage Exchange (NESE)
+    subnet4: "10.0.120.0/22"
     fabrics:
       - nerc
       - moc
   - id: 212
     name: OPENACCELERATOR-EDGE
     description: Open Accelerator Edge Network on FW
+    subnet4: "10.20.0.0/24"
     fabrics:
       - moc
   - id: 213
     name: OPENACCELERATOR-INFRA
-    description: OAC Infra Net 10.20.8.0 /23
+    description: OAC Infra Net
+    subnet4: "10.20.8.0/23"
     fabrics:
       - moc
       - nerc
   - id: 214
     name: OPENACCELERATOR-STAGING
-    description: OAC Staging Net 10.20.10.0 /23
+    description: OAC Staging Net
+    subnet4: "10.20.10.0/23"
     fabrics:
       - moc
       - nerc
   - id: 215
     name: MOC-INFRA-NAT
-    description: Infrastructure subnet 10.10.0.0 /22
+    description: Infrastructure subnet
+    subnet4: "10.10.0.0/22"
     fabrics:
       - moc
   - id: 216
     name: OPENACCELERATOR-PRODUCTION
-    description: OAC Production Net 10.20.12.0 /23
+    description: OAC Production Net
+    subnet4: "10.20.12.0/23"
     fabrics:
       - moc
       - nerc
   - id: 240
     name: JONATHAN-NAT
     description: "NAT net for Jonathan student environment"
+    subnet4: "10.40.0.64/26"
     fabrics:
       - moc
   - id: 249
     name: CEPH-INTERNAL
     description: Ceph Cluster (internal)
+    subnet4: "192.168.40.0/23"
     fabrics:
       - moc
   - id: 250
     name: MOC-PROD-CEPH
     description: Ceph public (for clients)
+    subnet4: "192.168.0.0/24"
     fabrics:
       - moc
   - id: 277
     name: MOC-RCEPH
     description: Research ceph access network
+    subnet4: "10.128.0.0/24"
     fabrics:
       - nerc
       - moc
   - id: 300
     name: UNITY-INTERNAL
     description: Unity Cluster at UMass Internal Net
+    subnet4: "10.100.0.0/16"
     fabrics:
       - nerc
       - moc
@@ -1758,6 +1767,7 @@ vlans:
   - id: 623
     name: ESI-INSPECTION
     description: ESI Inspection and provisioning network
+    subnet4: "192.168.11.0/24"
     fabrics:
       - nerc
       - moc
@@ -1806,33 +1816,39 @@ vlans:
   - id: 910
     name: CLOUDLAB-OBM
     description: CloudLab IPMI Network
+    subnet4: "10.0.0.0/22"
     fabrics:
       - oct
   - id: 911
     name: OCT-MOC-OBM
     description: For OCT/UMass nodes IPMI
+    subnet4: "10.2.0.0/19"
     fabrics:
       - nerc
       - moc
   - id: 912
     name: ESI-Controller-IPMI
     description: IPMI network for ESI controllers
+    subnet4: "10.3.0.0/19"
     fabrics:
       - nerc
       - moc
   - id: 913
     name: MOC-Research-OBM
     description: OBM network for MOC researcher nodes
+    subnet4: "10.4.0.0/22"
     fabrics:
       - moc
   - id: 914
     name: MOC-DEV-OBM
     description: OBM network for MOC/RH dev cluster (o-sac testing)
+    subnet4: "10.5.0.0/22"
     fabrics:
       - moc
   - id: 916
     name: MOCSEC-OBM
     description: OBM network for MOCSEC cluster
+    subnet4: "10.6.0.1/19"
     fabrics:
       - mocsecmgmt
       - moc
@@ -1847,28 +1863,33 @@ vlans:
   - id: 918
     name: MOCEXT-JONATHANAPPAVOO-MGMT
     description: Management net for Joanathan Appavoo student cluster
+    subnet4: "10.40.0.0/26"
     fabrics:
       - moc
   - id: 930
     name: MOC-SWMGMT
     description: Switch management network for MOC
+    subnet4: "10.80.0.0/20"
     fabrics:
       - nerc
       - moc
   - id: 931
     name: OCT-SWMGMT
     description: Switch management network for OCT
+    subnet4: "10.81.0.0/20"
     fabrics:
       - oct
       - moc
   - id: 933
     name: OCT-PDU
     description: PDU network for OCT
+    subnet4: "10.91.0.0/20"
     fabrics:
       - oct
   - id: 935
     name: MOC-SWMON
     description: Switch monitoring network for MOC
+    subnet4: "10.82.0.0/20"
     fabrics:
       - oct
       - nerc
@@ -1912,170 +1933,197 @@ vlans:
   - id: 2076
     name: Routed-2176
     description: NERC Openshift Infra Frontend Routed
+    subnet4: "10.85.0.0/22"
     fabrics:
       - nerc
       - moc
   - id: 2141
     name: NERC-Openstack-FloatingIP
-    description: Floating IPs for NERC openstack 199.94.60.0 /24
+    description: Floating IPs for NERC openstack
+    subnet4: "199.94.60.0/24"
     fabrics:
       - nerc
       - moc
   - id: 2142
     name: NERC-Openstack-Ext-Cntrl
-    description: NERC External Controller IPs 140.247.152.0 /27
+    description: NERC External Controller IPs
+    subnet4: "140.247.152.0/27"
     fabrics:
       - nerc
       - moc
   - id: 2143
     name: NERC-Openstack-L2-1
-    description: NERC Openstack L2 Internal 1 172.18.0.0 /23
+    description: NERC Openstack L2 Internal 1
+    subnet4: "172.18.0.0/23"
     fabrics:
       - nerc
       - moc
   - id: 2144
     name: NERC-Openstack-L2-2
-    description: NERC Openstack L2 Internal 2 172.18.4.0 /23
+    description: NERC Openstack L2 Internal 2
+    subnet4: "172.18.4.0/23"
     fabrics:
       - nerc
       - moc
   - id: 2145
     name: NERC-Openstack-Admin-1
-    description: NERC Openstack Admin Network 1 10.255.0.0 /24
+    description: NERC Openstack Admin Network 1
+    subnet4: "10.255.0.0/24"
     fabrics:
       - nerc
       - moc
   - id: 2146
     name: NERC-Openstack-OBM-1
-    description: NERC Openstack OBM Network 1 10.255.1.0 /24
+    description: NERC Openstack OBM Network 1
+    subnet4: "10.255.1.0/24"
     fabrics:
       - nerc
       - moc
   - id: 2147
     name: NERC-Openstack-CEPH-Backend
-    description: NERC Openstack CEPH Backend 10.255.2.0 /24
+    description: NERC Openstack CEPH Backend
+    subnet4: "10.255.2.0/24"
     fabrics:
       - nerc
       - moc
   - id: 2148
     name: NERC-Openstack-VR-Egress
-    description: NERC Openstack Virtual Router Egress 10.255.3.0 /24
+    description: NERC Openstack Virtual Router Egress
+    subnet4: "10.255.3.0/24"
     fabrics:
       - nerc
       - moc
   - id: 2170
     name: NERC-Openshift-OBM-2
-    description: NERC Openshift OBM Network 2 10.30.0.0 /22
+    description: NERC Openshift OBM Network 2
+    subnet4: "10.30.0.0/22"
     fabrics:
       - nerc
       - moc
   - id: 2172
     name: NERC-Openshift-Prod-Frontend
-    description: NERC Openshift Prod Frontend 10.30.6.0 /23
+    description: NERC Openshift Prod Frontend
+    subnet4: "10.30.6.0/23"
     fabrics:
       - nerc
       - moc
   - id: 2173
     name: NERC-Openshift-Prod-Backend
-    description: NERC Openshift Prod Storage Backend 10.30.10.0 /23
+    description: NERC Openshift Prod Storage Backend
+    subnet4: "10.30.10.0/23"
     fabrics:
       - nerc
       - moc
   - id: 2174
     name: NERC-Openshift-Test-Frontend
-    description: NERC Openshift Test Frontend 10.30.8.0 /24
+    description: NERC Openshift Test Frontend
+    subnet4: "10.30.8.0/24"
     fabrics:
       - nerc
       - moc
   - id: 2175
     name: NERC-Openshift-Test-Backend
-    description: NERC Openshift Test Storage Backend 10.30.12.0 /24
+    description: NERC Openshift Test Storage Backend
+    subnet4: "10.30.12.0/24"
     fabrics:
       - nerc
       - moc
   - id: 2176
     name: NERC-Openshift-Infra-Frontend
-    description: NERC Openshift Infra Frontend 10.30.9.0 /24
+    description: NERC Openshift Infra Frontend
+    subnet4: "10.30.9.0/24"
     fabrics:
       - nerc
       - moc
   - id: 2177
     name: NERC-Openshift-Infra-Backend
-    description: NERC Openshift Infra Storage Backend 10.30.13.0 /24
+    description: NERC Openshift Infra Storage Backend
+    subnet4: "10.30.13.0/24"
     fabrics:
       - nerc
       - moc
   - id: 2180
     name: NERC-Openshift-PublicIP
-    description: NERC Openshift Public Access Network 199.94.63.0 /28
+    description: NERC Openshift Public Access Network
+    subnet4: "199.94.63.0/28"
     fabrics:
       - nerc
       - moc
   - id: 2304
     name: PureStorage-Dataplane
     description: PureStorage 200G dataplane network
+    subnet4: "10.7.0.0/20"
     fabrics:
       - nerc
       - moc
   - id: 2305
     name: PureStorage-Secure-Infra
-    description: PureStorage Secure Infra Network 10.8.0.0 /24
+    description: PureStorage Secure Infra Network
+    subnet4: "10.8.0.0/24"
     fabrics:
       - nerc
       - moc
       - mocsecdata
   - id: 2306
     name: PureStorage-Secure-Staging
-    description: PureStorage Secure Staging Network 10.8.1.0 /24
+    description: PureStorage Secure Staging Network
+    subnet4: "10.8.1.0/24"
     fabrics:
       - nerc
       - moc
       - mocsecdata
   - id: 2307
     name: PureStorage-Secure-Prod
-    description: PureStorage Secure Staging Network 10.8.2.0 /23
+    description: PureStorage Secure Prod Network
+    subnet4: "10.8.2.0/23"
     fabrics:
       - nerc
       - moc
       - mocsecdata
   - id: 2310
     name: PureStorage-OAC-DEV
-    description: PureStorage OAC 1 10.9.0.0 /24
+    description: PureStorage OAC 1
+    subnet4: "10.9.0.0/24"
     fabrics:
       - nerc
       - moc
       - mocsecdata
   - id: 2311
     name: PureStorage-OAC-INFRA
-    description: PureStorage OAC 2 10.9.1.0 /24
+    description: PureStorage OAC 2
+    subnet4: "10.9.1.0/24"
     fabrics:
       - nerc
       - moc
       - mocsecdata
   - id: 2312
     name: PureStorage-OAC-STAGING
-    description: PureStorage OAC 3 10.9.2.0 /24
+    description: PureStorage OAC 3
+    subnet4: "10.9.2.0/24"
     fabrics:
       - nerc
       - moc
       - mocsecdata
   - id: 2313
     name: PureStorage-OAC-PROD-WORKLOAD0
-    description: PureStorage OAC 4 10.9.8.0 /22
+    description: PureStorage OAC 4
+    subnet4: "10.9.8.0/22"
     fabrics:
       - nerc
       - moc
       - mocsecdata
   - id: 2314
     name: PureStorage-OAC-5
-    description: PureStorage OAC 5 10.9.4.0 /24
+    description: PureStorage OAC 5
+    subnet4: "10.9.4.0/24"
     fabrics:
       - nerc
       - moc
       - mocsecdata
   - id: 2315
     name: PureStorage-OAC-6
-    description: PureStorage OAC 6 10.9.5.0 /24
+    description: PureStorage OAC 6
+    subnet4: "10.9.5.0/24"
     fabrics:
       - nerc
       - moc
@@ -3959,6 +4007,7 @@ vlans:
   - id: 3801
     name: CSAIL-3801
     description: CSAIL - ESI Floating IP
+    subnet4: "128.31.20.0/22"
     fabrics:
       - oct
       - nerc
