@@ -278,7 +278,7 @@ interfaces:
     state: "up"
     mtu: 9216
     portmode: "access"
-    untagged: 2316
+    untagged: 2315
     stp:
       edgeport: true
       bpduguard: true
@@ -295,7 +295,7 @@ interfaces:
     state: "up"
     mtu: 9216
     portmode: "access"
-    untagged: 2316
+    untagged: 2315
     stp:
       edgeport: true
       bpduguard: true
