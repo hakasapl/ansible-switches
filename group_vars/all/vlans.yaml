@@ -2142,6 +2142,14 @@ vlans:
       - nerc
       - moc
       - mocsecdata
+  - id: 2316
+    name: PureStorage-JETTY
+    description: PureStorage OAC 7
+    subnet4: "10.9.6.0/24"
+    fabrics:
+      - nerc
+      - moc
+      - mocsecdata
   - id: 2500
     name: oct-cloudlab-2500
     description: OCT CloudLab Vlan 2500
