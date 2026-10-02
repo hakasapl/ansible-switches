@@ -216,7 +216,11 @@ interfaces:
   TenGigabitEthernet 1/49:
     state: "down"
   TenGigabitEthernet 1/50:
-    state: "down"
+    description: "MOC-R4PAC23-SW-MGMT port 52"
+    state: "up"
+    mtu: 9216
+    portmode: "trunk"
+    tagged: "all"
   TenGigabitEthernet 1/51:
     description: "MOC-R4PAC21-SW-TORS-A Port 33"
     state: "up"

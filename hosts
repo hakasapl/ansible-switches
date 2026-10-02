@@ -71,6 +71,8 @@ MOC-R4PAC02-SW-MGMT ansible_host=10.80.2.85   ansible_network_os=dellemc.os9.os9
 # MOC R4PCC06
 #MOC-R4PCC06-SW-TORS ansible_host=10.80.2.111 ansible_network_os=nvidia.nvue
 #MOC-R4PCC06-SW-MGMT ansible_host=10.80.2.115 ansible_network_os=nvidia.nvue
+# MOC R4PAC23
+MOC-R4PAC23-SW-MGMT ansible_host=10.80.2.125 ansible_network_os=dellemc.os9.os9
 
 [mocsecdata]
 MOCSEC-R4PAC06-SW-TORS-A ansible_host=10.6.1.1 ansible_network_os=dellemc.os9.os9
