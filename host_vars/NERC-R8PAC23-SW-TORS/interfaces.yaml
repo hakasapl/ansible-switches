@@ -206,7 +206,14 @@ interfaces:
       edgeport: true
       bpduguard: true
   hundredGigE 1/53:
-    state: "down"
+    description: "U33-100G"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 2314
+    stp:
+      edgeport: true
+      bpduguard: true
   hundredGigE 1/54:
     state: "down"
   Port-channel 10:
