@@ -127,6 +127,13 @@ vlans:
     fabrics:
       - moc
       - nerc
+  - id: 220
+    name: NIST-DEV-WORKLOAD0
+    description: NIST Dev Workload0 Cluster
+    subnet4: "10.20.20.0/23"
+    fabrics:
+      - moc
+      - nerc
   - id: 240
     name: JONATHAN-NAT
     description: "NAT net for Jonathan student environment"
@@ -2161,6 +2168,14 @@ vlans:
     name: PureStorage-NIST-DEV-INFRA
     description: PureStorage OAC 8
     subnet4: "10.9.7.0/24"
+    fabrics:
+      - nerc
+      - moc
+      - mocsecdata
+  - id: 2318
+    name: PureStorage-NIST-DEV-WORKLOAD0
+    description: PureStorage NIST 9
+    subnet4: "10.9.12.0/24"
     fabrics:
       - nerc
       - moc
