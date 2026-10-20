@@ -385,17 +385,27 @@ interfaces:
       edgeport: true
       bpduguard: true
   TenGigabitEthernet 1/27/2:
-    description: "U37-S1B-P1"
-    allowlist:
-      - "description"
+    description: "U37-S1B-P1 OAC NIST Workload0 1"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 220
+    stp:
+      edgeport: true
+      bpduguard: true
   TenGigabitEthernet 1/27/3:
     description: "U37-S1C-P1"
     allowlist:
       - "description"
   TenGigabitEthernet 1/27/4:
-    description: "U37-S1D-P1"
-    allowlist:
-      - "description"
+    description: "U37-S1D-P1 OAC NIST Workload0 2"
+    state: "up"
+    mtu: 9216
+    portmode: "access"
+    untagged: 220
+    stp:
+      edgeport: true
+      bpduguard: true
   hundredGigE 1/28:
     fanout:
       type: "quad"
