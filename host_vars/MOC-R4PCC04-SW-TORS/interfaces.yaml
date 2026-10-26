@@ -23,7 +23,7 @@ interfaces:
       type: "dual"
   swp2s0:
     description: "MOC-R4PCC04U37-1"
-    state: "down"
+    state: "up"
     portmode: "access"
     untagged: 220
     stp:
@@ -31,7 +31,7 @@ interfaces:
       disabled: true
   swp2s1:
     description: "MOC-R4PCC04U37-2"
-    state: "down"
+    state: "up"
     portmode: "access"
     untagged: 2318
     stp:
@@ -67,7 +67,7 @@ interfaces:
       type: "dual"
   swp5s0:
     description: "MOC-R4PCC04U32-1"
-    state: "down"
+    state: "up"
     portmode: "access"
     untagged: 220
     stp:
@@ -75,7 +75,7 @@ interfaces:
       disabled: true
   swp5s1:
     description: "MOC-R4PCC04U32-2"
-    state: "down"
+    state: "up"
     portmode: "access"
     untagged: 2318
     stp:

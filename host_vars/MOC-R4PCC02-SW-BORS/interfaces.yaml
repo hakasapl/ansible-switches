@@ -198,4 +198,3 @@ interfaces:
     lacp-members-active:
       - "swp31"
       - "swp32"
-
