@@ -43,6 +43,7 @@ vlans:
     fabrics:
       - oct
       - moc
+      - moc2
   - id: 206
     name: MOCSEC-PROD-DATA
     description: Data network for mocsec environment
@@ -67,6 +68,7 @@ vlans:
     subnet4: "10.0.120.0/22"
     fabrics:
       - moc
+      - moc2
   - id: 212
     name: OAC-EDGE
     description: Open Accelerator Edge Network on FW
@@ -214,6 +216,7 @@ vlans:
     description: ESI Vlan 361
     fabrics:
       - moc
+      - moc2
   - id: 362
     name: ESI-362
     description: ESI Vlan 362
@@ -429,6 +432,7 @@ vlans:
     description: ESI Vlan 404
     fabrics:
       - moc
+      - moc2
   - id: 405
     name: ESI-405
     description: ESI Vlan 405
@@ -574,6 +578,7 @@ vlans:
     description: ESI Vlan 433
     fabrics:
       - moc
+      - moc2
   - id: 434
     name: ESI-434
     description: ESI Vlan 434
@@ -1280,6 +1285,7 @@ vlans:
     description: ESI Vlan 575
     fabrics:
       - moc
+      - moc2
   - id: 576
     name: ESI-576
     description: ESI Vlan 576
@@ -1310,6 +1316,7 @@ vlans:
     description: ESI Vlan 581
     fabrics:
       - moc
+      - moc2
   - id: 582
     name: ESI-582
     description: ESI Vlan 582
@@ -1340,6 +1347,7 @@ vlans:
     description: ESI Vlan 587
     fabrics:
       - moc
+      - moc2
   - id: 588
     name: ESI-588
     description: ESI Vlan 588
@@ -1678,6 +1686,7 @@ vlans:
     subnet4: "10.85.0.0/22"
     fabrics:
       - moc
+      - moc2
   - id: 2141
     name: NERC-Openstack-FloatingIP
     description: Floating IPs for NERC openstack
@@ -1738,12 +1747,14 @@ vlans:
     subnet4: "10.30.6.0/23"
     fabrics:
       - moc
+      - moc2
   - id: 2173
     name: NERC-Openshift-Prod-Backend
     description: NERC Openshift Prod Storage Backend
     subnet4: "10.30.10.0/23"
     fabrics:
       - moc
+      - moc2
   - id: 2174
     name: NERC-Openshift-Test-Frontend
     description: NERC Openshift Test Frontend

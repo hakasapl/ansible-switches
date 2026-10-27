@@ -1,5 +1,6 @@
 interfaces:
   swp1:
+    description: "PURE-U01 MGMT 1"
     state: "up"
     speed: "auto"
     portmode: "access"
@@ -8,6 +9,7 @@ interfaces:
       bpduguard: true
       edgeport: true
   swp2:
+    description: "PURE-U01 MGMT 2"
     state: "up"
     speed: "auto"
     portmode: "access"
@@ -76,42 +78,51 @@ interfaces:
   swp32:
     state: "down"
   swp33:
+    description: "R440-U14 MGMT"
     state: "up"
     portmode: "access"
     untagged: 916
   swp34:
+    description: "R440-U15 MGMT"
     state: "up"
     portmode: "access"
     untagged: 916
   swp35:
+    description: "R440-U16 MGMT"
     state: "up"
     portmode: "access"
     untagged: 916
   swp36:
+    description: "R440-U17 MGMT"
     state: "up"
     portmode: "access"
     untagged: 916
   swp37:
+    description: "R440-U18 MGMT"
     state: "up"
     portmode: "access"
     untagged: 916
   swp38:
+    description: "R440-U19 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 912
+    untagged: 916
   swp39:
+    description: "R440-U20 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 912
+    untagged: 916
   swp40:
+    description: "R440-U21 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 912
+    untagged: 916
   swp41:
     state: "down"
   swp42:
     state: "down"
   swp43:
+    description: "MOC2-RT-2 MGMT"
     state: "up"
     portmode: "access"
     untagged: 930
@@ -119,6 +130,7 @@ interfaces:
       edgeport: true
       disabled: true
   swp44:
+    description: "MOC2-RT-1 MGMT"
     state: "up"
     portmode: "access"
     untagged: 930
@@ -126,6 +138,7 @@ interfaces:
       edgeport: true
       disabled: true
   swp45:
+    description: "MOC2-VPN-2 MGMT"
     state: "up"
     portmode: "access"
     untagged: 930
@@ -133,6 +146,7 @@ interfaces:
       edgeport: true
       disabled: true
   swp46:
+    description: "MOC2-VPN-1 MGMT"
     state: "up"
     portmode: "access"
     untagged: 930
@@ -140,6 +154,7 @@ interfaces:
       edgeport: true
       disabled: true
   swp47:
+    description: "MOC2-FW-2 MGMT"
     state: "up"
     portmode: "access"
     untagged: 930
@@ -147,6 +162,7 @@ interfaces:
       edgeport: true
       disabled: true
   swp48:
+    description: "MOC2-FW-1 MGMT"
     state: "up"
     portmode: "access"
     untagged: 930
@@ -172,5 +188,5 @@ interfaces:
       - "swp51"
       - "swp52"
   vlan930:
-    ip4: "10.80.2.115/20"
+    ip4: "10.80.0.45/20"
     gateway: "10.80.0.1"

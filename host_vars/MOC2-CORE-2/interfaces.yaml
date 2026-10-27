@@ -11,8 +11,51 @@ interfaces:
   swp4:
     state: "down"
   swp5:
+    fanout:
+      type: "quad"
+      speed: "25G"
+  swp5s0:
+    description: "R440-U14-2"
+    state: "up"
+    portmode: "access"
+    untagged: 2311
+    stp:
+      edgeport: true
+      bpduguard: true
+  swp5s1:
+    description: "R440-U15-2"
+    state: "up"
+    portmode: "access"
+    untagged: 2311
+    stp:
+      edgeport: true
+      bpduguard: true
+  swp5s2:
+    description: "R440-U16-2"
+    state: "up"
+    portmode: "access"
+    untagged: 2311
+    stp:
+      edgeport: true
+      bpduguard: true
+  swp5s3:
+    description: "R440-U17-2"
     state: "down"
   swp6:
+    fanout:
+      type: "quad"
+      speed: "25G"
+  swp6s0:
+    description: "R440-U18-2"
+    state: "down"
+  swp6s1:
+    description: "R440-U19-2"
+    state: "down"
+  swp6s2:
+    description: "R440-U20-2"
+    state: "down"
+  swp6s3:
+    description: "R440-U21-2"
     state: "down"
   swp7:
     state: "down"
@@ -37,9 +80,13 @@ interfaces:
   swp17:
     description: "MOC2-R4PCC02-SW-TORS Port 49/1"
     state: "up"
+    speed: "200G"
+    fec: "rs"
   swp18:
     description: "MOC2-R4PCC04-SW-TORS Port 49/1"
     state: "up"
+    speed: "200G"
+    fec: "rs"
   swp19:
     description: "MOC2-R4PCC02-SW-BORS Port 32"
     state: "up"
@@ -55,26 +102,28 @@ interfaces:
   swp24:
     state: "down"
   swp25:
-    state: "down"
+    description: "PURE-U01 Port 1/1"
+    state: "up"
   swp26:
-    state: "down"
+    description: "PURE-U01 Port 1/3"
+    state: "up"
   swp27:
-    state: "down"
+    description: "PURE-U01 Port 2/1"
+    state: "up"
   swp28:
-    description: "MOC2-MCORE-1 Port 52"
+    description: "PURE-U01 Port 2/3"
     state: "up"
   swp29:
-    description: "PURE-U01 Port ##"
+    description: "MOC2-CORE-1 Port 29"
     state: "up"
   swp30:
-    description: "PURE-U01 Port ##"
+    description: "MOC2-CORE-1 Port 30"
     state: "up"
   swp31:
-    description: "PURE-U01 Port ##"
+    description: "MOC2-MCORE-1 Port 51"
     state: "up"
   swp32:
-    description: "PURE-U01 Port ##"
-    state: "up"
+    state: "down"
   bond1:
     description: "MOC2-RT Uplink"
     state: "up"
@@ -108,7 +157,7 @@ interfaces:
     tagged: "all"
     lacp-rate: "fast"
     lacp-members-active:
-      - "swp28"
+      - "swp31"
     mlag: "bond10"
   bond11:
     description: "MOC2-R4PCC02/04-SW-TORS Downlink"
@@ -143,11 +192,14 @@ interfaces:
       - 2305:2307
       - 2310:2318
     lacp-members-active:
-      - "swp29"
-      - "swp30"
-      - "swp31"
-      - "swp32"
+      - "swp25"
+      - "swp26"
+      - "swp27"
+      - "swp28"
     mlag: "bond101"
     stp:
       edgeport: true
       bpduguard: true
+  vlan930:
+    ip4: "10.80.0.42/20"
+    gateway: "10.80.0.1"

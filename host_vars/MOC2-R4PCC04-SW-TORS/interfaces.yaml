@@ -524,9 +524,13 @@ interfaces:
   swp49s0:
     description: "MOC2-CORE-1 Port 18"
     state: "up"
+    speed: "200G"
+    fec: "rs"
   swp49s1:
     description: "MOC2-CORE-2 Port 18"
     state: "up"
+    speed: "200G"
+    fec: "rs"
   swp50:
     state: "up"
   swp51:
