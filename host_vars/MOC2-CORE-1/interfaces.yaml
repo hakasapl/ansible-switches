@@ -1,0 +1,153 @@
+interfaces:
+  swp1:
+    description: "MOC2-RT-1 Port 17"
+    state: "up"
+  swp2:
+    description: "MOC2-RT-2 Port 17"
+    state: "up"
+  swp3:
+    description: "MOC-CORE-1 Port 21 (TEMP MOC1 UPLINK)"
+    state: "up"
+  swp4:
+    state: "down"
+  swp5:
+    state: "down"
+  swp6:
+    state: "down"
+  swp7:
+    state: "down"
+  swp8:
+    state: "down"
+  swp9:
+    state: "down"
+  swp10:
+    state: "down"
+  swp11:
+    state: "down"
+  swp12:
+    state: "down"
+  swp13:
+    state: "down"
+  swp14:
+    state: "down"
+  swp15:
+    state: "down"
+  swp16:
+    state: "down"
+  swp17:
+    description: "MOC2-R4PCC02-SW-TORS Port 49/0"
+    state: "up"
+  swp18:
+    description: "MOC2-R4PCC04-SW-TORS Port 49/0"
+    state: "up"
+  swp19:
+    description: "MOC2-R4PCC02-SW-BORS Port 31"
+    state: "up"
+  swp20:
+    description: "MOC2-R4PCC04-SW-BORS Port 31"
+    state: "up"
+  swp21:
+    state: "down"
+  swp22:
+    state: "down"
+  swp23:
+    state: "down"
+  swp24:
+    state: "down"
+  swp25:
+    state: "down"
+  swp26:
+    state: "down"
+  swp27:
+    state: "down"
+  swp28:
+    description: "MOC2-MCORE-1 Port 51"
+    state: "up"
+  swp29:
+    description: "PURE-U01 Port ##"
+    state: "up"
+  swp30:
+    description: "PURE-U01 Port ##"
+    state: "up"
+  swp31:
+    description: "PURE-U01 Port ##"
+    state: "up"
+  swp32:
+    description: "PURE-U01 Port ##"
+    state: "up"
+  bond1:
+    description: "MOC2-RT Uplink"
+    state: "up"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp1"
+      - "swp2"
+    mlag: "bond1"
+  bond2:
+    description: "MOC-CORE Uplink (TEMP MOC1 UPLINK)"
+    state: "up"
+    portmode: "trunk"
+    tagged:
+      - 212:214
+      - 216:220
+      - 568
+      - 911:912
+      - 916:917
+      - 930
+      - 2304:2307
+      - 2310:2318
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp3"
+    mlag: "bond2"
+  bond10:
+    description: "MOC2-MCORE-1 Downlink"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp28"
+    mlag: "bond10"
+  bond11:
+    description: "MOC2-R4PCC02/04-SW-TORS Downlink"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp17"
+      - "swp18"
+    mlag: "bond11"
+  bond12:
+    description: "MOC2-R4PCC02-SW-BORS Downlink"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp19"
+    mlag: "bond12"
+  bond13:
+    description: "MOC2-R4PCC04-SW-BORS Downlink"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp20"
+    mlag: "bond13"
+  bond101:
+    description: "PURE-U01 Downlink"
+    portmode: "hybrid"
+    untagged: 2304
+    tagged:
+      - 2305:2307
+      - 2310:2318
+    lacp-members-active:
+      - "swp29"
+      - "swp30"
+      - "swp31"
+      - "swp32"
+    mlag: "bond101"
+    stp:
+      edgeport: true
+      bpduguard: true

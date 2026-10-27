@@ -189,17 +189,11 @@ interfaces:
   hundredGigE 1/20:
     state: "down"
   hundredGigE 1/21:
-    description: "NERC-CORE-1 Port 35"
+    description: "MOC2-CORE-1 Port 3"
     state: "up"
     mtu: 9216
-    autoneg: false
-    fec: false
   hundredGigE 1/22:
-    description: "NERC-CORE-2 Port 35"
-    state: "up"
-    mtu: 9216
-    autoneg: false
-    fec: false
+    state: "down"
   hundredGigE 1/23:
     state: "down"
   hundredGigE 1/24:
@@ -294,32 +288,16 @@ interfaces:
     stp:
       rootguard: true
   Port-channel 50:
-    description: "NERC core LAG"
+    description: "MOC2-CORE Downlink (TEMPORARY)"
     state: "up"
     portmode: "trunk"
     tagged:
-      - 203
-      - 204
-      - 211
-      - 213
-      - 214
+      - 212:214
       - 216:220
-      - 300
-      - 351:499
-      - 501:622
-      - 623
-      - 624:630
-      - 911
-      - 912
-      - 916
-      - 917
+      - 568
+      - 911:912
+      - 916:917
       - 930
-      - 935
-      - 2076
-      - 2141:2148
-      - 2170
-      - 2172:2177
-      - 2180
       - 2304:2307
       - 2310:2318
     mtu: 9216
@@ -328,7 +306,6 @@ interfaces:
     lacp-rate: "fast"
     lacp-members-active:
       - "hundredGigE 1/21"
-      - "hundredGigE 1/22"
     mlag: "Port-channel 50"
   Port-channel 60:
     description: "DEV-SW-1 uplink"

@@ -600,10 +600,10 @@ interfaces:
     fanout:
       type: "dual"
   swp49s0:
-    description: "EMS-S3-P2"
+    description: "MOC2-CORE-1 Port 17"
     state: "up"
   swp49s1:
-    description: "MOC-R6PCC06-SW-TORS-1"
+    description: "MOC2-CORE-2 Port 17"
     state: "up"
   swp50:
     state: "up"
@@ -618,11 +618,6 @@ interfaces:
   swp55:
     state: "up"
   swp56:
-    fanout:
-      type: "dual"
-  swp56s0:
-    state: "up"
-  swp56s1:
     state: "up"
   swp57:
     state: "up"
@@ -641,23 +636,11 @@ interfaces:
   swp64:
     state: "up"
   bond1:
-    description: "GPU-CORE"
-    portmode: "trunk"
-    tagged: "all"
-    lacp-rate: "fast"
-    lacp-members-active:
-      - "swp56s0"
-      - "swp56s1"
-    mlag: "bond1"
-  bond10:
-    description: "MOC-R6PCC06-SW-TORS"
+    description: "MOC2-CORE Uplink"
     portmode: "trunk"
     tagged: "all"
     lacp-rate: "fast"
     lacp-members-active:
       - "swp49s0"
       - "swp49s1"
-    mlag: "bond10"
-  vlan935:
-    ip4: "10.82.2.91/20"
-    gateway: "10.82.0.1"
+    mlag: "bond1"

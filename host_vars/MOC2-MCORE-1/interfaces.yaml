@@ -16,138 +16,43 @@ interfaces:
       bpduguard: true
       edgeport: true
   swp3:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp4:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp5:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp6:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp7:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp8:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp9:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp10:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp11:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp12:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp13:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp14:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp15:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp16:
-    state: "up"
-    portmode: "access"
-    untagged: 2170
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp17:
-    state: "up"
-    portmode: "access"
-    untagged: 2170
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp18:
-    state: "up"
-    portmode: "access"
-    untagged: 2170
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp19:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp20:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp21:
-    state: "up"
-    portmode: "access"
-    untagged: 2146
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp22:
     state: "down"
   swp23:
@@ -253,12 +158,19 @@ interfaces:
   swp50:
     state: "down"
   swp51:
-    state: "down"
-  swp52:
+    description: "MOC2-CORE-1 Port 28"
     state: "up"
-    speed: "auto"
+  swp52:
+    description: "MOC2-CORE-2 Port 28"
+    state: "up"
+  bond1:
+    description: "MOC2-CORE Uplink"
     portmode: "trunk"
     tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp51"
+      - "swp52"
   vlan930:
     ip4: "10.80.2.115/20"
     gateway: "10.80.0.1"

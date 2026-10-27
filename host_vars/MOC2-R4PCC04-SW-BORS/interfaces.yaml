@@ -159,6 +159,7 @@ interfaces:
   swp32:
     state: "up"
   bond1:
+    description: "MOC2-CORE Uplink"
     portmode: "trunk"
     tagged: "all"
     lacp-rate: "fast"
