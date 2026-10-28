@@ -378,10 +378,8 @@ interfaces:
     description: "U37-S1A-P2 OAC Bastion"
     state: "up"
     mtu: 9216
-    portmode: "hybrid"
+    portmode: "trunk"
     untagged: 911
-    tagged:
-      - 916
     stp:
       edgeport: true
       bpduguard: true
