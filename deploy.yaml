@@ -6,4 +6,5 @@
   vars:
     diff_only: false
   roles:
-    - common
+    - baseline
+    - cci_moc.stateful_switches.configure

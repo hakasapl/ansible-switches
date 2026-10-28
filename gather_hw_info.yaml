@@ -6,4 +6,4 @@
   vars:
     diff_only: false
   roles:
-    - hwinfo
+    - cci_moc.stateful_switches.hwinfo

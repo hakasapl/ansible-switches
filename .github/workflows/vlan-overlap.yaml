@@ -1,9 +1,9 @@
-name: Unit tests
+name: VLAN overlap check
 
 on: [push, pull_request]
 
 jobs:
-  run-unit-tests:
+  check-vlan-overlaps:
 
     runs-on: ubuntu-latest
     steps:
@@ -12,11 +12,7 @@ jobs:
         with:
           python-version: 3.12
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install -r test-requirements.txt
-      - name: Unit Tests
-        run: pytest --cov=filter_plugins -rXxs
+        run: pip install pyyaml
 
       - name: Check VLAN Subnet Overlaps
         run: python scripts/overlap.py

@@ -22,28 +22,16 @@ alert on a variety of syntax errors.
 [pre-commit]: https://pre-commit.com/
 [linters]: https://en.wikipedia.org/wiki/Lint_(software)
 
-## Unit tests
+## VLAN overlap check
 
-### Install prerequisites
-
-Install the dependencies from `test-requirements.txt`:
-
-```
-pip install -r test-requirements.txt
-```
-
-### Run the tests
-
-To run the unit tests, from the top level of the repository run:
+CI runs `scripts/overlap.py`, which fails if any subnets in
+`group_vars/all/vlans.yaml` overlap. To run it locally:
 
 ```
-pytest
+pip install pyyaml
+python scripts/overlap.py
 ```
 
-To generate HTML coverage reports:
-
-```
-pytest --cov-report=html
-```
-
-Then open `htmlcov/index.html` in your browser.
+The switch drivers and their tests are in the
+[ansible-stateful-switches](https://github.com/CCI-MOC/ansible-stateful-switches)
+repository.
