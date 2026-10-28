@@ -22,14 +22,12 @@ vlans:
     description: NEU Public IP for infrastructure
     subnet4: "129.10.5.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 201
     name: MOC-INFRA-OPENSHIFT
     description: MOC infra Openshift infra network
     subnet4: "172.16.0.0/19"
     fabrics:
-      - nerc
       - moc
   - id: 203
     name: MOCSEC-INFRANAT
@@ -38,15 +36,14 @@ vlans:
     fabrics:
       - mocsecdata
       - moc
-      - nerc
   - id: 204
     name: MOC-GENERAL
     description: MaaS and NAT access to internet.
     subnet4: "172.16.96.0/24"
     fabrics:
       - oct
-      - nerc
       - moc
+      - moc2
   - id: 206
     name: MOCSEC-PROD-DATA
     description: Data network for mocsec environment
@@ -64,35 +61,35 @@ vlans:
     description: ESI control plane
     subnet4: "192.168.24.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 211
     name: MOC-NESE
     description: New England Storage Exchange (NESE)
     subnet4: "10.0.120.0/22"
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 212
     name: OAC-EDGE
     description: Open Accelerator Edge Network on FW
     subnet4: "10.20.0.0/24"
     fabrics:
       - moc
+      - moc2
   - id: 213
     name: OAC-PROD-INFRA
     description: OAC Prod Infra Net
     subnet4: "10.20.8.0/23"
     fabrics:
       - moc
-      - nerc
+      - moc2
   - id: 214
     name: OAC-STAGING-WORKLOAD
     description: OAC Staging Workload Net
     subnet4: "10.20.10.0/23"
     fabrics:
       - moc
-      - nerc
+      - moc2
   - id: 215
     name: MOC-INFRA-NAT
     description: Infrastructure subnet
@@ -105,35 +102,35 @@ vlans:
     subnet4: "10.20.12.0/23"
     fabrics:
       - moc
-      - nerc
+      - moc2
   - id: 217
     name: OAC-DEV-WORKLOAD1
     description: OAC Dev Workload 1 Net
     subnet4: "10.20.14.0/23"
     fabrics:
       - moc
-      - nerc
+      - moc2
   - id: 218
     name: JETTY
     description: Jetty Cluster
     subnet4: "10.20.16.0/23"
     fabrics:
       - moc
-      - nerc
+      - moc2
   - id: 219
     name: NIST-DEV-INFRA
     description: NIST Dev Infra Cluster
     subnet4: "10.20.18.0/23"
     fabrics:
       - moc
-      - nerc
+      - moc2
   - id: 220
     name: NIST-DEV-WORKLOAD0
     description: NIST Dev Workload0 Cluster
     subnet4: "10.20.20.0/23"
     fabrics:
       - moc
-      - nerc
+      - moc2
   - id: 240
     name: JONATHAN-NAT
     description: "NAT net for Jonathan student environment"
@@ -157,1689 +154,1415 @@ vlans:
     description: Research ceph access network
     subnet4: "10.128.0.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 300
     name: UNITY-INTERNAL
     description: Unity Cluster at UMass Internal Net
     subnet4: "10.100.0.0/16"
     fabrics:
-      - nerc
       - moc
   - id: 351
     name: ESI-351
     description: ESI Vlan 351
     fabrics:
-      - nerc
       - moc
   - id: 352
     name: ESI-352
     description: ESI Vlan 352
     fabrics:
-      - nerc
       - moc
   - id: 353
     name: ESI-353
     description: ESI Vlan 353
     fabrics:
-      - nerc
       - moc
   - id: 354
     name: ESI-354
     description: ESI Vlan 354
     fabrics:
-      - nerc
       - moc
   - id: 355
     name: ESI-355
     description: ESI Vlan 355
     fabrics:
-      - nerc
       - moc
   - id: 356
     name: ESI-356
     description: ESI Vlan 356
     fabrics:
-      - nerc
       - moc
   - id: 357
     name: ESI-357
     description: ESI Vlan 357
     fabrics:
-      - nerc
       - moc
   - id: 358
     name: ESI-358
     description: ESI Vlan 358
     fabrics:
-      - nerc
       - moc
   - id: 359
     name: ESI-359
     description: ESI Vlan 359
     fabrics:
-      - nerc
       - moc
   - id: 360
     name: ESI-360
     description: ESI Vlan 360
     fabrics:
-      - nerc
       - moc
   - id: 361
     name: ESI-361
     description: ESI Vlan 361
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 362
     name: ESI-362
     description: ESI Vlan 362
     fabrics:
-      - nerc
       - moc
   - id: 363
     name: ESI-363
     description: ESI Vlan 363
     fabrics:
-      - nerc
       - moc
   - id: 364
     name: ESI-364
     description: ESI Vlan 364
     fabrics:
-      - nerc
       - moc
   - id: 365
     name: ESI-365
     description: ESI Vlan 365
     fabrics:
-      - nerc
       - moc
   - id: 366
     name: ESI-366
     description: ESI Vlan 366
     fabrics:
-      - nerc
       - moc
   - id: 367
     name: ESI-367
     description: ESI Vlan 367
     fabrics:
-      - nerc
       - moc
   - id: 368
     name: ESI-368
     description: ESI Vlan 368
     fabrics:
-      - nerc
       - moc
   - id: 369
     name: ESI-369
     description: ESI Vlan 369
     fabrics:
-      - nerc
       - moc
   - id: 370
     name: ESI-370
     description: ESI Vlan 370
     fabrics:
-      - nerc
       - moc
   - id: 371
     name: ESI-371
     description: ESI Vlan 371
     fabrics:
-      - nerc
       - moc
   - id: 372
     name: ESI-372
     description: ESI Vlan 372
     fabrics:
-      - nerc
       - moc
   - id: 373
     name: ESI-373
     description: ESI Vlan 373
     fabrics:
-      - nerc
       - moc
   - id: 374
     name: ESI-374
     description: ESI Vlan 374
     fabrics:
-      - nerc
       - moc
   - id: 375
     name: ESI-375
     description: ESI Vlan 375
     fabrics:
-      - nerc
       - moc
   - id: 376
     name: ESI-376
     description: ESI Vlan 376
     fabrics:
-      - nerc
       - moc
   - id: 377
     name: ESI-377
     description: ESI Vlan 377
     fabrics:
-      - nerc
       - moc
   - id: 378
     name: ESI-378
     description: ESI Vlan 378
     fabrics:
-      - nerc
       - moc
   - id: 379
     name: ESI-379
     description: ESI Vlan 379
     fabrics:
-      - nerc
       - moc
   - id: 380
     name: ESI-380
     description: ESI Vlan 380
     fabrics:
-      - nerc
       - moc
   - id: 381
     name: ESI-381
     description: ESI Vlan 381
     fabrics:
-      - nerc
       - moc
   - id: 382
     name: ESI-382
     description: ESI Vlan 382
     fabrics:
-      - nerc
       - moc
   - id: 383
     name: ESI-383
     description: ESI Vlan 383
     fabrics:
-      - nerc
       - moc
   - id: 384
     name: ESI-384
     description: ESI Vlan 384
     fabrics:
-      - nerc
       - moc
   - id: 385
     name: ESI-385
     description: ESI Vlan 385
     fabrics:
-      - nerc
       - moc
   - id: 386
     name: ESI-386
     description: ESI Vlan 386
     fabrics:
-      - nerc
       - moc
   - id: 387
     name: ESI-387
     description: ESI Vlan 387
     fabrics:
-      - nerc
       - moc
   - id: 388
     name: ESI-388
     description: ESI Vlan 388
     fabrics:
-      - nerc
       - moc
   - id: 389
     name: ESI-389
     description: ESI Vlan 389
     fabrics:
-      - nerc
       - moc
   - id: 390
     name: ESI-390
     description: ESI Vlan 390
     fabrics:
-      - nerc
       - moc
   - id: 391
     name: ESI-391
     description: ESI Vlan 391
     fabrics:
-      - nerc
       - moc
   - id: 392
     name: ESI-392
     description: ESI Vlan 392
     fabrics:
-      - nerc
       - moc
   - id: 393
     name: ESI-393
     description: ESI Vlan 393
     fabrics:
-      - nerc
       - moc
   - id: 394
     name: ESI-394
     description: ESI Vlan 394
     fabrics:
-      - nerc
       - moc
   - id: 395
     name: ESI-395
     description: ESI Vlan 395
     fabrics:
-      - nerc
       - moc
   - id: 396
     name: ESI-396
     description: ESI Vlan 396
     fabrics:
-      - nerc
       - moc
   - id: 397
     name: ESI-397
     description: ESI Vlan 397
     fabrics:
-      - nerc
       - moc
   - id: 398
     name: ESI-398
     description: ESI Vlan 398
     fabrics:
-      - nerc
       - moc
   - id: 399
     name: ESI-399
     description: ESI Vlan 399
     fabrics:
-      - nerc
       - moc
   - id: 400
     name: ESI-400
     description: ESI Vlan 400
     fabrics:
-      - nerc
       - moc
   - id: 401
     name: ESI-401
     description: ESI Vlan 401
     fabrics:
-      - nerc
       - moc
   - id: 402
     name: ESI-402
     description: ESI Vlan 402
     fabrics:
-      - nerc
       - moc
   - id: 403
     name: ESI-403
     description: ESI Vlan 403
     fabrics:
-      - nerc
       - moc
   - id: 404
     name: ESI-404
     description: ESI Vlan 404
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 405
     name: ESI-405
     description: ESI Vlan 405
     fabrics:
-      - nerc
       - moc
   - id: 406
     name: ESI-406
     description: ESI Vlan 406
     fabrics:
-      - nerc
       - moc
   - id: 407
     name: ESI-407
     description: ESI Vlan 407
     fabrics:
-      - nerc
       - moc
   - id: 408
     name: ESI-408
     description: ESI Vlan 408
     fabrics:
-      - nerc
       - moc
   - id: 409
     name: ESI-409
     description: ESI Vlan 409
     fabrics:
-      - nerc
       - moc
   - id: 410
     name: ESI-410
     description: ESI Vlan 410
     fabrics:
-      - nerc
       - moc
   - id: 411
     name: ESI-411
     description: ESI Vlan 411
     fabrics:
-      - nerc
       - moc
   - id: 412
     name: ESI-412
     description: ESI Vlan 412
     fabrics:
-      - nerc
       - moc
   - id: 413
     name: ESI-413
     description: ESI Vlan 413
     fabrics:
-      - nerc
       - moc
   - id: 414
     name: ESI-414
     description: ESI Vlan 414
     fabrics:
-      - nerc
       - moc
   - id: 415
     name: ESI-415
     description: ESI Vlan 415
     fabrics:
-      - nerc
       - moc
   - id: 416
     name: ESI-416
     description: ESI Vlan 416
     fabrics:
-      - nerc
       - moc
   - id: 417
     name: ESI-417
     description: ESI Vlan 417
     fabrics:
-      - nerc
       - moc
   - id: 418
     name: ESI-418
     description: ESI Vlan 418
     fabrics:
-      - nerc
       - moc
   - id: 419
     name: ESI-419
     description: ESI Vlan 419
     fabrics:
-      - nerc
       - moc
   - id: 420
     name: ESI-420
     description: ESI Vlan 420
     fabrics:
-      - nerc
       - moc
   - id: 421
     name: ESI-421
     description: ESI Vlan 421
     fabrics:
-      - nerc
       - moc
   - id: 422
     name: ESI-422
     description: ESI Vlan 422
     fabrics:
-      - nerc
       - moc
   - id: 423
     name: ESI-423
     description: ESI Vlan 423
     fabrics:
-      - nerc
       - moc
   - id: 424
     name: ESI-424
     description: ESI Vlan 424
     fabrics:
-      - nerc
       - moc
   - id: 425
     name: ESI-425
     description: ESI Vlan 425
     fabrics:
-      - nerc
       - moc
   - id: 426
     name: ESI-426
     description: ESI Vlan 426
     fabrics:
-      - nerc
       - moc
   - id: 427
     name: ESI-427
     description: ESI Vlan 427
     fabrics:
-      - nerc
       - moc
   - id: 428
     name: ESI-428
     description: ESI Vlan 428
     fabrics:
-      - nerc
       - moc
   - id: 429
     name: ESI-429
     description: ESI Vlan 429
     fabrics:
-      - nerc
       - moc
   - id: 430
     name: ESI-430
     description: ESI Vlan 430
     fabrics:
-      - nerc
       - moc
   - id: 431
     name: ESI-431
     description: ESI Vlan 431
     fabrics:
-      - nerc
       - moc
   - id: 432
     name: ESI-432
     description: ESI Vlan 432
     fabrics:
-      - nerc
       - moc
   - id: 433
     name: ESI-433
     description: ESI Vlan 433
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 434
     name: ESI-434
     description: ESI Vlan 434
     fabrics:
-      - nerc
       - moc
   - id: 435
     name: ESI-435
     description: ESI Vlan 435
     fabrics:
-      - nerc
       - moc
   - id: 436
     name: ESI-436
     description: ESI Vlan 436
     fabrics:
-      - nerc
       - moc
   - id: 437
     name: ESI-437
     description: ESI Vlan 437
     fabrics:
-      - nerc
       - moc
   - id: 438
     name: ESI-438
     description: ESI Vlan 438
     fabrics:
-      - nerc
       - moc
   - id: 439
     name: ESI-439
     description: ESI Vlan 439
     fabrics:
-      - nerc
       - moc
   - id: 440
     name: ESI-440
     description: ESI Vlan 440
     fabrics:
-      - nerc
       - moc
   - id: 441
     name: ESI-441
     description: ESI Vlan 441
     fabrics:
-      - nerc
       - moc
   - id: 442
     name: ESI-442
     description: ESI Vlan 442
     fabrics:
-      - nerc
       - moc
   - id: 443
     name: ESI-443
     description: ESI Vlan 443
     fabrics:
-      - nerc
       - moc
   - id: 444
     name: ESI-444
     description: ESI Vlan 444
     fabrics:
-      - nerc
       - moc
   - id: 445
     name: ESI-445
     description: ESI Vlan 445
     fabrics:
-      - nerc
       - moc
   - id: 446
     name: ESI-446
     description: ESI Vlan 446
     fabrics:
-      - nerc
       - moc
   - id: 447
     name: ESI-447
     description: ESI Vlan 447
     fabrics:
-      - nerc
       - moc
   - id: 448
     name: ESI-448
     description: ESI Vlan 448
     fabrics:
-      - nerc
       - moc
   - id: 449
     name: ESI-449
     description: ESI Vlan 449
     fabrics:
-      - nerc
       - moc
   - id: 450
     name: ESI-450
     description: ESI Vlan 450
     fabrics:
-      - nerc
       - moc
   - id: 451
     name: ESI-451
     description: ESI Vlan 451
     fabrics:
-      - nerc
       - moc
   - id: 452
     name: ESI-452
     description: ESI Vlan 452
     fabrics:
-      - nerc
       - moc
   - id: 453
     name: ESI-453
     description: ESI Vlan 453
     fabrics:
-      - nerc
       - moc
   - id: 454
     name: ESI-454
     description: ESI Vlan 454
     fabrics:
-      - nerc
       - moc
   - id: 455
     name: ESI-455
     description: ESI Vlan 455
     fabrics:
-      - nerc
       - moc
   - id: 456
     name: ESI-456
     description: ESI Vlan 456
     fabrics:
-      - nerc
       - moc
   - id: 457
     name: ESI-457
     description: ESI Vlan 457
     fabrics:
-      - nerc
       - moc
   - id: 458
     name: ESI-458
     description: ESI Vlan 458
     fabrics:
-      - nerc
       - moc
   - id: 459
     name: ESI-459
     description: ESI Vlan 459
     fabrics:
-      - nerc
       - moc
   - id: 460
     name: ESI-460
     description: ESI Vlan 460
     fabrics:
-      - nerc
       - moc
   - id: 461
     name: ESI-461
     description: ESI Vlan 461
     fabrics:
-      - nerc
       - moc
   - id: 462
     name: ESI-462
     description: ESI Vlan 462
     fabrics:
-      - nerc
       - moc
   - id: 463
     name: ESI-463
     description: ESI Vlan 463
     fabrics:
-      - nerc
       - moc
   - id: 464
     name: ESI-464
     description: ESI Vlan 464
     fabrics:
-      - nerc
       - moc
   - id: 465
     name: ESI-465
     description: ESI Vlan 465
     fabrics:
-      - nerc
       - moc
   - id: 466
     name: ESI-466
     description: ESI Vlan 466
     fabrics:
-      - nerc
       - moc
   - id: 467
     name: ESI-467
     description: ESI Vlan 467
     fabrics:
-      - nerc
       - moc
   - id: 468
     name: ESI-468
     description: ESI Vlan 468
     fabrics:
-      - nerc
       - moc
   - id: 469
     name: ESI-469
     description: ESI Vlan 469
     fabrics:
-      - nerc
       - moc
   - id: 470
     name: ESI-470
     description: ESI Vlan 470
     fabrics:
-      - nerc
       - moc
   - id: 471
     name: ESI-471
     description: ESI Vlan 471
     fabrics:
-      - nerc
       - moc
   - id: 472
     name: ESI-472
     description: ESI Vlan 472
     fabrics:
-      - nerc
       - moc
   - id: 473
     name: ESI-473
     description: ESI Vlan 473
     fabrics:
-      - nerc
       - moc
   - id: 474
     name: ESI-474
     description: ESI Vlan 474
     fabrics:
-      - nerc
       - moc
   - id: 475
     name: ESI-475
     description: ESI Vlan 475
     fabrics:
-      - nerc
       - moc
   - id: 476
     name: ESI-476
     description: ESI Vlan 476
     fabrics:
-      - nerc
       - moc
   - id: 477
     name: ESI-477
     description: ESI Vlan 477
     fabrics:
-      - nerc
       - moc
   - id: 478
     name: ESI-478
     description: ESI Vlan 478
     fabrics:
-      - nerc
       - moc
   - id: 479
     name: ESI-479
     description: ESI Vlan 479
     fabrics:
-      - nerc
       - moc
   - id: 480
     name: ESI-480
     description: ESI Vlan 480
     fabrics:
-      - nerc
       - moc
   - id: 481
     name: ESI-481
     description: ESI Vlan 481
     fabrics:
-      - nerc
       - moc
   - id: 482
     name: ESI-482
     description: ESI Vlan 482
     fabrics:
-      - nerc
       - moc
   - id: 483
     name: ESI-483
     description: ESI Vlan 483
     fabrics:
-      - nerc
       - moc
   - id: 484
     name: ESI-484
     description: ESI Vlan 484
     fabrics:
-      - nerc
       - moc
   - id: 485
     name: ESI-485
     description: ESI Vlan 485
     fabrics:
-      - nerc
       - moc
   - id: 486
     name: ESI-486
     description: ESI Vlan 486
     fabrics:
-      - nerc
       - moc
   - id: 487
     name: ESI-487
     description: ESI Vlan 487
     fabrics:
-      - nerc
       - moc
   - id: 488
     name: ESI-488
     description: ESI Vlan 488
     fabrics:
-      - nerc
       - moc
   - id: 489
     name: ESI-489
     description: ESI Vlan 489
     fabrics:
-      - nerc
       - moc
   - id: 490
     name: ESI-490
     description: ESI Vlan 490
     fabrics:
-      - nerc
       - moc
   - id: 491
     name: ESI-491
     description: ESI Vlan 491
     fabrics:
-      - nerc
       - moc
   - id: 492
     name: ESI-492
     description: ESI Vlan 492
     fabrics:
-      - nerc
       - moc
   - id: 493
     name: ESI-493
     description: ESI Vlan 493
     fabrics:
-      - nerc
       - moc
   - id: 494
     name: ESI-494
     description: ESI Vlan 494
     fabrics:
-      - nerc
       - moc
   - id: 495
     name: ESI-495
     description: ESI Vlan 495
     fabrics:
-      - nerc
       - moc
   - id: 496
     name: ESI-496
     description: ESI Vlan 496
     fabrics:
-      - nerc
       - moc
   - id: 497
     name: ESI-497
     description: ESI Vlan 497
     fabrics:
-      - nerc
       - moc
   - id: 498
     name: ESI-498
     description: ESI Vlan 498
     fabrics:
-      - nerc
       - moc
   - id: 499
     name: ESI-499
     description: ESI Vlan 499
     fabrics:
-      - nerc
       - moc
   - id: 501
     name: ESI-501
     description: ESI Vlan 501
     fabrics:
-      - nerc
       - moc
   - id: 502
     name: ESI-502
     description: ESI Vlan 502
     fabrics:
-      - nerc
       - moc
   - id: 503
     name: ESI-503
     description: ESI Vlan 503
     fabrics:
-      - nerc
       - moc
   - id: 504
     name: ESI-504
     description: ESI Vlan 504
     fabrics:
-      - nerc
       - moc
   - id: 505
     name: ESI-505
     description: ESI Vlan 505
     fabrics:
-      - nerc
       - moc
   - id: 506
     name: ESI-506
     description: ESI Vlan 506
     fabrics:
-      - nerc
       - moc
   - id: 507
     name: ESI-507
     description: ESI Vlan 507
     fabrics:
-      - nerc
       - moc
   - id: 508
     name: ESI-508
     description: ESI Vlan 508
     fabrics:
-      - nerc
       - moc
   - id: 509
     name: ESI-509
     description: ESI Vlan 509
     fabrics:
-      - nerc
       - moc
   - id: 510
     name: ESI-510
     description: ESI Vlan 510
     fabrics:
-      - nerc
       - moc
   - id: 511
     name: ESI-511
     description: ESI Vlan 511
     fabrics:
-      - nerc
       - moc
   - id: 512
     name: ESI-512
     description: ESI Vlan 512
     fabrics:
-      - nerc
       - moc
   - id: 513
     name: ESI-513
     description: ESI Vlan 513
     fabrics:
-      - nerc
       - moc
   - id: 514
     name: ESI-514
     description: ESI Vlan 514
     fabrics:
-      - nerc
       - moc
   - id: 515
     name: ESI-515
     description: ESI Vlan 515
     fabrics:
-      - nerc
       - moc
   - id: 516
     name: ESI-516
     description: ESI Vlan 516
     fabrics:
-      - nerc
       - moc
   - id: 517
     name: ESI-517
     description: ESI Vlan 517
     fabrics:
-      - nerc
       - moc
   - id: 518
     name: ESI-518
     description: ESI Vlan 518
     fabrics:
-      - nerc
       - moc
   - id: 519
     name: ESI-519
     description: ESI Vlan 519
     fabrics:
-      - nerc
       - moc
   - id: 520
     name: ESI-520
     description: ESI Vlan 520
     fabrics:
-      - nerc
       - moc
   - id: 521
     name: ESI-521
     description: ESI Vlan 521
     fabrics:
-      - nerc
       - moc
   - id: 522
     name: ESI-522
     description: ESI Vlan 522
     fabrics:
-      - nerc
       - moc
   - id: 523
     name: ESI-523
     description: ESI Vlan 523
     fabrics:
-      - nerc
       - moc
   - id: 524
     name: ESI-524
     description: ESI Vlan 524
     fabrics:
-      - nerc
       - moc
   - id: 525
     name: ESI-525
     description: ESI Vlan 525
     fabrics:
-      - nerc
       - moc
   - id: 526
     name: ESI-526
     description: ESI Vlan 526
     fabrics:
-      - nerc
       - moc
   - id: 527
     name: ESI-527
     description: ESI Vlan 527
     fabrics:
-      - nerc
       - moc
   - id: 528
     name: ESI-528
     description: ESI Vlan 528
     fabrics:
-      - nerc
       - moc
   - id: 529
     name: ESI-529
     description: ESI Vlan 529
     fabrics:
-      - nerc
       - moc
   - id: 530
     name: ESI-530
     description: ESI Vlan 530
     fabrics:
-      - nerc
       - moc
   - id: 531
     name: ESI-531
     description: ESI Vlan 531
     fabrics:
-      - nerc
       - moc
   - id: 532
     name: ESI-532
     description: ESI Vlan 532
     fabrics:
-      - nerc
       - moc
   - id: 533
     name: ESI-533
     description: ESI Vlan 533
     fabrics:
-      - nerc
       - moc
   - id: 534
     name: ESI-534
     description: ESI Vlan 534
     fabrics:
-      - nerc
       - moc
   - id: 535
     name: ESI-535
     description: ESI Vlan 535
     fabrics:
-      - nerc
       - moc
   - id: 536
     name: ESI-536
     description: ESI Vlan 536
     fabrics:
-      - nerc
       - moc
   - id: 537
     name: ESI-537
     description: ESI Vlan 537
     fabrics:
-      - nerc
       - moc
   - id: 538
     name: ESI-538
     description: ESI Vlan 538
     fabrics:
-      - nerc
       - moc
   - id: 539
     name: ESI-539
     description: ESI Vlan 539
     fabrics:
-      - nerc
       - moc
   - id: 540
     name: ESI-540
     description: ESI Vlan 540
     fabrics:
-      - nerc
       - moc
   - id: 541
     name: ESI-541
     description: ESI Vlan 541
     fabrics:
-      - nerc
       - moc
   - id: 542
     name: ESI-542
     description: ESI Vlan 542
     fabrics:
-      - nerc
       - moc
   - id: 543
     name: ESI-543
     description: ESI Vlan 543
     fabrics:
-      - nerc
       - moc
   - id: 544
     name: ESI-544
     description: ESI Vlan 544
     fabrics:
-      - nerc
       - moc
   - id: 545
     name: ESI-545
     description: ESI Vlan 545
     fabrics:
-      - nerc
       - moc
   - id: 546
     name: ESI-546
     description: ESI Vlan 546
     fabrics:
-      - nerc
       - moc
   - id: 547
     name: ESI-547
     description: ESI Vlan 547
     fabrics:
-      - nerc
       - moc
   - id: 548
     name: ESI-548
     description: ESI Vlan 548
     fabrics:
-      - nerc
       - moc
   - id: 549
     name: ESI-549
     description: ESI Vlan 549
     fabrics:
-      - nerc
       - moc
   - id: 550
     name: ESI-550
     description: ESI Vlan 550
     fabrics:
-      - nerc
       - moc
   - id: 551
     name: ESI-551
     description: ESI Vlan 551
     fabrics:
-      - nerc
       - moc
   - id: 552
     name: ESI-552
     description: ESI Vlan 552
     fabrics:
-      - nerc
       - moc
   - id: 553
     name: ESI-553
     description: ESI Vlan 553
     fabrics:
-      - nerc
       - moc
   - id: 554
     name: ESI-554
     description: ESI Vlan 554
     fabrics:
-      - nerc
       - moc
   - id: 555
     name: ESI-555
     description: ESI Vlan 555
     fabrics:
-      - nerc
       - moc
   - id: 556
     name: ESI-556
     description: ESI Vlan 556
     fabrics:
-      - nerc
       - moc
   - id: 557
     name: ESI-557
     description: ESI Vlan 557
     fabrics:
-      - nerc
       - moc
   - id: 558
     name: ESI-558
     description: ESI Vlan 558
     fabrics:
-      - nerc
       - moc
   - id: 559
     name: ESI-559
     description: ESI Vlan 559
     fabrics:
-      - nerc
       - moc
   - id: 560
     name: ESI-560
     description: ESI Vlan 560
     fabrics:
-      - nerc
       - moc
   - id: 561
     name: ESI-561
     description: ESI Vlan 561
     fabrics:
-      - nerc
       - moc
   - id: 562
     name: ESI-562
     description: ESI Vlan 562
     fabrics:
-      - nerc
       - moc
   - id: 563
     name: ESI-563
     description: ESI Vlan 563
     fabrics:
-      - nerc
       - moc
   - id: 564
     name: ESI-564
     description: ESI Vlan 564
     fabrics:
-      - nerc
       - moc
   - id: 565
     name: ESI-565
     description: ESI Vlan 565
     fabrics:
-      - nerc
       - moc
   - id: 566
     name: ESI-566
     description: ESI Vlan 566
     fabrics:
-      - nerc
       - moc
   - id: 567
     name: ESI-567
     description: ESI Vlan 567
     fabrics:
-      - nerc
       - moc
   - id: 568
     name: ESI-568
     description: ESI Vlan 568
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 569
     name: ESI-569
     description: ESI Vlan 569
     fabrics:
-      - nerc
       - moc
   - id: 570
     name: ESI-570
     description: ESI Vlan 570
     fabrics:
-      - nerc
       - moc
   - id: 571
     name: ESI-571
     description: ESI Vlan 571
     fabrics:
-      - nerc
       - moc
   - id: 572
     name: ESI-572
     description: ESI Vlan 572
     fabrics:
-      - nerc
       - moc
   - id: 573
     name: ESI-573
     description: ESI Vlan 573
     fabrics:
-      - nerc
       - moc
   - id: 574
     name: ESI-574
     description: ESI Vlan 574
     fabrics:
-      - nerc
       - moc
   - id: 575
     name: ESI-575
     description: ESI Vlan 575
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 576
     name: ESI-576
     description: ESI Vlan 576
     fabrics:
-      - nerc
       - moc
   - id: 577
     name: ESI-577
     description: ESI Vlan 577
     fabrics:
-      - nerc
       - moc
   - id: 578
     name: ESI-578
     description: ESI Vlan 578
     fabrics:
-      - nerc
       - moc
   - id: 579
     name: ESI-579
     description: ESI Vlan 579
     fabrics:
-      - nerc
       - moc
   - id: 580
     name: ESI-580
     description: ESI Vlan 580
     fabrics:
-      - nerc
       - moc
   - id: 581
     name: ESI-581
     description: ESI Vlan 581
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 582
     name: ESI-582
     description: ESI Vlan 582
     fabrics:
-      - nerc
       - moc
   - id: 583
     name: ESI-583
     description: ESI Vlan 583
     fabrics:
-      - nerc
       - moc
   - id: 584
     name: ESI-584
     description: ESI Vlan 584
     fabrics:
-      - nerc
       - moc
   - id: 585
     name: ESI-585
     description: ESI Vlan 585
     fabrics:
-      - nerc
       - moc
   - id: 586
     name: ESI-586
     description: ESI Vlan 586
     fabrics:
-      - nerc
       - moc
   - id: 587
     name: ESI-587
     description: ESI Vlan 587
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 588
     name: ESI-588
     description: ESI Vlan 588
     fabrics:
-      - nerc
       - moc
   - id: 589
     name: ESI-589
     description: ESI Vlan 589
     fabrics:
-      - nerc
       - moc
   - id: 590
     name: ESI-590
     description: ESI Vlan 590
     fabrics:
-      - nerc
       - moc
   - id: 591
     name: ESI-591
     description: ESI Vlan 591
     fabrics:
-      - nerc
       - moc
   - id: 592
     name: ESI-592
     description: ESI Vlan 592
     fabrics:
-      - nerc
       - moc
   - id: 593
     name: ESI-593
     description: ESI Vlan 593
     fabrics:
-      - nerc
       - moc
   - id: 594
     name: ESI-594
     description: ESI Vlan 594
     fabrics:
-      - nerc
       - moc
   - id: 595
     name: ESI-595
     description: ESI Vlan 595
     fabrics:
-      - nerc
       - moc
   - id: 596
     name: ESI-596
     description: ESI Vlan 596
     fabrics:
-      - nerc
       - moc
   - id: 597
     name: ESI-597
     description: ESI Vlan 597
     fabrics:
-      - nerc
       - moc
   - id: 598
     name: ESI-598
     description: ESI Vlan 598
     fabrics:
-      - nerc
       - moc
   - id: 599
     name: ESI-599
     description: ESI Vlan 599
     fabrics:
-      - nerc
       - moc
   - id: 600
     name: ESI-600
     description: ESI Vlan 600
     fabrics:
-      - nerc
       - moc
   - id: 601
     name: ESI-601
     description: ESI Vlan 601
     fabrics:
-      - nerc
       - moc
   - id: 602
     name: ESI-602
     description: ESI Vlan 602
     fabrics:
-      - nerc
       - moc
   - id: 603
     name: ESI-603
     description: ESI Vlan 603
     fabrics:
-      - nerc
       - moc
   - id: 604
     name: ESI-604
     description: ESI Vlan 604
     fabrics:
-      - nerc
       - moc
   - id: 605
     name: ESI-605
     description: ESI Vlan 605
     fabrics:
-      - nerc
       - moc
   - id: 606
     name: ESI-606
     description: ESI Vlan 606
     fabrics:
-      - nerc
       - moc
   - id: 607
     name: ESI-607
     description: ESI Vlan 607
     fabrics:
-      - nerc
       - moc
   - id: 608
     name: ESI-608
     description: ESI Vlan 608
     fabrics:
-      - nerc
       - moc
   - id: 609
     name: ESI-609
     description: ESI Vlan 609
     fabrics:
-      - nerc
       - moc
   - id: 610
     name: ESI-610
     description: ESI Vlan 610
     fabrics:
-      - nerc
       - moc
   - id: 611
     name: ESI-611
     description: ESI Vlan 611
     fabrics:
-      - nerc
       - moc
   - id: 612
     name: ESI-612
     description: ESI Vlan 612
     fabrics:
-      - nerc
       - moc
   - id: 613
     name: ESI-613
     description: ESI Vlan 613
     fabrics:
-      - nerc
       - moc
   - id: 614
     name: ESI-614
     description: ESI Vlan 614
     fabrics:
-      - nerc
       - moc
   - id: 615
     name: ESI-615
     description: ESI Vlan 615
     fabrics:
-      - nerc
       - moc
   - id: 616
     name: ESI-616
     description: ESI Vlan 616
     fabrics:
-      - nerc
       - moc
   - id: 617
     name: ESI-617
     description: ESI Vlan 617
     fabrics:
-      - nerc
       - moc
   - id: 618
     name: ESI-618
     description: ESI Vlan 618
     fabrics:
-      - nerc
       - moc
   - id: 619
     name: ESI-619
     description: ESI Vlan 619
     fabrics:
-      - nerc
       - moc
   - id: 620
     name: ESI-620
     description: ESI Vlan 620
     fabrics:
-      - nerc
       - moc
   - id: 621
     name: ESI-621
     description: ESI Vlan 621
     fabrics:
-      - nerc
       - moc
   - id: 622
     name: ESI-622
     description: ESI Vlan 622
     fabrics:
-      - nerc
       - moc
   - id: 623
     name: ESI-INSPECTION
     description: ESI Inspection and provisioning network
     subnet4: "192.168.11.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 624
     name: ESI-624
     description: ESI Vlan 624
     fabrics:
-      - nerc
       - moc
   - id: 625
     name: ESI-625
     description: ESI Vlan 625
     fabrics:
-      - nerc
       - moc
   - id: 626
     name: ESI-626
     description: ESI Vlan 626
     fabrics:
-      - nerc
       - moc
   - id: 627
     name: ESI-627
     description: ESI Vlan 627
     fabrics:
-      - nerc
       - moc
   - id: 628
     name: ESI-628
     description: ESI Vlan 628
     fabrics:
-      - nerc
       - moc
   - id: 629
     name: ESI-629
     description: ESI Vlan 629
     fabrics:
-      - nerc
       - moc
   - id: 630
     name: ESI-630
     description: ESI Vlan 630
     fabrics:
-      - nerc
       - moc
   - id: 910
     name: CLOUDLAB-OBM
@@ -1852,15 +1575,15 @@ vlans:
     description: For OCT/UMass nodes IPMI
     subnet4: "10.2.0.0/19"
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 912
     name: ESI-Controller-IPMI
     description: IPMI network for ESI controllers
     subnet4: "10.3.0.0/19"
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 913
     name: MOC-Research-OBM
     description: OBM network for MOC researcher nodes
@@ -1878,15 +1601,15 @@ vlans:
     description: OBM network for MOCSEC cluster
     subnet4: "10.6.0.1/19"
     fabrics:
-      - mocsecmgmt
       - moc
-      - nerc
+      - moc2
+      - mocsecmgmt
   - id: 917
     name: MOCSEC-STORAGE-MGMT
     description: Storage management network for MOCSEC cluster
     fabrics:
       - moc
-      - nerc
+      - moc2
       - mocsecmgmt
   - id: 918
     name: MOCEXT-JONATHANAPPAVOO-MGMT
@@ -1899,8 +1622,8 @@ vlans:
     description: Switch management network for MOC
     subnet4: "10.80.0.0/20"
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 931
     name: OCT-SWMGMT
     description: Switch management network for OCT
@@ -1920,7 +1643,6 @@ vlans:
     subnet4: "10.82.0.0/20"
     fabrics:
       - oct
-      - nerc
       - moc
   - id: 961
     name: MOC-DEVVLAN-1
@@ -1963,222 +1685,208 @@ vlans:
     description: NERC Openshift Infra Frontend Routed
     subnet4: "10.85.0.0/22"
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 2141
     name: NERC-Openstack-FloatingIP
     description: Floating IPs for NERC openstack
     subnet4: "199.94.60.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 2142
     name: NERC-Openstack-Ext-Cntrl
     description: NERC External Controller IPs
     subnet4: "140.247.152.0/27"
     fabrics:
-      - nerc
       - moc
   - id: 2143
     name: NERC-Openstack-L2-1
     description: NERC Openstack L2 Internal 1
     subnet4: "172.18.0.0/23"
     fabrics:
-      - nerc
       - moc
   - id: 2144
     name: NERC-Openstack-L2-2
     description: NERC Openstack L2 Internal 2
     subnet4: "172.18.4.0/23"
     fabrics:
-      - nerc
       - moc
   - id: 2145
     name: NERC-Openstack-Admin-1
     description: NERC Openstack Admin Network 1
     subnet4: "10.255.0.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 2146
     name: NERC-Openstack-OBM-1
     description: NERC Openstack OBM Network 1
     subnet4: "10.255.1.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 2147
     name: NERC-Openstack-CEPH-Backend
     description: NERC Openstack CEPH Backend
     subnet4: "10.255.2.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 2148
     name: NERC-Openstack-VR-Egress
     description: NERC Openstack Virtual Router Egress
     subnet4: "10.255.3.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 2170
     name: NERC-Openshift-OBM-2
     description: NERC Openshift OBM Network 2
     subnet4: "10.30.0.0/22"
     fabrics:
-      - nerc
       - moc
   - id: 2172
     name: NERC-Openshift-Prod-Frontend
     description: NERC Openshift Prod Frontend
     subnet4: "10.30.6.0/23"
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 2173
     name: NERC-Openshift-Prod-Backend
     description: NERC Openshift Prod Storage Backend
     subnet4: "10.30.10.0/23"
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 2174
     name: NERC-Openshift-Test-Frontend
     description: NERC Openshift Test Frontend
     subnet4: "10.30.8.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 2175
     name: NERC-Openshift-Test-Backend
     description: NERC Openshift Test Storage Backend
     subnet4: "10.30.12.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 2176
     name: NERC-Openshift-Infra-Frontend
     description: NERC Openshift Infra Frontend
     subnet4: "10.30.9.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 2177
     name: NERC-Openshift-Infra-Backend
     description: NERC Openshift Infra Storage Backend
     subnet4: "10.30.13.0/24"
     fabrics:
-      - nerc
       - moc
   - id: 2180
     name: NERC-Openshift-PublicIP
     description: NERC Openshift Public Access Network
     subnet4: "199.94.63.0/28"
     fabrics:
-      - nerc
       - moc
   - id: 2304
     name: PureStorage-Dataplane
     description: PureStorage 200G dataplane network
     subnet4: "10.7.0.0/20"
     fabrics:
-      - nerc
       - moc
+      - moc2
   - id: 2305
     name: PureStorage-Secure-Infra
     description: PureStorage Secure Infra Network
     subnet4: "10.8.0.0/24"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2306
     name: PureStorage-Secure-Staging
     description: PureStorage Secure Staging Network
     subnet4: "10.8.1.0/24"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2307
     name: PureStorage-Secure-Prod
     description: PureStorage Secure Prod Network
     subnet4: "10.8.2.0/23"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2310
     name: PureStorage-OAC-DEV
     description: PureStorage OAC 1
     subnet4: "10.9.0.0/24"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2311
     name: PureStorage-OAC-PROD-INFRA
     description: PureStorage OAC 2
     subnet4: "10.9.1.0/24"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2312
     name: PureStorage-OAC-STAGING-WORKLOAD
     description: PureStorage OAC 3
     subnet4: "10.9.2.0/24"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2313
     name: PureStorage-OAC-PROD-WORKLOAD0
     description: PureStorage OAC 4
     subnet4: "10.9.8.0/22"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2314
     name: PureStorage-OAC-DEV-WORKLOAD0
     description: PureStorage OAC 5
     subnet4: "10.9.4.0/24"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2315
     name: PureStorage-OAC-DEV-WORKLOAD1
     description: PureStorage OAC 6
     subnet4: "10.9.5.0/24"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2316
     name: PureStorage-JETTY
     description: PureStorage OAC 7
     subnet4: "10.9.6.0/24"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2317
     name: PureStorage-NIST-DEV-INFRA
     description: PureStorage OAC 8
     subnet4: "10.9.7.0/24"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2318
     name: PureStorage-NIST-DEV-WORKLOAD0
     description: PureStorage NIST 9
     subnet4: "10.9.12.0/24"
     fabrics:
-      - nerc
       - moc
+      - moc2
       - mocsecdata
   - id: 2500
     name: oct-cloudlab-2500
@@ -4062,7 +3770,6 @@ vlans:
     subnet4: "128.31.20.0/22"
     fabrics:
       - oct
-      - nerc
       - moc
   - id: 3911
     name: ATLAS-3911

@@ -1,0 +1,205 @@
+interfaces:
+  swp1:
+    description: "MOC2-RT-1 Port 18"
+    state: "up"
+  swp2:
+    description: "MOC2-RT-2 Port 18"
+    state: "up"
+  swp3:
+    description: "MOC-CORE-2 Port 21 (TEMP MOC1 UPLINK)"
+    state: "up"
+  swp4:
+    state: "down"
+  swp5:
+    fanout:
+      type: "quad"
+      speed: "25G"
+  swp5s0:
+    description: "R440-U14-2"
+    state: "up"
+    portmode: "access"
+    untagged: 2311
+    stp:
+      edgeport: true
+      bpduguard: true
+  swp5s1:
+    description: "R440-U15-2"
+    state: "up"
+    portmode: "access"
+    untagged: 2311
+    stp:
+      edgeport: true
+      bpduguard: true
+  swp5s2:
+    description: "R440-U16-2"
+    state: "up"
+    portmode: "access"
+    untagged: 2311
+    stp:
+      edgeport: true
+      bpduguard: true
+  swp5s3:
+    description: "R440-U17-2"
+    state: "down"
+  swp6:
+    fanout:
+      type: "quad"
+      speed: "25G"
+  swp6s0:
+    description: "R440-U18-2"
+    state: "down"
+  swp6s1:
+    description: "R440-U19-2"
+    state: "down"
+  swp6s2:
+    description: "R440-U20-2"
+    state: "down"
+  swp6s3:
+    description: "R440-U21-2"
+    state: "down"
+  swp7:
+    state: "down"
+  swp8:
+    state: "down"
+  swp9:
+    state: "down"
+  swp10:
+    state: "down"
+  swp11:
+    state: "down"
+  swp12:
+    state: "down"
+  swp13:
+    state: "down"
+  swp14:
+    state: "down"
+  swp15:
+    state: "down"
+  swp16:
+    state: "down"
+  swp17:
+    description: "MOC2-R4PCC02-SW-TORS Port 49/1"
+    state: "up"
+    speed: "200G"
+    fec: "rs"
+  swp18:
+    description: "MOC2-R4PCC04-SW-TORS Port 49/1"
+    state: "up"
+    speed: "200G"
+    fec: "rs"
+  swp19:
+    description: "MOC2-R4PCC02-SW-BORS Port 32"
+    state: "up"
+  swp20:
+    description: "MOC2-R4PCC04-SW-BORS Port 32"
+    state: "up"
+  swp21:
+    state: "down"
+  swp22:
+    state: "down"
+  swp23:
+    state: "down"
+  swp24:
+    state: "down"
+  swp25:
+    description: "PURE-U01 Port 1/1"
+    state: "up"
+  swp26:
+    description: "PURE-U01 Port 1/3"
+    state: "up"
+  swp27:
+    description: "PURE-U01 Port 2/1"
+    state: "up"
+  swp28:
+    description: "PURE-U01 Port 2/3"
+    state: "up"
+  swp29:
+    description: "MOC2-CORE-1 Port 29"
+    state: "up"
+  swp30:
+    description: "MOC2-CORE-1 Port 30"
+    state: "up"
+  swp31:
+    description: "MOC2-MCORE-1 Port 51"
+    state: "up"
+  swp32:
+    state: "down"
+  bond1:
+    description: "MOC2-RT Uplink"
+    state: "up"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp1"
+      - "swp2"
+    mlag: "bond1"
+  bond2:
+    description: "MOC-CORE Uplink (TEMP MOC1 UPLINK)"
+    state: "up"
+    portmode: "trunk"
+    tagged:
+      - 212:214
+      - 216:220
+      - 568
+      - 911:912
+      - 916:917
+      - 930
+      - 2304:2307
+      - 2310:2318
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp3"
+    mlag: "bond2"
+  bond10:
+    description: "MOC2-MCORE-1 Downlink"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp31"
+    mlag: "bond10"
+  bond11:
+    description: "MOC2-R4PCC02/04-SW-TORS Downlink"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp17"
+      - "swp18"
+    mlag: "bond11"
+  bond12:
+    description: "MOC2-R4PCC02-SW-BORS Downlink"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp19"
+    mlag: "bond12"
+  bond13:
+    description: "MOC2-R4PCC04-SW-BORS Downlink"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp20"
+    mlag: "bond13"
+  bond101:
+    description: "PURE-U01 Downlink"
+    portmode: "hybrid"
+    untagged: 2304
+    tagged:
+      - 2305:2307
+      - 2310:2318
+    lacp-members-active:
+      - "swp25"
+      - "swp26"
+      - "swp27"
+      - "swp28"
+    mlag: "bond101"
+    stp:
+      edgeport: true
+      bpduguard: true
+  vlan930:
+    ip4: "10.80.0.42/20"
+    gateway: "10.80.0.1"

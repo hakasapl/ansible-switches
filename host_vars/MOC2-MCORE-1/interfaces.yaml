@@ -1,0 +1,192 @@
+interfaces:
+  swp1:
+    description: "PURE-U01 MGMT 1"
+    state: "up"
+    speed: "auto"
+    portmode: "access"
+    untagged: 917
+    stp:
+      bpduguard: true
+      edgeport: true
+  swp2:
+    description: "PURE-U01 MGMT 2"
+    state: "up"
+    speed: "auto"
+    portmode: "access"
+    untagged: 917
+    stp:
+      bpduguard: true
+      edgeport: true
+  swp3:
+    state: "down"
+  swp4:
+    state: "down"
+  swp5:
+    state: "down"
+  swp6:
+    state: "down"
+  swp7:
+    state: "down"
+  swp8:
+    state: "down"
+  swp9:
+    state: "down"
+  swp10:
+    state: "down"
+  swp11:
+    state: "down"
+  swp12:
+    state: "down"
+  swp13:
+    state: "down"
+  swp14:
+    state: "down"
+  swp15:
+    state: "down"
+  swp16:
+    state: "down"
+  swp17:
+    state: "down"
+  swp18:
+    state: "down"
+  swp19:
+    state: "down"
+  swp20:
+    state: "down"
+  swp21:
+    state: "down"
+  swp22:
+    state: "down"
+  swp23:
+    state: "down"
+  swp24:
+    state: "down"
+  swp25:
+    state: "down"
+  swp26:
+    state: "down"
+  swp27:
+    state: "down"
+  swp28:
+    state: "down"
+  swp29:
+    state: "down"
+  swp30:
+    state: "down"
+  swp31:
+    state: "down"
+  swp32:
+    state: "down"
+  swp33:
+    description: "R440-U14 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 916
+  swp34:
+    description: "R440-U15 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 916
+  swp35:
+    description: "R440-U16 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 916
+  swp36:
+    description: "R440-U17 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 916
+  swp37:
+    description: "R440-U18 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 916
+  swp38:
+    description: "R440-U19 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 916
+  swp39:
+    description: "R440-U20 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 916
+  swp40:
+    description: "R440-U21 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 916
+  swp41:
+    state: "down"
+  swp42:
+    state: "down"
+  swp43:
+    description: "MOC2-RT-2 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 930
+    stp:
+      edgeport: true
+      disabled: true
+  swp44:
+    description: "MOC2-RT-1 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 930
+    stp:
+      edgeport: true
+      disabled: true
+  swp45:
+    description: "MOC2-VPN-2 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 930
+    stp:
+      edgeport: true
+      disabled: true
+  swp46:
+    description: "MOC2-VPN-1 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 930
+    stp:
+      edgeport: true
+      disabled: true
+  swp47:
+    description: "MOC2-FW-2 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 930
+    stp:
+      edgeport: true
+      disabled: true
+  swp48:
+    description: "MOC2-FW-1 MGMT"
+    state: "up"
+    portmode: "access"
+    untagged: 930
+    stp:
+      edgeport: true
+      disabled: true
+  swp49:
+    state: "down"
+  swp50:
+    state: "down"
+  swp51:
+    description: "MOC2-CORE-1 Port 28"
+    state: "up"
+  swp52:
+    description: "MOC2-CORE-2 Port 28"
+    state: "up"
+  bond1:
+    description: "MOC2-CORE Uplink"
+    portmode: "trunk"
+    tagged: "all"
+    lacp-rate: "fast"
+    lacp-members-active:
+      - "swp51"
+      - "swp52"
+  vlan930:
+    ip4: "10.80.0.45/20"
+    gateway: "10.80.0.1"
