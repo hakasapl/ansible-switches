@@ -1,4 +1,0 @@
----
-- name: Save Config
-  dellemc.os9.os9_config:
-    save: true

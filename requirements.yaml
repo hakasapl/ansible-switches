@@ -1,5 +1,6 @@
 ---
 collections:
+  - name: cci_moc.stateful_switches
   - name: dellemc.os9
   - name: cisco.nxos
   - name: amazon.aws

@@ -1,8 +1,7 @@
 ---
-- name: Generate host-specific VLAN manifest
-  set_fact:
-    vlans_host: "{{ vlans | FILTER_VLANS(group_names) }}"
-
+# Site settings every switch gets, applied before the manifests by the
+# cci_moc.stateful_switches.configure role. The tasks notify that role's "Save Config"
+# handler, so changes made here are saved at the end of the run with everything else
 - name: Import Dell OS9 Tasks
   ansible.builtin.include_tasks: dell_os9.yaml
   when: ansible_network_os == "dellemc.os9.os9"
@@ -10,7 +9,3 @@
 - name: Import Cisco NXOS Tasks
   ansible.builtin.include_tasks: cisco_nxos.yaml
   when: ansible_network_os == "cisco.nxos.nxos"
-
-- name: Import NVIDIA Cumulus Linux Tasks
-  ansible.builtin.include_tasks: nvidia_nvue.yaml
-  when: ansible_network_os == "nvidia.nvue"

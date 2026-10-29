@@ -4,4 +4,4 @@
   connection: network_cli
   gather_facts: false
   roles:
-    - save
+    - cci_moc.stateful_switches.save
