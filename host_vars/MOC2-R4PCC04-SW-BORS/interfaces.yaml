@@ -86,7 +86,7 @@ interfaces:
       type: "quad"
   swp6s0:
     description: "MOC-R4PCC04U06"
-    state: "down"
+    state: "up"
     portmode: "access"
     untagged: 204
     stp:
@@ -97,7 +97,7 @@ interfaces:
     state: "down"
   swp6s2:
     description: "MOC-R4PCC04U04"
-    state: "down"
+    state: "up"
     portmode: "access"
     untagged: 204
     stp:
