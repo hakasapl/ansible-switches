@@ -18,7 +18,7 @@ interfaces:
     description: "R440-U14-1"
     state: "up"
     portmode: "access"
-    untagged: 213
+    untagged: 219
     stp:
       edgeport: true
       bpduguard: true
@@ -26,7 +26,7 @@ interfaces:
     description: "R440-U15-1"
     state: "up"
     portmode: "access"
-    untagged: 213
+    untagged: 219
     stp:
       edgeport: true
       bpduguard: true
@@ -34,38 +34,23 @@ interfaces:
     description: "R440-U16-1"
     state: "up"
     portmode: "access"
-    untagged: 213
+    untagged: 219
     stp:
       edgeport: true
       bpduguard: true
   swp5s3:
     description: "R440-U17-1"
-    state: "up"
-    portmode: "access"
-    untagged: 213
-    stp:
-      edgeport: true
-      bpduguard: true
+    state: "down"
   swp6:
     fanout:
       type: "quad"
       speed: "25G"
   swp6s0:
     description: "R440-U18-1"
-    state: "up"
-    portmode: "access"
-    untagged: 213
-    stp:
-      edgeport: true
-      bpduguard: true
+    state: "down"
   swp6s1:
     description: "R440-U19-1"
-    state: "up"
-    portmode: "access"
-    untagged: 213
-    stp:
-      edgeport: true
-      bpduguard: true
+    state: "down"
   swp6s2:
     description: "R440-U20-1"
     state: "down"
