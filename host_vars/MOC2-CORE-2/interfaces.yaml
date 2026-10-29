@@ -18,7 +18,7 @@ interfaces:
     description: "R440-U14-2"
     state: "up"
     portmode: "access"
-    untagged: 2311
+    untagged: 2317
     stp:
       edgeport: true
       bpduguard: true
@@ -26,7 +26,7 @@ interfaces:
     description: "R440-U15-2"
     state: "up"
     portmode: "access"
-    untagged: 2311
+    untagged: 2317
     stp:
       edgeport: true
       bpduguard: true
@@ -34,7 +34,7 @@ interfaces:
     description: "R440-U16-2"
     state: "up"
     portmode: "access"
-    untagged: 2311
+    untagged: 2317
     stp:
       edgeport: true
       bpduguard: true
@@ -147,7 +147,7 @@ interfaces:
       - 916:917
       - 930
       - 2304:2307
-      - 2310:2318
+      - 2310:2320
     lacp-rate: "fast"
     lacp-members-active:
       - "swp3"
@@ -191,7 +191,7 @@ interfaces:
     untagged: 2304
     tagged:
       - 2305:2307
-      - 2310:2318
+      - 2310:2320
     lacp-members-active:
       - "swp25"
       - "swp26"

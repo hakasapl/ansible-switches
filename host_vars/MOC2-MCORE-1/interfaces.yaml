@@ -81,42 +81,42 @@ interfaces:
     description: "R440-U14 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 916
+    untagged: 912
   swp34:
     description: "R440-U15 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 916
+    untagged: 912
   swp35:
     description: "R440-U16 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 916
+    untagged: 912
   swp36:
     description: "R440-U17 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 916
+    untagged: 912
   swp37:
     description: "R440-U18 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 916
+    untagged: 912
   swp38:
     description: "R440-U19 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 916
+    untagged: 912
   swp39:
     description: "R440-U20 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 916
+    untagged: 912
   swp40:
     description: "R440-U21 MGMT"
     state: "up"
     portmode: "access"
-    untagged: 916
+    untagged: 912
   swp41:
     state: "down"
   swp42:
