@@ -3,21 +3,9 @@ interfaces:
     fanout:
       type: "dual"
   swp1s0:
-    description: "MOC-R4PCC04U38-1"
-    state: "up"
-    portmode: "access"
-    untagged: 433
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp1s1:
-    description: "MOC-R4PCC04U38-2"
-    state: "up"
-    portmode: "access"
-    untagged: 433
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp2:
     fanout:
       type: "dual"
@@ -41,26 +29,15 @@ interfaces:
     fanout:
       type: "dual"
   swp3s0:
-    description: "MOC-R4PCC04U36-1"
     state: "down"
   swp3s1:
-    description: "MOC-R4PCC04U36-2"
     state: "down"
   swp4:
     fanout:
       type: "dual"
   swp4s0:
-    description: "MOC-R4PCC04U35-1"
-    state: "up"
-    portmode: "hybrid"
-    untagged: 2172
-    tagged:
-      - 2173
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp4s1:
-    description: "MOC-R4PCC04U35-2"
     state: "down"
   swp5:
     fanout:
@@ -103,19 +80,15 @@ interfaces:
     fanout:
       type: "dual"
   swp8s0:
-    description: "MOC-R4PCC04U29-1"
     state: "down"
   swp8s1:
-    description: "MOC-R4PCC04U29-2"
     state: "down"
   swp9:
     fanout:
       type: "dual"
   swp9s0:
-    description: "MOC-R4PCC04U26-1"
     state: "down"
   swp9s1:
-    description: "MOC-R4PCC04U26-2"
     state: "down"
   swp10:
     fanout:
@@ -130,19 +103,15 @@ interfaces:
     fanout:
       type: "dual"
   swp11s0:
-    description: "MOC-R4PCC04U24-1"
     state: "down"
   swp11s1:
-    description: "MOC-R4PCC04U24-2"
     state: "down"
   swp12:
     fanout:
       type: "dual"
   swp12s0:
-    description: "MOC-R4PCC04U23-1"
     state: "down"
   swp12s1:
-    description: "MOC-R4PCC04U23-2"
     state: "down"
   swp13:
     fanout:
@@ -157,10 +126,8 @@ interfaces:
     fanout:
       type: "dual"
   swp14s0:
-    description: "MOC-R4PCC04U17-1"
     state: "down"
   swp14s1:
-    description: "MOC-R4PCC04U17-2"
     state: "down"
   swp15:
     fanout:
@@ -185,10 +152,8 @@ interfaces:
     fanout:
       type: "dual"
   swp16s0:
-    description: "MOC-R4PCC04U15-1"
     state: "down"
   swp16s1:
-    description: "MOC-R4PCC04U15-2"
     state: "down"
   swp17:
     fanout:
@@ -269,10 +234,8 @@ interfaces:
     fanout:
       type: "dual"
   swp22s0:
-    description: "MOC-R4PCC04U05-1"
     state: "down"
   swp22s1:
-    description: "MOC-R4PCC04U05-2"
     state: "down"
   swp23:
     fanout:
@@ -296,21 +259,9 @@ interfaces:
     fanout:
       type: "dual"
   swp25s0:
-    description: "MOC-R4PCC04U38-3"
-    state: "up"
-    portmode: "access"
-    untagged: 433
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp25s1:
-    description: "MOC-R4PCC04U38-4"
-    state: "up"
-    portmode: "access"
-    untagged: 433
-    stp:
-      edgeport: true
-      disabled: true
+    state: "down"
   swp26:
     fanout:
       type: "dual"
@@ -324,19 +275,15 @@ interfaces:
     fanout:
       type: "dual"
   swp27s0:
-    description: "MOC-R4PCC04U36-3"
     state: "down"
   swp27s1:
-    description: "MOC-R4PCC04U36-4"
     state: "down"
   swp28:
     fanout:
       type: "dual"
   swp28s0:
-    description: "MOC-R4PCC04U35-3"
     state: "down"
   swp28s1:
-    description: "MOC-R4PCC04U35-4"
     state: "down"
   swp29:
     fanout:
@@ -369,19 +316,15 @@ interfaces:
     fanout:
       type: "dual"
   swp32s0:
-    description: "MOC-R4PCC04U29-3"
     state: "down"
   swp32s1:
-    description: "MOC-R4PCC04U29-4"
     state: "down"
   swp33:
     fanout:
       type: "dual"
   swp33s0:
-    description: "MOC-R4PCC04U26-3"
     state: "down"
   swp33s1:
-    description: "MOC-R4PCC04U26-4"
     state: "down"
   swp34:
     fanout:
@@ -396,19 +339,15 @@ interfaces:
     fanout:
       type: "dual"
   swp35s0:
-    description: "MOC-R4PCC04U24-3"
     state: "down"
   swp35s1:
-    description: "MOC-R4PCC04U24-4"
     state: "down"
   swp36:
     fanout:
       type: "dual"
   swp36s0:
-    description: "MOC-R4PCC04U23-3"
     state: "down"
   swp36s1:
-    description: "MOC-R4PCC04U23-4"
     state: "down"
   swp37:
     fanout:
@@ -423,10 +362,8 @@ interfaces:
     fanout:
       type: "dual"
   swp38s0:
-    description: "MOC-R4PCC04U17-3"
     state: "down"
   swp38s1:
-    description: "MOC-R4PCC04U17-4"
     state: "down"
   swp39:
     fanout:
@@ -441,10 +378,8 @@ interfaces:
     fanout:
       type: "dual"
   swp40s0:
-    description: "MOC-R4PCC04U15-3"
     state: "down"
   swp40s1:
-    description: "MOC-R4PCC04U15-4"
     state: "down"
   swp41:
     fanout:
@@ -495,10 +430,8 @@ interfaces:
     fanout:
       type: "dual"
   swp46s0:
-    description: "MOC-R4PCC04U05-3"
     state: "down"
   swp46s1:
-    description: "MOC-R4PCC04U05-4"
     state: "down"
   swp47:
     fanout:
