@@ -17,6 +17,8 @@ interfaces:
   swp5s0:
     description: "R440-U14-2"
     state: "up"
+    speed: "10G"
+    autoneg: false
     portmode: "access"
     untagged: 2317
     stp:
@@ -25,6 +27,8 @@ interfaces:
   swp5s1:
     description: "R440-U15-2"
     state: "up"
+    speed: "10G"
+    autoneg: false
     portmode: "access"
     untagged: 2317
     stp:
@@ -33,6 +37,8 @@ interfaces:
   swp5s2:
     description: "R440-U16-2"
     state: "up"
+    speed: "10G"
+    autoneg: false
     portmode: "access"
     untagged: 2317
     stp:
@@ -41,6 +47,8 @@ interfaces:
   swp5s3:
     description: "R440-U17-2"
     state: "down"
+    speed: "10G"
+    autoneg: false
   swp6:
     fanout:
       type: "quad"
@@ -48,15 +56,23 @@ interfaces:
   swp6s0:
     description: "R440-U18-2"
     state: "down"
+    speed: "10G"
+    autoneg: false
   swp6s1:
     description: "R440-U19-2"
     state: "down"
+    speed: "10G"
+    autoneg: false
   swp6s2:
     description: "R440-U20-2"
     state: "down"
+    speed: "10G"
+    autoneg: false
   swp6s3:
     description: "R440-U21-2"
     state: "down"
+    speed: "10G"
+    autoneg: false
   swp7:
     state: "down"
   swp8:
